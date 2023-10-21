@@ -1,0 +1,417 @@
+#sec-home {
+    background-image: url("assests/readme-images/home-bg.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+}
+
+
+/* text animation */
+
+
+header .item .cover {
+    padding: 75px 0;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+}
+
+header .item .cover .header-content {
+    position: relative;
+    padding: 56px;
+    overflow: hidden;
+}
+
+header .item .cover .header-content .line {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    border: 9px solid #fff;
+    -webkit-clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
+    clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
+}
+
+header .item .cover .header-content h2 {
+    font-weight: 300;
+    font-size: 35px;
+    color: #fff;
+}
+
+header .item .cover .header-content h1 {
+    font-size: 56px;
+    font-weight: 600;
+    margin: 5px 0 20px;
+    word-spacing: 3px;
+    color: #fff;
+}
+
+header .item .cover .header-content h4 {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 36px;
+    color: #fff;
+}
+
+header .owl-item.active h1 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-name: fadeInDown;
+    animation-delay: 0.3s;
+}
+
+header .owl-item.active h2 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-name: fadeInDown;
+    animation-delay: 0.3s;
+}
+
+header .owl-item.active h4 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-name: fadeInUp;
+    animation-delay: 0.3s;
+}
+
+header .owl-item.active .line {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-name: fadeInLeft;
+    animation-delay: 0.3s;
+}
+
+header .owl-nav .owl-prev {
+    position: absolute;
+    left: 15px;
+    top: 43%;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+    background: rgba(0, 0, 0, 0.5) !important;
+    width: 40px;
+    cursor: pointer;
+    height: 40px;
+    position: absolute;
+    display: block;
+    z-index: 1000;
+    border-radius: 0;
+}
+
+header .owl-nav .owl-prev span {
+    font-size: 1.6875rem;
+    color: #fff;
+}
+
+header .owl-nav .owl-prev:focus {
+    outline: 0;
+}
+
+header .owl-nav .owl-prev:hover {
+    background: #000 !important;
+}
+
+header .owl-nav .owl-next {
+    position: absolute;
+    right: 15px;
+    top: 43%;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+    background: rgba(0, 0, 0, 0.5) !important;
+    width: 40px;
+    cursor: pointer;
+    height: 40px;
+    position: absolute;
+    display: block;
+    z-index: 1000;
+    border-radius: 0;
+}
+
+header .owl-nav .owl-next span {
+    font-size: 1.6875rem;
+    color: #fff;
+}
+
+header .owl-nav .owl-next:focus {
+    outline: 0;
+}
+
+header .owl-nav .owl-next:hover {
+    background: #000 !important;
+}
+
+header:hover .owl-prev {
+    left: 0px;
+    opacity: 1;
+}
+
+header:hover .owl-next {
+    right: 0px;
+    opacity: 1;
+}
+
+
+/* about us  */
+
+.description {
+    padding: 0 48px;
+}
+
+
+/* package images in home page  */
+
+.rounded {
+    text-decoration: none;
+    animation: rounded;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    cursor: pointer;
+    /* Transition */
+    transition-property: transform, backgorund-color, color;
+    transition-duration: 1s, 2s, 1s;
+}
+
+.rounded:hover {
+    transform: scaleX(1.35) scaleY(1.35);
+
+}
+
+
+/* contact us */
+.image1 {
+    /*position: absolute;*/
+    width: 100vw;
+    height: 75px;
+    opacity: 0.99;
+
+
+}
+
+.logoSize {
+    width: 70vw;
+    height: 150px;
+    /*position: relative;*/
+    /*display: flex;*/
+    /*justify-content: center;*/
+}
+
+
+#contact {
+    height: fit-content;
+    background-image: url("assests/readme-images/img.png");
+    opacity: 0.99;
+    position: relative;
+}
+
+/*Copyright*/
+.copyrightStyle {
+    background: #383733;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    width: 200px;
+    height: fit-content;
+    padding: 1rem 1em 0.5rem;
+    border-radius: 10px;
+    border: 2px solid #bb8c2b;
+    box-shadow: 4px 4px 40px -10px #000;
+    /*border: 2px solid #000000;*/
+}
+
+.copyrightStyle h1 {
+    margin-bottom: 2rem;
+}
+
+.copyrightStyle span {
+    margin-top: 0.4rem;
+    display: block;
+}
+
+
+
+/* see the travels area*/
+
+.visit_area{
+    height: 200px;
+    background-image: url("assests/readme-images/peakpx2.jpg");
+    opacity: 0.99;
+}
+
+
+.visit_topic{
+
+}
+
+/* travel images */
+
+
+.travel-image-frame{
+    border: 2px solid #bb8c2b;
+    box-shadow: 4px 6px 100px -20px #000;
+}
+.travel-image{
+    border: 2px solid #bb8c2b;
+    box-shadow: 4px 4px 50px -10px #000;
+}
+
+
+
+/* button-Booking */
+.button-Booking{
+    right: 0px;
+    bottom: 50px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    font-weight: bolder;
+    background-color: #499203;
+    border-radius: 10px;
+    box-shadow: 4px 4px 50px -10px #000;
+
+
+}
+
+.button-Booking:hover {
+    transform: scaleX(1.20) scaleY(1.20);
+    background-color: #555050;
+    color: #ffffff;
+    box-shadow: 4px 4px 50px -10px #000000;
+
+
+
+}
+
+@keyframes btn{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+
+/* User Register Form */
+/*#userId{
+    border: 2px solid #bb8c2b;
+}*/
+.reg-small-form{
+    border: 4px solid #bb8c2b;
+    box-shadow: 4px 6px 100px -20px #000;
+}
+.container {
+    max-width: 1000px;
+
+}
+.user-reg{
+    background-image: url("assests/readme-images/peakpx (2).jpg");
+    width:100%;
+    opacity: 0.95;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+.b-example-divider {
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+}
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+.nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+.btn-bd-primary {
+    --bd-violet-bg: #712cf9;
+    --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: var(--bd-violet-bg);
+    --bs-btn-border-color: var(--bd-violet-bg);
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: #6528e0;
+    --bs-btn-hover-border-color: #6528e0;
+    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: #5a23c8;
+    --bs-btn-active-border-color: #5a23c8;
+}
+
+.bd-mode-toggle {
+    z-index: 1500;
+}
+
+.bd-mode-toggle .dropdown-menu .active .bi {
+    display: block !important;
+}
+
+
+/* register user topic img*/
+
+.reg_area{
+    height: 150px;
+    background-image: url("assests/readme-images/peakpx2.jpg");
+    opacity: 0.99;
+}
+

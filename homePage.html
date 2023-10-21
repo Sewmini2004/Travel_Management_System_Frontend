@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assests/bootstrap/css/bootstrap.min.css">
+    <meta name="generator" content="Hugo 0.118.2">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+
+    <link rel="stylesheet" href="style.css">
+
+<!--    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/checkout/">-->
+<!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+<body>
+<!-- admin user register form -->
+<section class="user-reg  ">
+    <!-- topic-->
+    <article class="reg_area text-white visit_topic position-relative flex-column p-2">
+        <h1 class="justify-content-center d-flex p-3 text-warning">User Register Form</h1>
+
+    </article>
+    <!--  admin user Form container -->
+     <div class="d-flex">
+    <div class="container p-5 m-5 d-flex ">
+        <main>
+            <div class="row g-5 d-flex justify-content-lg-start">
+
+                <div class="reg-small-form  col-md-3 col-lg-8 ">
+                    <h3 class="p-4 mb-5">User Register Form</h3>
+                    <form class="needs-validation" novalidate>
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <label id="userId" class="form-label">User Id</label>
+                                <label  class="form-label "></label>
+                            </div>
+
+                            <div class="col-6">
+                                <label for="username" class="form-label">Username</label>
+                                <div class="input-group has-validation">
+                                    <input type="text" class="form-control" id="username" placeholder="Username" required>
+                                    <div class="invalid-feedback">
+                                        Your username is required.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                                <div class="invalid-feedback">
+                                    Please enter a valid email address for shipping updates.
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <label for="address" class="form-label">Address</label>
+                                <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+                                <div class="invalid-feedback">
+                                    Please enter your shipping address.
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <label for="nic" class="form-label">NIC</label>
+                                <input type="text" class="form-control" id="nic" placeholder="NIC">
+                            </div>
+
+                            <div class="col-6">
+                                <label for="gender" class="form-label">Gender</label>
+                                <select class="form-select" id="gender" required>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please select a valid gender.
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label for="remarks" class="form-label">Remarks</label>
+                                <textarea type="textarea" class="form-control" id="remarks" placeholder="Remarks"></textarea>
+                            </div>
+
+                            <div class="col-6">
+                                <label for="nic-image1" class="form-label">NIC Image FrontEnd</label>
+                                <input type="file" class="form-control" id="nic-image1" placeholder="Remarks">
+                            </div>
+
+                            <div class="col-6">
+                                <label for="nic-image2" class="form-label">NIC Image BackEnd</label>
+                                <input type="file" class="form-control" id="nic-image2" placeholder="NIC Image BackEnd">
+                            </div>
+
+                            <div class="col-3 pb-4 p-2 " >
+                                <button class=" button-Booking " type="submit">Register</button>
+                            </div>
+
+                            <div class="col-3 pb-5 p-2" >
+                                <button class=" button-Booking " type="submit">Update</button>
+                            </div>
+
+                            <div class="col-3 pb-4 p-2 " >
+                                <button class=" button-Booking " type="submit">Delete</button>
+                            </div>
+
+                            <div class="col-3 pb-5 p-2" >
+                                <button class=" button-Booking " type="submit">Clear</button>
+                            </div>
+
+                        </div >
+
+                    </form>
+                </div>
+            </div>
+        </main>
+
+
+    </div>
+     <div class="d-flex">
+         <div class="container-fluid">
+             <form class="d-flex" role="search">
+                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                 <button class="btn btn-outline-success" type="submit">Search</button>
+             </form>
+         </div>
+     </div>
+
+    </div>
+
+    <!-- get all user details -->
+    <article class="d-flex justify-content-start" style="background-color: #efe4c1">
+        <table class="table mt-3 bg-body-tertiary tbl border m-5 ">
+            <thead class="table "  >
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">UserId</th>
+                <th scope="col">User Name</th>
+                <th scope="col">Address</th>
+                <th scope="col">Email</th>
+                <th scope="col">Gender</th>
+                <th scope="col">Remarks</th>
+            </tr>
+            </thead>
+            <tbody id="user_table">
+            <tr>
+                <th scope="row">1</th>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            </tbody>
+        </table>
+    </article>
+
+
+
+</section>
+<script src="checkout.js"></script>
+<script src="assests/jQuary/jquery-3.6.4.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
