@@ -217,6 +217,10 @@
 
 </section>
 
+
+
+
+
 <!-- visit the travel area -->
 <section class="visit_area">
     <!-- topic-->
@@ -391,6 +395,9 @@
     </article>
 </section>
 
+
+
+
 <!-- user register form -->
 <section class="user-reg  ">
     <!-- topic-->
@@ -424,7 +431,7 @@
 
                             <div class="col-6">
                                 <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                                <input type="email" class="form-control" id="email2" placeholder="you@example.com">
                                 <div class="invalid-feedback">
                                     Please enter a valid email address for shipping updates.
                                 </div>
@@ -461,12 +468,12 @@
 
                             <div class="col-6">
                                 <label for="nic-image1" class="form-label">NIC Image FrontEnd</label>
-                                <input type="file" class="form-control" id="nic-image1" placeholder="Remarks">
+                                <input type="file" class="form-control" id="nic-image" placeholder="Remarks">
                             </div>
 
                             <div class="col-6">
                                 <label for="nic-image2" class="form-label">NIC Image BackEnd</label>
-                                <input type="file" class="form-control" id="nic-image2" placeholder="NIC Image BackEnd">
+                                <input type="file" class="form-control" id="nic-imag3" placeholder="NIC Image BackEnd">
                             </div>
 
                             <div class="col-6 pb-4 p-2 " >
@@ -498,106 +505,116 @@
 
     </article>
     <!--  admin user Form container -->
-    <div class="container p-5 d-flex ">
-        <main>
-            <div class="row g-5 d-flex justify-content-lg-center">
+    <div class="d-flex">
+        <div class="container p-5 m-5 d-flex ">
+            <main>
+                <div class="row g-5 d-flex justify-content-lg-start">
 
-                <div class="reg-small-form  col-md-3 col-lg-8 ">
-                    <h3 class="p-4 mb-5">User Register Form</h3>
-                    <form class="needs-validation" novalidate>
-                        <div class="row g-3">
-                            <div class="col-6">
-                                <label id="userId2" class="form-label">User Id</label>
-                                <label  class="form-label "></label>
-                            </div>
+                    <div class="reg-small-form  col-md-3 col-lg-12 ">
+                        <h3 class="p-4 mb-5">User Register Form</h3>
+                        <form class="needs-validation" novalidate>
+                            <div class="row g-3">
+                                <div class="col-6">
+                                    <label id="userId2" class="form-label">User Id</label>
+                                    <label  class="form-label "></label>
+                                </div>
 
-                            <div class="col-6">
-                                <label for="username" class="form-label">Username</label>
-                                <div class="input-group has-validation">
-                                    <input type="text" class="form-control" id="username2" placeholder="Username" required>
-                                    <div class="invalid-feedback">
-                                        Your username is required.
+                                <div class="col-6">
+                                    <label for="username" class="form-label">Username</label>
+                                    <div class="input-group has-validation">
+                                        <input type="text" class="form-control" id="username2" placeholder="Username" required>
+                                        <div class="invalid-feedback">
+                                            Your username is required.
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="col-6">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email3" placeholder="you@example.com">
-                                <div class="invalid-feedback">
-                                    Please enter a valid email address for shipping updates.
+                                <div class="col-6">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                                    <div class="invalid-feedback">
+                                        Please enter a valid email address for shipping updates.
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="col-6">
-                                <label for="address" class="form-label">Address</label>
-                                <input type="text" class="form-control" id="address4" placeholder="1234 Main St" required>
-                                <div class="invalid-feedback">
-                                    Please enter your shipping address.
+                                <div class="col-6">
+                                    <label for="address" class="form-label">Address</label>
+                                    <input type="text" class="form-control" id="address2" placeholder="1234 Main St" required>
+                                    <div class="invalid-feedback">
+                                        Please enter your shipping address.
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="col-6">
-                                <label for="nic" class="form-label">NIC</label>
-                                <input type="text" class="form-control" id="nic5" placeholder="NIC">
-                            </div>
-
-                            <div class="col-6">
-                                <label for="gender" class="form-label">Gender</label>
-                                <select class="form-select" id="gender6" required>
-                                    <option value="male">Male</option>
-                                    <option value="female">Female</option>
-                                    <option value="other">Other</option>
-                                </select>
-                                <div class="invalid-feedback">
-                                    Please select a valid gender.
+                                <div class="col-6">
+                                    <label for="nic" class="form-label">NIC</label>
+                                    <input type="text" class="form-control" id="nic2" placeholder="NIC">
                                 </div>
-                            </div>
-                            <div class="col-12">
-                                <label for="remarks" class="form-label">Remarks</label>
-                                <textarea type="textarea" class="form-control" id="remarks7" placeholder="Remarks"></textarea>
-                            </div>
 
-                            <div class="col-6">
-                                <label for="nic-image1" class="form-label">NIC Image FrontEnd</label>
-                                <input type="file" class="form-control" id="nic-image1-8" placeholder="Remarks">
-                            </div>
+                                <div class="col-6">
+                                    <label for="gender" class="form-label">Gender</label>
+                                    <select class="form-select" id="gender2" required>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please select a valid gender.
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="remarks" class="form-label">Remarks</label>
+                                    <textarea type="textarea" class="form-control" id="remarks2" placeholder="Remarks"></textarea>
+                                </div>
 
-                            <div class="col-6">
-                                <label for="nic-image2" class="form-label">NIC Image BackEnd</label>
-                                <input type="file" class="form-control" id="nic-image2-9" placeholder="NIC Image BackEnd">
-                            </div>
+                                <div class="col-6">
+                                    <label for="nic-image1" class="form-label">NIC Image FrontEnd</label>
+                                    <input type="file" class="form-control" id="nic-image1" placeholder="Remarks">
+                                </div>
 
-                            <div class="col-3 pb-4 p-2 " >
-                                <button class=" button-Booking " type="submit">Register</button>
-                            </div>
+                                <div class="col-6">
+                                    <label for="nic-image2" class="form-label">NIC Image BackEnd</label>
+                                    <input type="file" class="form-control" id="nic-image2" placeholder="NIC Image BackEnd">
+                                </div>
 
-                            <div class="col-3 pb-5 p-2" >
-                                <button class=" button-Booking " type="submit">Update</button>
-                            </div>
+                                <div class="col-3 pb-4 p-2 " >
+                                    <button class=" button-Booking " type="submit">Register</button>
+                                </div>
 
-                            <div class="col-3 pb-4 p-2 " >
-                                <button class=" button-Booking " type="submit">Delete</button>
-                            </div>
+                                <div class="col-3 pb-5 p-2" >
+                                    <button class=" button-Booking " type="submit">Update</button>
+                                </div>
 
-                            <div class="col-3 pb-5 p-2" >
-                                <button class=" button-Booking " type="submit">Clear</button>
-                            </div>
+                                <div class="col-3 pb-4 p-2 " >
+                                    <button class=" button-Booking " type="submit">Delete</button>
+                                </div>
 
-                        </div >
+                                <div class="col-3 pb-5 p-2" >
+                                    <button class=" button-Booking " type="submit">Clear</button>
+                                </div>
 
-                    </form>
+                            </div >
+
+                        </form>
+                    </div>
                 </div>
-            </div>
-        </main>
+            </main>
 
+
+        </div>
+        <div class="d-flex  p-5 m-5 col-md-4">
+            <div class="container-fluid">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-lg-5" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
 
     </div>
 
-
     <!-- get all user details -->
-    <article class="d-flex justify-content-start" style="background-color: #efe4c1">
-        <table class="table mt-3 bg-body-tertiary tbl border m-5 ">
+    <article class="d-flex justify-content-start" >
+        <table class=" table mt-3 bg-body-tertiary tbl border m-5 ">
             <thead class="table "  >
             <tr>
                 <th scope="col">#</th>
@@ -624,5 +641,337 @@
 
 
 </section>
+
+
+
+
+<!--  booking tours-->
+<section class="booking-tours">
+    <!-- Booking tours topic-->
+    <article class="booking-tour-topic text-white visit_topic position-relative flex-column p-2">
+        <h1 class="justify-content-center d-flex p-3 text-warning">Booking Your Day Tours</h1>
+        <h5 class="justify-content-center m-4">Lanka Travel Plan is a customer oriented flexible service that offers the best bespoken luxury tour experience to our customers.
+            There’s no such thing as a package tour with us as we understand that no two experiences are the same because no two requests are ever identical.
+            The following itineraries are simply examples of the types of trips we like to run so have a read, browse by destination or by your specific need and let your wanderlust guide you through our site.
+            And when you have an idea of what you’re looking for, be it vague or intricately specific, get in touch. We’ll do the rest.</h5>
+    </article>
+
+    <!-- travel package table  -->
+
+    <article class="d-flex m-5 ">
+        <table class="table mt-3 bg-body-tertiary tbl border-dark border-top  ">
+            <thead class="table " style="background-color: #fff5cb ">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Package Category</th>
+                <th scope="col">Hotel Category</th>
+                <th scope="col">Vehicle Category</th>
+            </tr>
+            </thead>
+            <tbody id="package_table2">
+            <tr>
+                <th scope="row">1</th>
+                <td>Regular</td>
+                <td>3 Star and 2 Star</td>
+                <td>Economy</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Mid-level</td>
+                <td>3 Star and 4 Star</td>
+                <td>Mid-Range</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Luxury</td>
+                <td>4 Star and 5 Star</td>
+                <td>Luxury</td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>Super Luxury</td>
+                <td>5 Star</td>
+                <td>Super Luxury</td>
+            </tr>
+            </tbody>
+        </table>
+    </article>
+
+    <section class="user-reg ">
+
+        <!-- Booking Form container -->
+        <div class="d-flex">
+            <div class="container p-5 pb-3   d-flex ">
+                <main>
+                    <div class="row g-5 d-flex  ">
+
+                        <div class="reg-small-form  col-md-3 col-lg-12 ">
+                            <h3 class="p-4 mb-5">Booking Day Tours Form</h3>
+                            <form class="needs-validation" novalidate>
+                                <div class="row g-3">
+                                    <div class="col-4">
+                                        <label id="packageId" class="form-label">Package Id</label>
+                                        <label  class="form-label "></label>
+                                    </div>
+
+                                    <div class="col-4">
+                                        <label for="package_cate" class="form-label">Package category</label>
+                                        <select class="form-select" id="package_cate" required>
+                                            <option value="regular">Regular</option>
+                                            <option value="luxury">Luxury</option>
+
+                                        </select>
+
+
+                                        <div class="invalid-feedback">
+                                            Please select a valid packages.
+                                        </div>
+                                    </div>
+
+                                    <div class="col-4">
+                                        <label for="start-date " class="form-label">Start Date </label>
+                                        <div class="input-group has-validation">
+                                            <input type="date" class="form-control" id="start-date " placeholder="" required>
+                                            <div class="invalid-feedback">
+                                                Your Start Date is required.
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-4">
+                                        <label for="end-date " class="form-label">End Date </label>
+                                        <div class="input-group has-validation">
+                                            <input type="date" class="form-control" id="end-date " placeholder="" required>
+                                            <div class="invalid-feedback">
+                                                Your End Date is required.
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-4">
+                                        <label for="days" class="form-label">Count of days</label>
+                                        <input type="number" class="form-control" id="days" placeholder="Count of days">
+                                        <div class="invalid-feedback">
+                                            Please enter a valid Count of days.
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-4">
+                                        <label for="nights" class="form-label">Count of nights</label>
+                                        <input type="number" class="form-control" id="nights" placeholder="Count of nights">
+                                        <div class="invalid-feedback">
+                                            Please enter a valid Count of days.
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-4">
+                                        <label for="travel_area" class="form-label">Travel Area</label>
+                                        <select class="form-select" id="travel_area" required>
+                                            <option value="Anuradhapura">Anuradhapura and Polonnaruwa</option>
+                                            <option value="Sigiriya">Sigiriya and Dambulla</option>
+                                            <option value="Down South">Down South</option>
+                                            <option value="Capital Colombo">Capital Colombo</option>
+                                            <option value="Kandy and Upcountry">Kandy and Upcountry</option>
+                                            <option value="Western Coast">Western Coast</option>
+                                            <option value="Matale">Matale</option>
+
+                                        </select>
+
+
+                                        <div class="invalid-feedback">
+                                            Please select a valid packages.
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="col-4">
+                                        <label for="No_of_adults" class="form-label">No of adults</label>
+                                        <input type="number" class="form-control" id="No_of_adults" placeholder="No of adults">
+                                        <div class="invalid-feedback">
+                                            Please enter a valid No of Adults.
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-4">
+                                        <label for="No_of_children" class="form-label">No of Children</label>
+                                        <input type="number" class="form-control" id="No_of_children" placeholder="No of Children">
+                                        <div class="invalid-feedback">
+                                            Please enter a valid No of Children.
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-4">
+                                        <label for="Total_headcount" class="form-label">Total headcount</label>
+                                        <input type="number" class="form-control" id="Total_headcount" placeholder="Total headcount">
+                                        <div class="invalid-feedback">
+                                            Please enter a valid Total headcount.
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="col-4">
+                                        <label for="With_Pets_or_no" class="form-label">With Pets or no</label>
+                                        <select class="form-select" id="With_Pets_or_no" required>
+                                            <option value="no">No</option>
+                                            <option value="yes">Yes</option>
+
+                                        </select>
+
+
+                                        <div class="invalid-feedback">
+                                            Please select a valid packages.
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="col-4">
+                                        <label for="Need_guide_or_no" class="form-label">Need a guide or no</label>
+                                        <select class="form-select" id="Need_guide_or_no" required>
+                                            <option value="no">No</option>
+                                            <option value="yes">Yes</option>
+
+                                        </select>
+
+
+                                        <div class="invalid-feedback">
+                                            Please select a valid packages.
+                                        </div>
+                                    </div>
+
+
+
+
+                                    <div class="col-4">
+                                        <label for="hotel-fee" class="form-label">Per Day Hotel Fee</label>
+                                        <input type="number" class="form-control" id="hotel-fee" placeholder="Per Day Hotel Fee">
+                                        <div class="invalid-feedback">
+                                            Please enter a valid Per Day Hotel Fee.
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="col-4">
+                                        <label for="guide_fee" class="form-label">Guide Fee</label>
+                                        <input type="number" class="form-control" id="guide_fee" placeholder="Guide Fee">
+                                        <div class="invalid-feedback">
+                                            Please enter a valid Guide Fee.
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="col-4">
+                                        <label for="vehicle_fee" class="form-label">Vehicle Fee</label>
+                                        <input type="number" class="form-control" id="vehicle_fee" placeholder="Vehicle Fee">
+                                        <div class="invalid-feedback">
+                                            Please enter a valid Vehicle Fee.
+                                        </div>
+                                    </div>
+
+
+
+
+                                    <div class="col-4">
+                                        <label for="paid_value" class="form-label">Paid value</label>
+                                        <input type="number" class="form-control" id="paid_value" placeholder="Paid value">
+                                        <div class="invalid-feedback">
+                                            Please enter a valid Vehicle Fee.
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-8">
+                                        <label for="remarks" class="form-label">Remarks</label>
+                                        <textarea type="textarea" class="form-control" id="remarks3" placeholder="Remarks"></textarea>
+                                    </div>
+
+                                    <div class="col-3 pb-4 p-2 " >
+                                        <button class=" button-Booking " type="submit">Booking</button>
+                                    </div>
+
+                                    <div class="col-3 pb-5 p-2" >
+                                        <button class=" button-Booking " type="submit">Update</button>
+                                    </div>
+
+                                    <div class="col-3 pb-4 p-2 " >
+                                        <button class=" button-Booking " type="submit">Delete</button>
+                                    </div>
+
+                                    <div class="col-3 pb-5 p-2" >
+                                        <button class=" button-Booking " type="submit">Clear</button>
+                                    </div>
+
+                                </div >
+
+                            </form>
+                        </div>
+                    </div>
+                </main>
+
+
+            </div>
+            <div class="  p-5 m-5 col-md-4">
+                <div class="container-fluid">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-lg-5" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- get all user details -->
+        <article class="d-flex justify-content-start" >
+            <table class=" table mt-3 bg-body-tertiary tbl border m-5 ">
+                <thead class="table "  >
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Package Id</th>
+                    <th scope="col">Package category</th>
+                    <th scope="col">Start Date</th>
+                    <th scope="col">End Date</th>
+                    <th scope="col">Count of days</th>
+                    <th scope="col">Travel Area</th>
+                    <th scope="col">Total headcount</th>
+                    <th scope="col">Need a guide or no</th>
+                    <th scope="col">Per Day Hotel Fee</th>
+                    <th scope="col">Guide Fee</th>
+                    <th scope="col">Vehicle Fee</th>
+                    <th scope="col">Vehicle Fee</th>
+                    <th scope="col">Vehicle Fee</th>
+                </tr>
+                </thead>
+                <tbody id="booking_table">
+                <tr>
+                    <th scope="row">1</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                </tbody>
+            </table>
+        </article>
+
+
+
+    </section>
+
+
+
+</section>
+
+
 </body>
 </html>

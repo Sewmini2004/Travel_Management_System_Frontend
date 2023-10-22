@@ -251,7 +251,7 @@ header:hover .owl-next {
 /* see the travels area*/
 
 .visit_area{
-    height: 200px;
+    height:fit-content;
     background-image: url("assests/readme-images/peakpx2.jpg");
     opacity: 0.99;
 }
@@ -315,6 +315,8 @@ header:hover .owl-next {
 /*#userId{
     border: 2px solid #bb8c2b;
 }*/
+
+
 .reg-small-form{
     border: 4px solid #bb8c2b;
     box-shadow: 4px 6px 100px -20px #000;
@@ -325,7 +327,7 @@ header:hover .owl-next {
 }
 .user-reg{
     background-image: url("assests/readme-images/peakpx (2).jpg");
-    width:100%;
+    width:fit-content;
     opacity: 0.95;
 }
 
@@ -410,8 +412,24 @@ header:hover .owl-next {
 /* register user topic img*/
 
 .reg_area{
-    height: 150px;
+    height:fit-content;
     background-image: url("assests/readme-images/peakpx2.jpg");
     opacity: 0.99;
 }
+
+
+
+
+
+/* booking tours*/
+
+
+/* booking tours topic */
+
+.booking-tour-topic{
+    height: fit-content;
+    background-image: url("assests/readme-images/peakpx2.jpg");
+    opacity: 0.99;
+}
+
 
