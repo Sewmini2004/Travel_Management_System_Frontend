@@ -265,11 +265,12 @@ header:hover .owl-next {
 
 
 .travel-image-frame{
-    border: 2px solid #bb8c2b;
+    border: 4px solid #bb8c2b;
     box-shadow: 4px 6px 100px -20px #000;
+    border-radius: 10px;
 }
 .travel-image{
-    border: 2px solid #bb8c2b;
+    border: 4px solid #bb8c2b;
     box-shadow: 4px 4px 50px -10px #000;
 }
 
@@ -433,3 +434,11 @@ header:hover .owl-next {
 }
 
 
+
+/* hotel bg image */
+
+.hotel_image_bg{
+    height: fit-content;
+    background-image: url("assests/readme-images/HD-wallpaper-white-wavy-background-abstract-waves-creative-white-backgrounds-white-waves-wavy-backgrounds.jpg");
+    opacity: 0.99;
+}
