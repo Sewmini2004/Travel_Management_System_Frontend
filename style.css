@@ -1,15 +1,23 @@
 #sec-home {
     background-image: url("assests/readme-images/home-bg.jpg");
     height: 100vh;
-    width: 100vw;
+    width:auto;
     background-size: cover;
 }
 
-.navbar {
-    position: fixed;
-    width: 100%;
+#navBar {
+    position:fixed;
+    top: 0;
+    width:100%;
+    z-index: 99;
 }
 
+.emptyDiv{
+    position: relative;
+    width: 100%;
+    background: transparent;
+    height: 70px;
+}
 
 /* text animation */
 
@@ -172,11 +180,28 @@ header:hover .owl-next {
 
 /* about us  */
 
+
 .description {
     padding: 0 48px;
 }
 
+/*.about_image{
+    text-decoration: none;
+    animation: about_image;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    cursor: pointer;
+    !* Transition *!
+    transition-property: transform, backgorund-color, color;
+    transition-duration: 1s, 2s, 1s;
 
+}
+
+
+.about_image:hover{
+    transform: scaleX(1.05) scaleY(1.05);
+}*/
 /* package images in home page  */
 
 .rounded {
@@ -197,6 +222,13 @@ header:hover .owl-next {
 }
 
 
+.sec-package{
+    height: fit-content;
+    background-image: url("assests/readme-images/peakpx (6).jpg");
+    opacity: 0.99;
+}
+
+
 /* contact us */
 .image1 {
     /*position: absolute;*/
@@ -205,6 +237,11 @@ header:hover .owl-next {
     opacity: 0.99;
 
 
+}
+
+ .bdr {
+    border-radius: 6px;
+    overflow: hidden;
 }
 
 .logoSize {
@@ -216,9 +253,9 @@ header:hover .owl-next {
 }
 
 
-#contact {
+.contact {
     height: fit-content;
-    background-image: url("assests/readme-images/img.png");
+    background-image: url("assests/readme-images/peakpx (9).jpg");
     opacity: 0.99;
     position: relative;
 }
@@ -251,26 +288,36 @@ header:hover .owl-next {
 /* see the travels area*/
 
 .visit_area{
+
+}
+
+
+.visit_topic{
     height:fit-content;
     background-image: url("assests/readme-images/peakpx2.jpg");
     opacity: 0.99;
 }
 
 
-.visit_topic{
 
+.travel-bg_image{
+    height:fit-content;
+    background-image: url("assests/readme-images/peakpx (14).jpg");
+    opacity: 0.99;
 }
 
 /* travel images */
 
 
 .travel-image-frame{
-    border: 4px solid #bb8c2b;
+    border: 3px solid #bb8c2b;
     box-shadow: 4px 6px 100px -20px #000;
     border-radius: 10px;
 }
+
+
 .travel-image{
-    border: 4px solid #bb8c2b;
+    border: 2px solid #bb8c2b;
     box-shadow: 4px 4px 50px -10px #000;
 }
 
@@ -292,7 +339,7 @@ header:hover .owl-next {
 }
 
 .button-Booking:hover {
-    transform: scaleX(1.20) scaleY(1.20);
+    transform: scaleX(1.08) scaleY(1.08);
     background-color: #555050;
     color: #ffffff;
     box-shadow: 4px 4px 50px -10px #000000;
@@ -442,3 +489,6 @@ header:hover .owl-next {
     background-image: url("assests/readme-images/HD-wallpaper-white-wavy-background-abstract-waves-creative-white-backgrounds-white-waves-wavy-backgrounds.jpg");
     opacity: 0.99;
 }
+
+
+

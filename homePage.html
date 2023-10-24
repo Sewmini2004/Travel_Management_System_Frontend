@@ -11,22 +11,2310 @@
 
     <link rel="stylesheet" href="style.css">
 
-<!--    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/checkout/">-->
-<!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/checkout/">-->
+    <!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
 </head>
 <body>
+<div class="emptyDiv"></div>
+<!-- Navigation Bar -->
+<header>
+    <nav class="navbar navbar-expand-lg" id="navBar" style="background:#aa7d0c">
+        <div class="container-fluid">
+            <a class="navbar-brand text-body-emphasis" href="#"><h1 class="fs-2 fw-medium text-white">Tourest</h1></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link active fs-6 fw-medium  text-white" aria-current="page" id="linkHome"
+                           href="#">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active fs-6 fw-medium  text-white" aria-current="page" id="linktravelPlace"
+                           href="#">Travel Places</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fs-6 fw-medium  text-white" aria-current="page" id="linkHotel"
+                           href="#">Hotel</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link active fs-6 fw-medium  text-white" aria-current="page" id="linkVehicle"
+                           href="#">Transport</a>
+                    </li>
+                </ul>
+
+                <div class=" d-flex ">
+                    <button class="btn btn-sm btn-outline-dark  border-3 p-2 text-white fw-bolder " style="size: 15px"
+                            type="button" id="btn-Booking-Nav">Booking Now
+                    </button>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active fs-6 fw-medium  text-white" aria-current="page" id="btnSignUp"
+                               type="button">Sign Up</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fs-6 fw-medium text-white" aria-current="page" id="btnLogIn"
+                               type="button">Log In</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+</header>
+
+
+<!--Section Home-->
+<section id="sec-home" class="d-flex p-5 align-items-center  text-white justify-content-start">
+    <div class="flex-row">
+        <header>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+
+                    <div class="cover">
+                        <div class="container">
+                            <div class="header-content">
+                                <div class="line"></div>
+                                <h2>Welcome To Travel</h2>
+                                <h1>Explore The World</h1>
+                                <h4>ive the trips exploring the world, discover paradises, islands, mountains and much
+                                    more,<br>
+                                    get your trip now.</h4>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <button id="home-btn" type="button"
+                            class="btn m-2 btn-outline-warning fw-bolder text-white w-25  h-50 fs-4"> Contact Us
+                    </button>
+                </div>
+
+            </div>
+        </header>
+
+    </div>
+
+</section>
+
+
+<!-- About Us Section  -->
+
+<section class="about section d-flex justify-content-center align-items-center" id="sec-about-page">
 
 
 
+    <div class="description col-6  text-dark  ">
+        <h5 class="section__title">
+            About Us
+        </h5>
+        <br>
+        <h2 class="section__title">
+            Plan Your Trip with Us
+        </h2>
+
+        <br><br>
+        <p class="about__description">
+            fascination of Sri Lanka never ends. Astonishment,
+            awe and amazement are just a few emotions that are used to
+            describe travel in this paradise island. Blend these with the
+            lavish and sumptuous accommodation, exquisite and unrivalled levels of gastronomy
+            a real luxuries experience enjoyed by those who are privileged.
+            <br>
+            <br>
+            Explore, experience and enjoy the most amazing destinations and take in the
+            magnificence of most unique Sri Lankan socio-cultural and historical splendour
+            with Lanka Travel Plan – a luxury tour operator with a promise of truly a premium
+            luxury travel experience in Sri Lanka
+
+    </div>
+    <div class="about_image col-6 p-5">
+        <img src="assests/readme-images/my%20tour%20images/A-man-at-the-top-of-Knuckles-Mountain-Range-th.jpg"
+             alt="about image" class="  about__img " width="500" height="400">
+    </div>
+
+</section>
+
+
+<!-- Tour Packages-->
+
+<section class="sec-package" id="sec-tour-Packages">
+    <div class="tour_topic d-flex justify-content-center text-warning"><h2>OUR AMAZING TOUR PACKAGES</h2></div>
+    <div class="m-4 p-4 text-white"><h4>Best of the Premium Features to Ensure You Feel Like a VIP on the go ...</h4>
+    </div>
+    <div class="p-3 m-4 d-flex justify-content-center flex-wrap  ">
+
+        <div class="position-relative p-5 m-2 ">
+            <div><img src="assests/readme-images/my%20tour%20images/Sri-Dalada-Maligawa-Temple-of-the-Tooth-Relic-1.jpg"
+                      class="rounded" width="300px" height="300px" alt="...">
+            </div>
+            <a ><h5 class="text_image position-absolute mt-4 text-white " type="button" id="btn-location">Location</h5></a>
+        </div>
+        <div class="position-relative p-5 m-2 ">
+            <div><img src="assests/readme-images/oyota%20Prado.jpg" class="rounded" width="300px" height="300px"
+                      alt="...">
+            </div>
+            <a ><h5 class="text_image position-absolute mt-4 text-white "  type="button" id="btn-transport">Transport</h5></a>
+
+        </div>
+        <div class="position-relative p-5 m-2 ">
+            <div><img src="assests/readme-images/light%20house.jpg" class="rounded" width="300px" height="300px"
+                      alt="...">
+            </div>
+            <a ><h5 class="text_image position-absolute mt-4 text-white "  type="button" id="btn-hotel">Hotel</h5></a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- section contact -->
+<section class="contact d-flex flex-column" id="sec-contact">
+
+    <div class="d-flex justify-content-around p-5">
+        <article class="ContactArea">
+            <div class="h3-topic text-warning"><h3>Contact Us</h3></div>
+            <div class="d-flex">
+
+                <dl>
+                    <dt class="con text-warning fa-caret-right">Address</dt>
+                    <dd class="text-dark fw-bolder">No : 37/12 Maddegedara Rd,<br> Mathugama</dd>
+                    <br>
+                    <dt class="con text-warning">G -Mail</dt>
+                    <dd class="text-dark fw-bolder">sewminipremodya98@gamil.com</dd>
+                    <br>
+                    <dt class="con text-warning">Customer Support</dt>
+                    <dd class="text-dark fw-bolder">Hotline : +94 777 987 655</dd>
+                    <dd class="text-dark fw-bolder">Phone : +94 814 549 495</dd>
+
+                </dl>
+
+            </div>
+        </article>
+        <article>
+
+            <table class="table mt-3 table-striped bdr" style="border-color: #997404; ">
+                <thead class="table table-dark">
+                <!-- eken den ewa wetenod blno -->
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Package Category</th>
+                    <th scope="col">Hotel Category</th>
+                    <th scope="col">Vehicle Category</th>
+                </tr>
+                </thead>
+                <tbody id="package_table1">
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Regular</td>
+                    <td>3 Star and 2 Star</td>
+                    <td>Economy</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Mid-level</td>
+                    <td>3 Star and 4 Star</td>
+                    <td>Mid-Range</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Luxury</td>
+                    <td>4 Star and 5 Star</td>
+                    <td>Luxury</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Super Luxury</td>
+                    <td>5 Star</td>
+                    <td>Super Luxury</td>
+                </tr>
+                </tbody>
+            </table>
+        </article>
+        <article class="copyrightStyle d-flex flex-column justify-content-start">
+            <h1 class="d-block text-warning">Tourest</h1>
+            <h6 class="text-white d-block">Copyright Tourest Plan © 2023. All Rights Reserved. <span>Website designed and
+                developed by Sewmini Premodya.</span></h6>
+        </article>
+    </div>
+
+    <img src="assests/readme-images/Truly-a-Magnificent-Luxury-Travel-Experience-Luxury-Travel-in-sri-lanka.png"
+         class="logoSize align-self-center">
+
+
+</section>
+
+
+<!-- visit the travel area -->
+<section class="visit_area" id="sec-travel-Visit">
+    <!-- topic-->
+    <article class="text-white visit_topic position-relative flex-column ">
+        <h1 class="justify-content-center d-flex p-3 text-warning">Travel Places</h1>
+
+        <h5 class="justify-content-center m-3 pb-4">With its endless miles of golden beaches and abundance of rich
+            natural beauties,
+            Sri Lanka is one of Asia's premium paradises that has seduced the travelers around the world for centuries.
+            The tremendous physical, cultural and ethnic diversity, as well as a long and distinguished history shaped
+            by the centuries of
+            foreign influence offers unlimited options for the avid travelers to obsess with.</h5>
+    </article>
+
+
+    <!-- accordion-visit-->
+    <article class="accordion-visit flex-wrap p-3">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button " style="background-color:#c6b071" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                            aria-controls="collapseOne">
+                        Where To Go
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <h5 class="fw-medium">When in Sri Lanka, you can explore an array of destinations that meet the
+                            aspirations of every kind of traveler.</h5>
+                        <h5 class="fw-medium">The gateway to this paradise island is Colombo- the commercial hub of the
+                            country situated towards the south of the island.<br>
+                            The West Coast presents a long swathe of golden sand. The South Coast is where you’ll find
+                            all the superb modern features of the civilization blended with the ancient.</h5>
+                        <h5 class="fw-medium">Inland from Colombo lies Kandy- the last royal city, still a vibrant
+                            crucible of the island’s traditional arts and architecture.<br>
+                            Towards the south you can find the tea estates swathe the heights of the Hill Country.</h5>
+                        <h5 class="fw-medium"> North of Kandy, the Cultural Triangle holds the island’s most absorbing
+                            archaeological remains centered on the ruins of the great
+                            cities of Anuradhapura and Polonnaruwa surrounded by the rock citadel of Sigiriya,
+                            Mihintale, and the exquisite cave temples of
+                            Dambulla.</h5>
+                        <h5 class="fw-medium">The East Coast is the war toned area, but offering a fascinating glimpse
+                            into the vibrant culture of the Sri Lankan Tamils.</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" style="background-color:#c6b071" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                        What To Do
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <h5 class="fw-medium">Sri Lanka is rich in novel and unparalleled experiences that can be safely
+                            enjoyed by any avid traveler who is looking for exceptional and novel luxury holidays
+                            experiences.</h5>
+                        <h5 class="fw-medium">Whether you want to join in activities, learn more about the island’s
+                            fascinating history, see how village people live, explore the lush wilderness, photograph
+                            wildlife or taste native cuisine at its source, we have designed tours to satisfy both the
+                            intrepid adventurer and the more relaxed traveler.</h5>
+                        <h5 class="fw-medium">Encircled by the ocean, the island lets you enjoy unlimited array of ocean
+                            activities and never miss participating in the ocean sports festivals that are organized
+                            internationally.</h5>
+                        <h5 class="fw-medium">If water is not really your area of interest, why not indulge in hiking,
+                            trekking and other more relaxing activities that can be found amidst the lush greenery or
+                            among the ancient monuments.</h5>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </article>
+
+
+    <!-- travel places-->
+    <div>
+        <h2 class="justify-content-center d-flex p-3 " style="color:#D7A350C6">Visit Sri Lanka</h2>
+    </div>
+    <section class="travel-bg_image" style="background-color:#4b4949">
+        <div class="m-4 p-4 text-white"><h4>Best of the Premium Features to Ensure You Feel Like a VIP on the go
+            ...</h4></div>
+        <div class="p-3 m-4 d-flex justify-content-center flex-wrap  travel-image-frame">
+
+
+            <div class="position-relative p-5 m-2 travel-image">
+                <div><img src="assests/readme-images/my tour images/Galle.jpg" class="rounded" width="240px"
+                          height="180px" alt="...">
+                </div>
+                <h5 class="text_image position-absolute mt-4 text-white ">Best Places to Visit in Galle</h5>
+            </div>
+
+            <div class="position-relative p-5 m-2 travel-image">
+                <div><img src="assests/readme-images/my tour images/Galle-Lighthouse.jpg" class="rounded" width="240px"
+                          height="180px" alt="...">
+                </div>
+                <h5 class="text_image position-absolute mt-4 text-white">Galle-Lighthouse</h5>
+            </div>
+            <div class="position-relative p-5 m-2 travel-image">
+                <div><img src="assests/readme-images/my tour images/Galle-Fort.jpg" class="rounded" width="240px"
+                          height="180px" alt="...">
+                </div>
+                <h5 class="text_image position-absolute mt-4 text-white">Galle Fort</h5>
+            </div>
+
+            <div class="position-relative p-5 m-2 travel-image">
+                <div><img src="assests/readme-images/my tour images/Hikkaduwa-Beach.jpg" class="rounded" width="240px"
+                          height="180px" alt="...">
+                </div>
+                <h5 class="text_image position-absolute mt-4 text-white ">Hikkaduwa Beach</h5>
+            </div>
+
+            <div class="position-relative p-5 m-2 travel-image">
+                <div><img src="assests/readme-images/my tour images/Sri-Dalada-Maligawa-Temple-of-the-Tooth-Relic-1.jpg"
+                          class="rounded" width="240px" height="180px" alt="...">
+                </div>
+                <h5 class="text_image position-absolute mt-4 text-white ">Must Places to Visit in Kandy</h5>
+            </div>
+
+
+            <div class="position-relative p-5 m-2 travel-image">
+                <div><img src="assests/readme-images/my tour images/SL_Kandy_asv2020-01_img04_Queens_Hotel.jpg"
+                          class="rounded" width="240px" height="180px" alt="...">
+                </div>
+                <h5 class="text_image position-absolute mt-4 text-white">Queens Hotel</h5>
+            </div>
+            <div class="position-relative p-5 m-2 travel-image">
+                <div><img src="assests/readme-images/my tour images/A-man-at-the-top-of-Knuckles-Mountain-Range-th.jpg"
+                          class="rounded" width="240px" height="180px" alt="...">
+                </div>
+                <h5 class="text_image position-absolute mt-4 text-white ">Knuckles Mountain Range</h5>
+            </div>
+            <div class="position-relative p-5 m-2 travel-image">
+                <div><img src="assests/readme-images/my tour images/Royal-Botanical-Gardens-Peradeniya.jpg"
+                          class="rounded" width="240px" height="180px" alt="...">
+                </div>
+                <h5 class="text_image position-absolute mt-4 text-white ">Botanical Gardens Peradeniya</h5>
+            </div>
+
+            <div class="position-relative p-5 m-2 travel-image">
+                <div><img src="assests/readme-images/my tour images/download (1).jpeg" class="rounded" width="240px"
+                          height="180px" alt="...">
+                </div>
+                <h5 class="text_image position-absolute mt-4 text-white ">Must Places to Visit in Anuradhapura</h5>
+            </div>
+
+            <div class="position-relative p-5 m-2 travel-image">
+                <div><img src="assests/readme-images/my tour images/100v1f000001h1dja8A9D.jpg" class="rounded"
+                          width="240px" height="180px" alt="...">
+                </div>
+                <h5 class="text_image position-absolute mt-4 text-white ">Ruwanweliseya</h5>
+            </div>
+            <div class="position-relative p-5 m-2 travel-image">
+                <div><img src="assests/readme-images/my tour images/Sri-Maha-Bodhi-sri-lanka.webp" class="rounded"
+                          width="240px" height="180px" alt="...">
+                </div>
+                <h5 class="text_image position-absolute mt-4 text-white ">Sri Maha Bodiya</h5>
+            </div>
+            <div class="position-relative p-5 m-2 travel-image">
+                <div><img src="assests/readme-images/my tour images/Anuradhapura-pilgrimage-Sri-Lanka-Thuparamaya.jpg"
+                          class="rounded" width="240px" height="180px" alt="...">
+                </div>
+                <h5 class="text_image position-absolute mt-4 text-white ">Thuparamaya</h5>
+            </div>
+
+
+            <div class="position-relative p-5 m-2 travel-image">
+                <div><img src="assests/readme-images/my tour images/galle-face-green-2.webp" class="rounded"
+                          width="240px" height="180px" alt="...">
+                </div>
+                <h5 class="text_image position-absolute mt-4 text-white ">Must Places to Visit in Colombo</h5>
+            </div>
+
+            <div class="position-relative p-5 m-2 travel-image">
+                <div><img src="assests/readme-images/my tour images/colombo-lotus-tower.webp" class="rounded"
+                          width="240px" height="180px" alt="...">
+                </div>
+                <h5 class="text_image position-absolute mt-4 text-white ">colombo lotus tower</h5>
+            </div>
+            <div class="position-relative p-5 m-2 travel-image">
+                <div><img src="assests/readme-images/my tour images/Gangaramaya-Temple-–-Colombo.webp" class="rounded"
+                          width="240px" height="180px" alt="...">
+                </div>
+                <h5 class="text_image position-absolute mt-4 text-white ">Gangaramaya Temple</h5>
+            </div>
+            <div class="position-relative p-5 m-2 travel-image">
+                <div><img src="assests/readme-images/my tour images/IMG_1970.jpg" class="rounded" width="240px"
+                          height="180px" alt="...">
+                </div>
+                <h5 class="text_image position-absolute mt-4 text-white ">Port City</h5>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- section contact -->
+    <section class="contact d-flex flex-column">
+
+        <div class="d-flex justify-content-around p-5">
+            <article class="ContactArea">
+                <div class="h3-topic text-warning"><h3>Contact Us</h3></div>
+                <div class="d-flex">
+
+                    <dl>
+                        <dt class="con text-warning fa-caret-right">Address</dt>
+                        <dd class="text-dark fw-bolder">No : 37/12 Maddegedara Rd,<br> Mathugama</dd>
+                        <br>
+                        <dt class="con text-warning">G -Mail</dt>
+                        <dd class="text-dark fw-bolder">sewminipremodya98@gamil.com</dd>
+                        <br>
+                        <dt class="con text-warning">Customer Support</dt>
+                        <dd class="text-dark fw-bolder">Hotline : +94 777 987 655</dd>
+                        <dd class="text-dark fw-bolder">Phone : +94 814 549 495</dd>
+
+                    </dl>
+
+                </div>
+            </article>
+            <article>
+                <table class="table mt-3 bg-body-tertiary tbl">
+                    <thead class="table " style="background-color: #fff5cb">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Package Category</th>
+                        <th scope="col">Hotel Category</th>
+                        <th scope="col">Vehicle Category</th>
+                    </tr>
+                    </thead>
+                    <tbody id="package_table2">
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Regular</td>
+                        <td>3 Star and 2 Star</td>
+                        <td>Economy</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Mid-level</td>
+                        <td>3 Star and 4 Star</td>
+                        <td>Mid-Range</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Luxury</td>
+                        <td>4 Star and 5 Star</td>
+                        <td>Luxury</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Super Luxury</td>
+                        <td>5 Star</td>
+                        <td>Super Luxury</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </article>
+            <article class="copyrightStyle d-flex flex-column justify-content-start">
+                <h1 class="d-block text-warning">Tourest</h1>
+                <h6 class="text-white d-block">Copyright Tourest Plan © 2023. All Rights Reserved. <span>Website designed and
+                developed by Sewmini Premodya.</span></h6>
+            </article>
+        </div>
+
+        <img src="assests/readme-images/Truly-a-Magnificent-Luxury-Travel-Experience-Luxury-Travel-in-sri-lanka.png"
+             class="logoSize align-self-center">
+
+
+    </section>
+
+
+</section>
+
+
+<!-- view Hotel-->
+<section id="sec-view-hotel">
+
+    <!-- hotel topic-->
+    <article class="booking-tour-topic text-white visit_topic position-relative flex-column p-2">
+        <h1 class="justify-content-center d-flex p-3 text-warning">View Hotels</h1>
+        <h5 class="justify-content-center m-4">ISri Lanka is home to many luxury experiences for the discerning
+            travelers.
+            From exquisite seaside resorts and spas to eclectic eco-friendly villas and boutique hotels,
+            there are plenty of opportunities for those who revel in comfort and luxury.
+            Let us plan your dream tour for you while you’re staying in one of the star class restaurants enjoying the
+            luxury lifestyle.
+
+        </h5>
+    </article>
+
+    <!-- view images hotels-->
+    <div class="hotel_image_bg">
+        <div class=" d-flex text-dark p-5 m-2"><h4 class="fw-bolder">5 Star Hotels</h4></div>
+        <div class="p-5 m-5 d-flex justify-content-center  travel-image-frame ">
+
+            <div class="card position-relative p-5 m-2 travel-image " style="width: 19rem;">
+                <img src="assests/readme-images/blue-water-hotel-pool-at-night.jpg" class="card-img-top rounded "
+                     alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Blue Water Hotel Wadduwa</h5>
+                    <h6 class="card-text  fw-bolder">Star Rate : 5 </h6>
+                    <h6 class="card-text">Full Board with A/C Luxury Room – Double Price:60000/=</h6>
+                    <h6 class="card-text">Half Board with A/C Luxury Room - Double Price:40000/=</h6>
+                    <h6 class="card-text">Full Board with A/C Luxury Room – Triple Price:80000/=</h6>
+                    <h6 class="card-text">Half Board with A/C Luxury Room - Triple Price:75000/=</h6>
+
+                </div>
+            </div>
+
+
+            <div class="card position-relative p-5 m-2 travel-image" style="width: 19rem;">
+                <img src="assests/readme-images/light%20house.jpg" class="card-img-top rounded " alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Light House Hotel Galle</h5>
+                    <h6 class="card-text  fw-bolder">Star Rate :5 </h6>
+                    <h6 class="card-text">Full Board with A/C Luxury Room – Double Price:70000/=</h6>
+                    <h6 class="card-text">Half Board with A/C Luxury Room - Double Price:56000/=</h6>
+                    <h6 class="card-text">Full Board with A/C Luxury Room – Triple Price:85000/=</h6>
+                    <h6 class="card-text">Half Board with A/C Luxury Room - Triple Price:74000/=</h6>
+                </div>
+            </div>
+
+
+            <div class="card position-relative p-5 m-2 travel-image" style="width: 19rem;">
+                <img src="assests/readme-images/644175039.jpeg" class="card-img-top rounded " alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Kingsbury Hotel Colombo</h5>
+                    <h6 class="card-text  fw-bolder">Star Rate : 5 </h6>
+                    <h6 class="card-text">Full Board with A/C Luxury Room – Double Price:79000/=</h6>
+                    <h6 class="card-text">Half Board with A/C Luxury Room - Double Price:70000/=</h6>
+                    <h6 class="card-text">Full Board with A/C Luxury Room – Triple Price:92000/=</h6>
+                    <h6 class="card-text">Half Board with A/C Luxury Room - Triple Price:87000/=</h6>
+
+                </div>
+            </div>
+
+
+            <div class="card position-relative p-5 m-2 travel-image" style="width: 19rem;">
+                <img src="assests/readme-images/5%20star%20grand%20.jpg" class="card-img-top rounded h-50" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Grand Hotel Nuwara Eliya</h5>
+                    <h6 class="card-text  fw-bolder">Star Rate : 5 </h6>
+                    <h6 class="card-text">Full Board with A/C Luxury Room – Double Price:76500/=</h6>
+                    <h6 class="card-text">Half Board with A/C Luxury Room - Double Price:68000/=</h6>
+                    <h6 class="card-text">Full Board with A/C Luxury Room – Triple Price:81000/=</h6>
+                    <h6 class="card-text">Half Board with A/C Luxury Room - Triple Price:75000/=</h6>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class=" d-flex text-dark p-5 m-2"><h4 class="fw-bolder">4 Star Hotels</h4></div>
+        <div class="p-5 m-5 d-flex justify-content-center  travel-image-frame ">
+
+            <div class="card position-relative p-5 m-2 travel-image" style="width: 19rem;">
+                <img src="assests/readme-images/grand%20kandyan.jpg" class="card-img-top rounded " alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Grand Kandyan Hotel Kandy</h5>
+                    <h6 class="card-text  fw-bolder">Star Rate : 4 </h6>
+                    <h6 class="card-text">Full Board with A/C Luxury Room – Double Price:59000/=</h6>
+                    <h6 class="card-text">Half Board with A/C Luxury Room - Double Price:51000/=</h6>
+                    <h6 class="card-text">Full Board with A/C Luxury Room – Triple Price:66000/=</h6>
+                    <h6 class="card-text">Half Board with A/C Luxury Room - Triple Price:62000/=</h6>
+
+                </div>
+            </div>
+
+
+            <div class="card position-relative p-5 m-2 travel-image" style="width: 19rem;">
+                <img src="assests/readme-images/Hikka-Tranz_048.jpg" class="card-img-top rounded " alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Hikka Tranz Hikkaduwa</h5>
+                    <h6 class="card-text  fw-bolder">Star Rate : 4 </h6>
+                    <h6 class="card-text">Full Board with A/C Luxury Room – Double Price:46000/=</h6>
+                    <h6 class="card-text">Half Board with A/C Luxury Room - Double Price:38000/=</h6>
+                    <h6 class="card-text">Full Board with A/C Luxury Room – Triple Price:55000/=</h6>
+                    <h6 class="card-text">Half Board with A/C Luxury Room - Triple Price:50000/=</h6>
+
+                </div>
+            </div>
+
+
+            <div class="card position-relative p-5 m-2 travel-image" style="width: 19rem;">
+                <img src="assests/readme-images/araliya%20green%20nuwaeliy.jpg" class="card-img-top rounded " alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Araliya Green Hills Nuwara Eliya</h5>
+                    <h6 class="card-text  fw-bolder">Star Rate : 4 </h6>
+                    <h6 class="card-text">Full Board with A/C Luxury Room – Double Price:46500/=</h6>
+                    <h6 class="card-text">Half Board with A/C Luxury Room - Double Price:40000/=</h6>
+                    <h6 class="card-text">Full Board with A/C Luxury Room – Triple Price:55000/=</h6>
+                    <h6 class="card-text">Half Board with A/C Luxury Room - Triple Price:49000/=</h6>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class=" d-flex text-dark p-5 m-2"><h4 class="fw-bolder">3 Star Hotels</h4></div>
+        <div class="p-5 m-5 d-flex justify-content-center  travel-image-frame ">
+
+            <div class="card position-relative p-5 m-2 travel-image" style="width: 19rem;">
+                <img src="assests/readme-images/Heritage%20Hotel%20Anuradhapura.jpg" class="card-img-top rounded "
+                     alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Heritage Hotel Anuradhapura</h5>
+                    <h6 class="card-text  fw-bolder">Star Rate : 3 </h6>
+                    <h6 class="card-text">Full Board with A/C Luxury Room – Double Price:10500/=</h6>
+                    <h6 class="card-text">Half Board with A/C Luxury Room - Double Price:9000/=</h6>
+                    <h6 class="card-text">Full Board with A/C Luxury Room – Triple Price:15000/=</h6>
+                    <h6 class="card-text">Half Board with A/C Luxury Room - Triple Price:13500/=</h6>
+                </div>
+            </div>
+
+
+            <div class="card position-relative p-5 m-2 travel-image" style="width: 19rem;">
+                <img src="assests/readme-images/The%20Peacock%20Beach%20Resort%20Hambanthota.jpg"
+                     class="card-img-top rounded w-100 h-50 " alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Peacock Beach Resort Hambanthota</h5>
+                    <h6 class="card-text  fw-bolder">Star Rate : 3 </h6>
+                    <h6 class="card-text">Full Board with A/C Luxury Room – Double Price:22000/=</h6>
+                    <h6 class="card-text">Half Board with A/C Luxury Room - Double Price:18000/=</h6>
+                    <h6 class="card-text">Full Board with A/C Luxury Room – Triple Price:28000/=</h6>
+                    <h6 class="card-text">Half Board with A/C Luxury Room - Triple Price:25000/=</h6>
+                </div>
+            </div>
+
+
+            <div class="card position-relative p-5 m-2 travel-image" style="width: 19rem;">
+                <img src="assests/readme-images/Shangri-La,%20Hambanthota.jpg" class="card-img-top rounded w-100 h-50"
+                     alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Shangri-La Hambanthota</h5>
+                    <h6 class="card-text  fw-bolder">Star Rate : 3 </h6>
+                    <h6 class="card-text">Full Board with A/C Luxury Room – Double Price:87000/=</h6>
+                    <h6 class="card-text">Half Board with A/C Luxury Room - Double Price:84000/=</h6>
+                    <h6 class="card-text">Full Board with A/C Luxury Room – Triple Price:93000/=</h6>
+                    <h6 class="card-text">Half Board with A/C Luxury Room - Triple Price:88000/=</h6>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class=" d-flex text-dark p-5 m-2 "><h4 class="fw-bolder">2 Star Hotels</h4></div>
+        <div class="p-5 m-5 d-flex justify-content-center  travel-image-frame ">
+
+            <div class="card position-relative p-5 m-2 travel-image" style="width: 19rem;">
+                <img src="assests/readme-images/The%20Blue%20Wave,%20Arugambay.jpg" class="card-img-top rounded "
+                     alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">The Blue Wave Arugambay</h5>
+                    <h6 class="card-text  fw-bolder">Star Rate : 2 </h6>
+                    <h6 class="card-text">Full Board with A/C Luxury Room – Double Price:38000/=</h6>
+                    <h6 class="card-text">Half Board with A/C Luxury Room - Double Price:35000/=</h6>
+                    <h6 class="card-text">Full Board with A/C Luxury Room – Triple Price:41000/=</h6>
+                    <h6 class="card-text">Half Board with A/C Luxury Room - Triple Price:37000/=</h6>
+
+                </div>
+            </div>
+
+
+            <div class="card position-relative p-5 m-2 travel-image" style="width: 19rem;">
+                <img src="assests/readme-images/Heritance,%20Kandalama.jpg" class="card-img-top rounded " alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Heritance Kandalama-Dambulla</h5>
+                    <h6 class="card-text  fw-bolder">Star Rate : 2 </h6>
+                    <h6 class="card-text">Full Board with A/C Luxury Room – Double Price:89000/=</h6>
+                    <h6 class="card-text">Half Board with A/C Luxury Room - Double Price:83000/=</h6>
+                    <h6 class="card-text">Full Board with A/C Luxury Room – Triple Price:97000/=</h6>
+                    <h6 class="card-text">Half Board with A/C Luxury Room - Triple Price:90000/=</h6>
+                </div>
+            </div>
+
+
+            <div class="card position-relative p-5 m-2 travel-image" style="width: 19rem;">
+                <img src="assests/readme-images/The%20Lake%20Hotel.jpeg" class="card-img-top rounded " alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">The Lake Hotel Polonnaruwa</h5>
+                    <h6 class="card-text  fw-bolder">Star Rate : 2 </h6>
+                    <h6 class="card-text">Full Board with A/C Luxury Room – Double Price:38000/=</h6>
+                    <h6 class="card-text">Half Board with A/C Luxury Room - Double Price:30000/=</h6>
+                    <h6 class="card-text">Full Board with A/C Luxury Room – Triple Price:40000/=</h6>
+                    <h6 class="card-text">Half Board with A/C Luxury Room - Triple Price:36000/=</h6>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- section contact -->
+    <section class="contact d-flex flex-column">
+
+        <div class="d-flex justify-content-around p-5">
+            <article class="ContactArea">
+                <div class="h3-topic text-warning"><h3>Contact Us</h3></div>
+                <div class="d-flex">
+
+                    <dl>
+                        <dt class="con text-warning fa-caret-right">Address</dt>
+                        <dd class="text-dark fw-bolder">No : 37/12 Maddegedara Rd,<br> Mathugama</dd>
+                        <br>
+                        <dt class="con text-warning">G -Mail</dt>
+                        <dd class="text-dark fw-bolder">sewminipremodya98@gamil.com</dd>
+                        <br>
+                        <dt class="con text-warning">Customer Support</dt>
+                        <dd class="text-dark fw-bolder">Hotline : +94 777 987 655</dd>
+                        <dd class="text-dark fw-bolder">Phone : +94 814 549 495</dd>
+
+                    </dl>
+
+                </div>
+            </article>
+            <article>
+
+                <table class="table mt-3 table-striped bdr" style="border-color: #997404; ">
+                    <thead class="table table-dark">
+                    <!-- eken den ewa wetenod blno -->
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Package Category</th>
+                        <th scope="col">Hotel Category</th>
+                        <th scope="col">Vehicle Category</th>
+                    </tr>
+                    </thead>
+                    <tbody id="package_table1_hotel1">
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Regular</td>
+                        <td>3 Star and 2 Star</td>
+                        <td>Economy</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Mid-level</td>
+                        <td>3 Star and 4 Star</td>
+                        <td>Mid-Range</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Luxury</td>
+                        <td>4 Star and 5 Star</td>
+                        <td>Luxury</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Super Luxury</td>
+                        <td>5 Star</td>
+                        <td>Super Luxury</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </article>
+            <article class="copyrightStyle d-flex flex-column justify-content-start">
+                <h1 class="d-block text-warning">Tourest</h1>
+                <h6 class="text-white d-block">Copyright Tourest Plan © 2023. All Rights Reserved. <span>Website designed and
+                developed by Sewmini Premodya.</span></h6>
+            </article>
+        </div>
+
+        <img src="assests/readme-images/Truly-a-Magnificent-Luxury-Travel-Experience-Luxury-Travel-in-sri-lanka.png"
+             class="logoSize align-self-center">
+
+
+    </section>
+
+</section>
+
+
+<!-- vehicle page -->
+<section id="sec-vehicle-page">
+    <!-- vehicle topic-->
+    <article class="booking-tour-topic text-white visit_topic position-relative flex-column p-2">
+        <h1 class="justify-content-center d-flex p-3 text-warning">View Vehicle</h1>
+        <h5 class="justify-content-center m-4">In our l tours, you will enjoy views of amazing landscapes and explore
+            unique locations from the comfort of the passenger seat.
+            Along the way, we will stop in at star class luxury restaurants and places where you can enjoy the mouth
+            watering food and drinks that match the luxury lifestyle.
+            This is a relaxed and comfortable experience that provides you with the ideal way to explore the fascinating
+            places around the small island.
+            You will be guided and looked after by an experienced private tour guide who will ensure that you enjoy the
+            every moment of this unique experience in a safe & comfortable way.
+            We take safety precautions very seriously and only select qualified professionals with years of driving
+            experience across multiple terrains and conditions.
+            And all the vehicles and the passengers are fully insured.
+            Plus the basic emergency roadside assistance service is in operation to successfully handle the unforeseen
+            circumstances with minimum hassle to the clients.
+
+        </h5>
+    </article>
+
+    <!-- view images vehicles-->
+    <div class="hotel_image_bg">
+        <div class=" d-flex text-dark p-5 m-2"><h4 class="fw-bolder">Super- Luxury</h4></div>
+        <div class="p-5 m-5 d-flex justify-content-center  travel-image-frame ">
+
+            <div class="card position-relative p-5 m-2 travel-image " style="width: 19rem;">
+                <img src="assests/readme-images/Toyota Alphard  Hybrid .jpg" class="card-img-top rounded " alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Toyota Alphard - (D/A) - Hybrid * 2</h5>
+                    <h6 class="card-text  fw-bolder">Super- Luxury</h6>
+                    <h6 class="card-text">Fee for Day (LKR) : Price:65000/=</h6>
+                    <h6 class="card-text">Fee For 1km (LKR) : Price:650/=</h6>
+                    <h6 class="card-text">Seating Capacity (Exclude driver) : 7</h6>
+                    <h6 class="card-text">Fuel Consumption km/l: 10 </h6>
+
+                </div>
+            </div>
+
+
+            <div class="card position-relative p-5 m-2 travel-image" style="width: 19rem;">
+                <img src="assests/readme-images/King Long.jpg" class="card-img-top rounded " alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">King Long (D/A) * 4</h5>
+                    <h6 class="card-text  fw-bolder">Super-Luxury</h6>
+                    <h6 class="card-text">Fee for Day (LKR) : Price:70000/=</h6>
+                    <h6 class="card-text">Fee For 1km (LKR) : Price:700/=</h6>
+                    <h6 class="card-text">Seating Capacity (Exclude driver) : 40</h6>
+                    <h6 class="card-text">Fuel Consumption km/l: 5 </h6>
+                </div>
+            </div>
+
+
+            <div class="card position-relative p-5 m-2 travel-image" style="width: 19rem;">
+                <img src="assests/readme-images/oyota Prado.jpg" class="card-img-top rounded " alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Toyota Prado - TX - (D/A) * 2</h5>
+                    <h6 class="card-text  fw-bolder">Super-Luxury</h6>
+                    <h6 class="card-text">Fee for Day (LKR) : Price:80000/=</h6>
+                    <h6 class="card-text">Fee For 1km (LKR) : Price:900/=</h6>
+                    <h6 class="card-text">Seating Capacity (Exclude driver) : 6</h6>
+                    <h6 class="card-text">Fuel Consumption km/l: 8 </h6>
+
+                </div>
+            </div>
+
+
+            <div class="card position-relative p-5 m-2 travel-image" style="width: 19rem;">
+                <img src="assests/readme-images/Toyota Prado .jpg" class="card-img-top rounded h-50" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Toyota Prado - VX -V8 (D/A) * 2</h5>
+                    <h6 class="card-text  fw-bolder">Super-Luxury</h6>
+                    <h6 class="card-text">Fee for Day (LKR) : Price:95000/=</h6>
+                    <h6 class="card-text">Fee For 1km (LKR) : Price:900/=</h6>
+                    <h6 class="card-text">Seating Capacity (Exclude driver) : 6</h6>
+                    <h6 class="card-text">Fuel Consumption km/l: 7 </h6>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class=" d-flex text-dark p-5 m-2"><h4 class="fw-bolder">Luxury</h4></div>
+        <div class="p-5 m-5 d-flex justify-content-center  travel-image-frame ">
+
+            <div class="card position-relative p-5 m-2 travel-image" style="width: 19rem;">
+                <img src="assests/readme-images/Toyota Corolla Axio.jpeg" class="card-img-top rounded " alt="...">
+                <div class="card-body">
+                    <h6 class="card-text  fw-bolder">Toyota Corolla Axio (P/A) - Hybrid * 5</h6>
+                    <h6 class="card-text">Fee for Day (LKR) : Price:30000/=</h6>
+                    <h6 class="card-text">Fee For 1km (LKR) : Price:300/=</h6>
+                    <h6 class="card-text">Seating Capacity (Exclude driver) : 4</h6>
+                    <h6 class="card-text">Fuel Consumption km/l: 25 </h6>
+
+                </div>
+            </div>
+
+
+            <div class="card position-relative p-5 m-2 travel-image" style="width: 19rem;">
+                <img src="assests/readme-images/Toyota Allion.jpg" class="card-img-top rounded " alt="...">
+                <div class="card-body">
+                    <h6 class="card-text  fw-bolder">Toyota Allion (P/A) * 5</h6>
+                    <h6 class="card-text">Fee for Day (LKR) : Price:35000/=</h6>
+                    <h6 class="card-text">Fee For 1km (LKR) : Price:350/=</h6>
+                    <h6 class="card-text">Seating Capacity (Exclude driver) : 4</h6>
+                    <h6 class="card-text">Fuel Consumption km/l: 15 </h6>
+
+                </div>
+            </div>
+
+
+            <div class="card position-relative p-5 m-2 travel-image" style="width: 19rem;">
+                <img src="assests/readme-images/Toyota KDH.jpg" class="card-img-top rounded " alt="...">
+                <div class="card-body">
+                    <h6 class="card-text  fw-bolder">Toyota KDH - (D/A) * 6</h6>
+                    <h6 class="card-text">Fee for Day (LKR) : Price:45000/=</h6>
+                    <h6 class="card-text">Fee For 1km (LKR) : Price:400/=</h6>
+                    <h6 class="card-text">Seating Capacity (Exclude driver) : 9</h6>
+                    <h6 class="card-text">Fuel Consumption km/l: 10 </h6>
+
+                </div>
+            </div>
+
+
+            <div class="card position-relative p-5 m-2 travel-image" style="width: 19rem;">
+                <img src="assests/readme-images/Yutong .jpg" class="card-img-top rounded " alt="...">
+                <div class="card-body">
+                    <h6 class="card-text  fw-bolder">Yutong - (D/M) * 4</h6>
+                    <h6 class="card-text">Fee for Day (LKR) : Price:55000/=</h6>
+                    <h6 class="card-text">Fee For 1km (LKR) : Price:550/=</h6>
+                    <h6 class="card-text">Seating Capacity (Exclude driver) : 38</h6>
+                    <h6 class="card-text">Fuel Consumption km/l: 6 </h6>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class=" d-flex text-dark p-5 m-2"><h4 class="fw-bolder">Mid-range</h4></div>
+        <div class="p-5 m-5 d-flex justify-content-center  travel-image-frame ">
+
+            <div class="card position-relative p-5 m-2 travel-image" style="width: 19rem;">
+                <img src="assests/readme-images/Toyota Yaris.jpg" class="card-img-top rounded " alt="...">
+                <div class="card-body">
+                    <h6 class="card-text  fw-bolder">Toyota Yaris (P/A) * 2</h6>
+                    <h6 class="card-text">Fee for Day (LKR) : Price:8500/=</h6>
+                    <h6 class="card-text">Fee For 1km (LKR) : Price:180/=</h6>
+                    <h6 class="card-text">Seating Capacity (Exclude driver) : 4</h6>
+                    <h6 class="card-text">Fuel Consumption km/l: 15 </h6>
+                </div>
+            </div>
+
+
+            <div class="card position-relative p-5 m-2 travel-image" style="width: 19rem;">
+                <img src="assests/readme-images/Toyota Yaris3.jpg" class="card-img-top rounded w-100 h-50 " alt="...">
+                <div class="card-body">
+                    <h6 class="card-text  fw-bolder">Toyota Yaris (P/M) * 3</h6>
+                    <h6 class="card-text">Fee for Day (LKR) : Price:8000/=</h6>
+                    <h6 class="card-text">Fee For 1km (LKR) : Price:175/=</h6>
+                    <h6 class="card-text">Seating Capacity (Exclude driver) : 4</h6>
+                    <h6 class="card-text">Fuel Consumption km/l: 16 </h6>
+                </div>
+            </div>
+
+
+            <div class="card position-relative p-5 m-2 travel-image" style="width: 19rem;">
+                <img src="assests/readme-images/Nissan Caravan.png" class="card-img-top rounded w-100 h-50" alt="...">
+                <div class="card-body">
+                    <h6 class="card-text  fw-bolder">Nissan Caravan (D/M) * 4</h6>
+                    <h6 class="card-text">Fee for Day (LKR) : Price:20000/=</h6>
+                    <h6 class="card-text">Fee For 1km (LKR) : Price:250/=</h6>
+                    <h6 class="card-text">Seating Capacity (Exclude driver) : 12</h6>
+                    <h6 class="card-text">Fuel Consumption km/l: 12 </h6>
+                </div>
+            </div>
+
+
+            <div class="card position-relative p-5 m-2 travel-image" style="width: 19rem;">
+                <img src="assests/readme-images/Nissan Caravan1.png" class="card-img-top rounded w-100 h-50" alt="...">
+                <div class="card-body">
+                    <h6 class="card-text  fw-bolder">Nissan Caravan (D/A) * 1</h6>
+                    <h6 class="card-text">Fee for Day (LKR) : Price:25000/=</h6>
+                    <h6 class="card-text">Fee For 1km (LKR) : Price:280/=</h6>
+                    <h6 class="card-text">Seating Capacity (Exclude driver) : 9</h6>
+                    <h6 class="card-text">Fuel Consumption km/l: 11 </h6>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class=" d-flex text-dark p-5 m-2 "><h4 class="fw-bolder">Economy</h4></div>
+        <div class="p-5 m-5 d-flex justify-content-center  travel-image-frame ">
+
+            <div class="card position-relative p-5 m-2 travel-image" style="width: 19rem;">
+                <img src="assests/readme-images/Suzuki Celerio1.jpg" class="card-img-top rounded " alt="...">
+                <div class="card-body">
+                    <h6 class="card-text  fw-bolder">Suzuki Celerio (P/M) * 1</h6>
+                    <h6 class="card-text">Fee for Day (LKR) : Price:4500/=</h6>
+                    <h6 class="card-text">Fee For 1km (LKR) : Price:95/=</h6>
+                    <h6 class="card-text">Seating Capacity (Exclude driver) : 4</h6>
+                    <h6 class="card-text">Fuel Consumption km/l: 22 </h6>
+                </div>
+            </div>
+
+
+            <div class="card position-relative p-5 m-2 travel-image" style="width: 19rem;">
+                <img src="assests/readme-images/Suzuki Celerio4.jpg" class="card-img-top rounded " alt="...">
+                <div class="card-body">
+                    <h6 class="card-text  fw-bolder">Suzuki Celerio (P/A) * 4</h6>
+                    <h6 class="card-text">Fee for Day (LKR) : Price:5000/=</h6>
+                    <h6 class="card-text">Fee For 1km (LKR) : Price:100/=</h6>
+                    <h6 class="card-text">Seating Capacity (Exclude driver) : 4</h6>
+                    <h6 class="card-text">Fuel Consumption km/l: 20 </h6>
+                </div>
+            </div>
+
+
+            <div class="card position-relative p-5 m-2 travel-image" style="width: 19rem;">
+                <img src="assests/readme-images/Suzuki Wagon R Synergy.jpg" class="card-img-top rounded " alt="...">
+                <div class="card-body">
+                    <h6 class="card-text  fw-bolder">Suzuki Wagon R Synergy (P/A) * 5</h6>
+                    <h6 class="card-text">Fee for Day (LKR) : Price:5500/=</h6>
+                    <h6 class="card-text">Fee For 1km (LKR) : Price:100/=</h6>
+                    <h6 class="card-text">Seating Capacity (Exclude driver) : 4</h6>
+                    <h6 class="card-text">Fuel Consumption km/l: 25 </h6>
+                </div>
+            </div>
+
+
+            <div class="card position-relative p-5 m-2 travel-image" style="width: 19rem;">
+                <img src="assests/readme-images/Toyota Aqua5.jpeg" class="card-img-top rounded " alt="...">
+                <div class="card-body">
+                    <h6 class="card-text  fw-bolder">Toyota Aqua (P/A) – Hybrid * 5</h6>
+                    <h6 class="card-text">Fee for Day (LKR) : Price:6000/=</h6>
+                    <h6 class="card-text">Fee For 1km (LKR) : Price:120/=</h6>
+                    <h6 class="card-text">Seating Capacity (Exclude driver) : 4</h6>
+                    <h6 class="card-text">Fuel Consumption km/l: 30 </h6>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- section contact -->
+    <section class="contact d-flex flex-column">
+
+        <div class="d-flex justify-content-around p-5">
+            <article class="ContactArea">
+                <div class="h3-topic text-warning"><h3>Contact Us</h3></div>
+                <div class="d-flex">
+
+                    <dl>
+                        <dt class="con text-warning fa-caret-right">Address</dt>
+                        <dd class="text-dark fw-bolder">No : 37/12 Maddegedara Rd,<br> Mathugama</dd>
+                        <br>
+                        <dt class="con text-warning">G -Mail</dt>
+                        <dd class="text-dark fw-bolder">sewminipremodya98@gamil.com</dd>
+                        <br>
+                        <dt class="con text-warning">Customer Support</dt>
+                        <dd class="text-dark fw-bolder">Hotline : +94 777 987 655</dd>
+                        <dd class="text-dark fw-bolder">Phone : +94 814 549 495</dd>
+
+                    </dl>
+
+                </div>
+            </article>
+            <article>
+
+                <table class="table mt-3 table-striped bdr" style="border-color: #997404; ">
+                    <thead class="table table-dark">
+                    <!-- eken den ewa wetenod blno -->
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Package Category</th>
+                        <th scope="col">Hotel Category</th>
+                        <th scope="col">Vehicle Category</th>
+                    </tr>
+                    </thead>
+                    <tbody id="package_table1_hotel2">
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Regular</td>
+                        <td>3 Star and 2 Star</td>
+                        <td>Economy</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Mid-level</td>
+                        <td>3 Star and 4 Star</td>
+                        <td>Mid-Range</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Luxury</td>
+                        <td>4 Star and 5 Star</td>
+                        <td>Luxury</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Super Luxury</td>
+                        <td>5 Star</td>
+                        <td>Super Luxury</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </article>
+            <article class="copyrightStyle d-flex flex-column justify-content-start">
+                <h1 class="d-block text-warning">Tourest</h1>
+                <h6 class="text-white d-block">Copyright Tourest Plan © 2023. All Rights Reserved. <span>Website designed and
+                developed by Sewmini Premodya.</span></h6>
+            </article>
+        </div>
+
+        <img src="assests/readme-images/Truly-a-Magnificent-Luxury-Travel-Experience-Luxury-Travel-in-sri-lanka.png"
+             class="logoSize align-self-center">
+
+
+    </section>
+
+</section>
+
+
+<!-- user register form -->
+<section class="user-reg w-auto" id="sec-user-register">
+    <!-- topic-->
+    <article class="reg_area text-white visit_topic position-relative flex-column p-2">
+        <h1 class="justify-content-center d-flex p-3 text-warning">User Register Form</h1>
+
+    </article>
+    <!-- user Form container -->
+    <div class="container p-5 ">
+        <main>
+            <div class="row g-5 d-flex justify-content-center">
+
+                <div class="reg-small-form  col-md-5 col-lg-8 ">
+                    <h3 class="p-4 mb-5">User Register Form</h3>
+                    <form class="needs-validation" novalidate>
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <label id="userId" class="form-label">User Id</label>
+                                <label class="form-label "></label>
+                            </div>
+
+                            <div class="col-6">
+                                <label for="username" class="form-label">Username</label>
+                                <div class="input-group has-validation">
+                                    <input type="text" class="form-control" id="username" placeholder="Username"
+                                           required>
+                                    <div class="invalid-feedback">
+                                        Your username is required.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email2" placeholder="you@example.com">
+                                <div class="invalid-feedback">
+                                    Please enter a valid email address for shipping updates.
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <label for="address" class="form-label">Address</label>
+                                <input type="text" class="form-control" id="address" placeholder="1234 Main St"
+                                       required>
+                                <div class="invalid-feedback">
+                                    Please enter your shipping address.
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <label for="nic" class="form-label">NIC</label>
+                                <input type="text" class="form-control" id="nic" placeholder="NIC">
+                            </div>
+
+                            <div class="col-6">
+                                <label for="gender" class="form-label">Gender</label>
+                                <select class="form-select" id="gender" required>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please select a valid gender.
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label for="remarks" class="form-label">Remarks</label>
+                                <textarea type="textarea" class="form-control" id="remarks"
+                                          placeholder="Remarks"></textarea>
+                            </div>
+
+                            <div class="col-6">
+                                <label for="nic-image1" class="form-label">NIC Image FrontEnd</label>
+                                <input type="file" class="form-control" id="nic-image" placeholder="Remarks">
+                            </div>
+
+                            <div class="col-6">
+                                <label for="nic-image2" class="form-label">NIC Image BackEnd</label>
+                                <input type="file" class="form-control" id="nic-imag3" placeholder="NIC Image BackEnd">
+                            </div>
+
+                            <div class="col-6 pb-4 p-2 ">
+                                <button class=" button-Booking " type="submit">Register</button>
+                            </div>
+
+                            <div class="col-6 pb-5 p-2">
+                                <button class=" button-Booking " type="submit">Clear</button>
+                            </div>
+
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+</section>
+
+
+<!-- admin user register form -->
+<section class="user-reg  " id="sec-admin-register">
+    <!-- topic-->
+    <article class="reg_area text-white visit_topic position-relative flex-column p-2">
+        <h1 class="justify-content-center d-flex p-3 text-warning">User Register Form</h1>
+
+    </article>
+    <!--  admin user Form container -->
+    <div class="d-flex">
+        <div class="container p-5 m-5 d-flex ">
+            <main>
+                <div class="row g-5 d-flex justify-content-lg-start">
+
+                    <div class="reg-small-form  col-md-3 col-lg-12 ">
+                        <h3 class="p-4 mb-5">User Register Form</h3>
+                        <form class="needs-validation" novalidate>
+                            <div class="row g-3">
+                                <div class="col-6">
+                                    <label id="userId2" class="form-label">User Id</label>
+                                    <label class="form-label "></label>
+                                </div>
+
+                                <div class="col-6">
+                                    <label for="username" class="form-label">Username</label>
+                                    <div class="input-group has-validation">
+                                        <input type="text" class="form-control" id="username2" placeholder="Username"
+                                               required>
+                                        <div class="invalid-feedback">
+                                            Your username is required.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                                    <div class="invalid-feedback">
+                                        Please enter a valid email address for shipping updates.
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <label for="address" class="form-label">Address</label>
+                                    <input type="text" class="form-control" id="address2" placeholder="1234 Main St"
+                                           required>
+                                    <div class="invalid-feedback">
+                                        Please enter your shipping address.
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <label for="nic" class="form-label">NIC</label>
+                                    <input type="text" class="form-control" id="nic2" placeholder="NIC">
+                                </div>
+
+                                <div class="col-6">
+                                    <label for="gender" class="form-label">Gender</label>
+                                    <select class="form-select" id="gender2" required>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please select a valid gender.
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="remarks" class="form-label">Remarks</label>
+                                    <textarea type="textarea" class="form-control" id="remarks2"
+                                              placeholder="Remarks"></textarea>
+                                </div>
+
+                                <div class="col-6">
+                                    <label for="nic-image1" class="form-label">NIC Image FrontEnd</label>
+                                    <input type="file" class="form-control" id="nic-image1" placeholder="Remarks">
+                                </div>
+
+                                <div class="col-6">
+                                    <label for="nic-image2" class="form-label">NIC Image BackEnd</label>
+                                    <input type="file" class="form-control" id="nic-image2"
+                                           placeholder="NIC Image BackEnd">
+                                </div>
+
+                                <div class="col-3 pb-4 p-2 ">
+                                    <button class=" button-Booking " type="submit">Register</button>
+                                </div>
+
+                                <div class="col-3 pb-5 p-2">
+                                    <button class=" button-Booking " type="submit">Update</button>
+                                </div>
+
+                                <div class="col-3 pb-4 p-2 ">
+                                    <button class=" button-Booking " type="submit">Delete</button>
+                                </div>
+
+                                <div class="col-3 pb-5 p-2">
+                                    <button class=" button-Booking " type="submit">Clear</button>
+                                </div>
+
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </main>
+
+
+        </div>
+        <div class="d-flex  p-5 m-5 col-md-4">
+            <div class="container-fluid">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-lg-5" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- get all user details -->
+    <article class="d-flex justify-content-start">
+        <table class=" table mt-3 bg-body-tertiary tbl border m-5 ">
+            <thead class="table ">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">UserId</th>
+                <th scope="col">User Name</th>
+                <th scope="col">Address</th>
+                <th scope="col">Email</th>
+                <th scope="col">Gender</th>
+                <th scope="col">Remarks</th>
+            </tr>
+            </thead>
+            <tbody id="user_table">
+            <tr>
+                <th scope="row">1</th>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            </tbody>
+        </table>
+    </article>
+
+
+</section>
+
+
+<!--  booking tours-->
+<section class="booking-tours" id="sec-bookingTour">
+    <!-- Booking tours topic-->
+    <article class="booking-tour-topic text-white visit_topic position-relative flex-column p-2">
+        <h1 class="justify-content-center d-flex p-3 text-warning">Booking Your Day Tours</h1>
+        <h5 class="justify-content-center m-4">Lanka Travel Plan is a customer oriented flexible service that offers the
+            best bespoken luxury tour experience to our customers.
+            There’s no such thing as a package tour with us as we understand that no two experiences are the same
+            because no two requests are ever identical.
+            The following itineraries are simply examples of the types of trips we like to run so have a read, browse by
+            destination or by your specific need and let your wanderlust guide you through our site.
+            And when you have an idea of what you’re looking for, be it vague or intricately specific, get in touch.
+            We’ll do the rest.</h5>
+    </article>
+
+    <!-- travel package table  -->
+
+    <article class="d-flex m-5 ">
+        <table class="table mt-3 bg-body-tertiary tbl border-dark border-top  ">
+            <thead class="table " style="background-color: #fff5cb ">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Package Category</th>
+                <th scope="col">Hotel Category</th>
+                <th scope="col">Vehicle Category</th>
+            </tr>
+            </thead>
+            <tbody id="package_table3">
+            <tr>
+                <th scope="row">1</th>
+                <td>Regular</td>
+                <td>3 Star and 2 Star</td>
+                <td>Economy</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Mid-level</td>
+                <td>3 Star and 4 Star</td>
+                <td>Mid-Range</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Luxury</td>
+                <td>4 Star and 5 Star</td>
+                <td>Luxury</td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>Super Luxury</td>
+                <td>5 Star</td>
+                <td>Super Luxury</td>
+            </tr>
+            </tbody>
+        </table>
+    </article>
+
+    <section class="user-reg ">
+
+        <!-- Booking Form container -->
+        <div class="d-flex">
+            <div class="container p-5 pb-3   d-flex ">
+                <main>
+                    <div class="row g-5 d-flex  ">
+
+                        <div class="reg-small-form  col-md-3 col-lg-12 ">
+                            <h3 class="p-4 mb-5">Booking Day Tours Form</h3>
+                            <form class="needs-validation" novalidate>
+                                <div class="row g-3">
+                                    <div class="col-4">
+                                        <label id="packageId" class="form-label">Package Id</label>
+                                        <label class="form-label "></label>
+                                    </div>
+
+                                    <div class="col-4">
+                                        <label for="package_cate" class="form-label">Package category</label>
+                                        <select class="form-select" id="package_cate" required>
+                                            <option value="regular">Regular</option>
+                                            <option value="luxury">Luxury</option>
+
+                                        </select>
+
+
+                                        <div class="invalid-feedback">
+                                            Please select a valid packages.
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-4">
+                                        <label for="hotel_Category" class="form-label">Choose Hotel</label>
+                                        <select class="form-select" id="hotel_Category" required>
+                                            <option value=""></option>
+
+
+                                        </select>
+
+
+                                        <div class="invalid-feedback">
+                                            Please select a valid packages.
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-4">
+                                        <label for="hotel_opt" class="form-label">Choose Hotel options</label>
+                                        <select class="form-select" id="hotel_opt" required>
+                                            <option value=""></option>
+
+
+                                        </select>
+
+
+                                        <div class="invalid-feedback">
+                                            Please select a valid packages.
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-4">
+                                        <label for="Vehicle_Category" class="form-label">Vehicle Category</label>
+                                        <select class="form-select" id="Vehicle_Category" required>
+                                            <option value="r"></option>
+
+
+                                        </select>
+
+
+                                        <div class="invalid-feedback">
+                                            Please select a valid packages.
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-4">
+                                        <label for="start-date " class="form-label">Start Date </label>
+                                        <div class="input-group has-validation">
+                                            <input type="date" class="form-control" id="start-date " placeholder=""
+                                                   required>
+                                            <div class="invalid-feedback">
+                                                Your Start Date is required.
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-4">
+                                        <label for="end-date " class="form-label">End Date </label>
+                                        <div class="input-group has-validation">
+                                            <input type="date" class="form-control" id="end-date " placeholder=""
+                                                   required>
+                                            <div class="invalid-feedback">
+                                                Your End Date is required.
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-4">
+                                        <label for="days" class="form-label">Count of days</label>
+                                        <input type="number" class="form-control" id="days" placeholder="Count of days">
+                                        <div class="invalid-feedback">
+                                            Please enter a valid Count of days.
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-4">
+                                        <label for="nights" class="form-label">Count of nights</label>
+                                        <input type="number" class="form-control" id="nights"
+                                               placeholder="Count of nights">
+                                        <div class="invalid-feedback">
+                                            Please enter a valid Count of days.
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-4">
+                                        <label for="travel_area" class="form-label">Travel Area</label>
+                                        <select class="form-select" id="travel_area" required>
+                                            <option value="Anuradhapura">Anuradhapura and Polonnaruwa</option>
+                                            <option value="Sigiriya">Sigiriya and Dambulla</option>
+                                            <option value="Down South">Down South</option>
+                                            <option value="Capital Colombo">Capital Colombo</option>
+                                            <option value="Kandy and Upcountry">Kandy and Upcountry</option>
+                                            <option value="Western Coast">Western Coast</option>
+                                            <option value="Matale">Matale</option>
+
+                                        </select>
+
+
+                                        <div class="invalid-feedback">
+                                            Please select a valid packages.
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-4">
+                                        <label for="No_of_adults" class="form-label">No of adults</label>
+                                        <input type="number" class="form-control" id="No_of_adults"
+                                               placeholder="No of adults">
+                                        <div class="invalid-feedback">
+                                            Please enter a valid No of Adults.
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-4">
+                                        <label for="No_of_children" class="form-label">No of Children</label>
+                                        <input type="number" class="form-control" id="No_of_children"
+                                               placeholder="No of Children">
+                                        <div class="invalid-feedback">
+                                            Please enter a valid No of Children.
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-4">
+                                        <label for="Total_headcount" class="form-label">Total headcount</label>
+                                        <input type="number" class="form-control" id="Total_headcount"
+                                               placeholder="Total headcount">
+                                        <div class="invalid-feedback">
+                                            Please enter a valid Total headcount.
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-4">
+                                        <label for="With_Pets_or_no" class="form-label">With Pets or no</label>
+                                        <select class="form-select" id="With_Pets_or_no" required>
+                                            <option value="no">No</option>
+                                            <option value="yes">Yes</option>
+
+                                        </select>
+
+
+                                        <div class="invalid-feedback">
+                                            Please select a valid packages.
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-4">
+                                        <label for="Need_guide_or_no" class="form-label">Need a guide or no</label>
+                                        <select class="form-select" id="Need_guide_or_no" required>
+                                            <option value="no">No</option>
+                                            <option value="yes">Yes</option>
+
+                                        </select>
+
+
+                                        <div class="invalid-feedback">
+                                            Please select a valid packages.
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-4">
+                                        <label for="hotel-fee" class="form-label">Per Day Hotel Fee</label>
+                                        <input type="number" class="form-control" id="hotel-fee"
+                                               placeholder="Per Day Hotel Fee">
+                                        <div class="invalid-feedback">
+                                            Please enter a valid Per Day Hotel Fee.
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-4">
+                                        <label for="guide_fee" class="form-label">Guide Fee</label>
+                                        <input type="number" class="form-control" id="guide_fee"
+                                               placeholder="Guide Fee">
+                                        <div class="invalid-feedback">
+                                            Please enter a valid Guide Fee.
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-4">
+                                        <label for="vehicle_fee" class="form-label">Vehicle Fee</label>
+                                        <input type="number" class="form-control" id="vehicle_fee"
+                                               placeholder="Vehicle Fee">
+                                        <div class="invalid-feedback">
+                                            Please enter a valid Vehicle Fee.
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-4">
+                                        <label for="paid_value" class="form-label">Paid value</label>
+                                        <input type="number" class="form-control" id="paid_value"
+                                               placeholder="Paid value">
+                                        <div class="invalid-feedback">
+                                            Please enter a valid Vehicle Fee.
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-8">
+                                        <label for="remarks3" class="form-label">Remarks</label>
+                                        <textarea type="textarea" class="form-control" id="remarks3"
+                                                  placeholder="Remarks"></textarea>
+                                    </div>
+
+                                    <div class="col-3 pb-4 p-2 ">
+                                        <button class=" button-Booking " type="submit">Booking</button>
+                                    </div>
+
+                                    <div class="col-3 pb-5 p-2">
+                                        <button class=" button-Booking " type="submit">Update</button>
+                                    </div>
+
+                                    <div class="col-3 pb-4 p-2 ">
+                                        <button class=" button-Booking " type="submit">Delete</button>
+                                    </div>
+
+                                    <div class="col-3 pb-5 p-2">
+                                        <button class=" button-Booking " type="submit">Clear</button>
+                                    </div>
+
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </main>
+
+
+            </div>
+            <div class="  p-5 m-5 col-md-4">
+                <div class="container-fluid">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-lg-5" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- get all user details -->
+        <article class="d-flex justify-content-start">
+            <table class=" table mt-3 bg-body-tertiary tbl border m-5 ">
+                <thead class="table ">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Package Id</th>
+                    <th scope="col">Package category</th>
+                    <th scope="col">Hotel</th>
+                    <th scope="col">Hotel options</th>
+                    <th scope="col">Vehicle</th>
+                    <th scope="col">Start Date</th>
+                    <th scope="col">End Date</th>
+                    <th scope="col">Count of days</th>
+                    <th scope="col">Travel Area</th>
+                    <th scope="col">Total headcount</th>
+                    <th scope="col">Need a guide or no</th>
+                    <th scope="col">Per Day Hotel Fee</th>
+                    <th scope="col">Guide Fee</th>
+                    <th scope="col">Vehicle Fee</th>
+                    <th scope="col">Vehicle Fee</th>
+                    <th scope="col">Vehicle Fee</th>
+                </tr>
+                </thead>
+                <tbody id="booking_table">
+                <tr>
+                    <th scope="row">1</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                </tbody>
+            </table>
+        </article>
+
+
+    </section>
+
+
+</section>
+
+
+<!-- Guide Form-->
+<section class="booking-tours" id="sec-guide">
+    <!-- Guide tours topic-->
+    <article class="booking-tour-topic text-white visit_topic position-relative flex-column p-2">
+        <h1 class="justify-content-center d-flex p-3 text-warning">Guide Form</h1>
+    </article>
+
+
+    <section class="user-reg ">
+
+        <!-- Guide Form container -->
+        <div class="d-flex">
+            <div class="container p-5 pb-5 m-5  d-flex ">
+                <main>
+                    <div class="row g-5 d-flex  ">
+
+                        <div class="reg-small-form  col-md-3 col-lg-12 ">
+                            <h3 class="p-4 mb-5">Guide Form</h3>
+                            <form class="needs-validation" novalidate>
+                                <div class="row g-3">
+                                    <div class="col-4">
+                                        <label id="GuideId" class="form-label">Guide Id</label>
+                                        <label class="form-label "></label>
+                                    </div>
+
+
+                                    <div class="col-4">
+                                        <label for="Guide_Name" class="form-label">Guide Name</label>
+                                        <input type="text" class="form-control" id="Guide_Name"
+                                               placeholder="Guide Name">
+                                        <div class="invalid-feedback">
+                                            Please enter a valid Guide Name.
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-4">
+                                        <label for="Guide_Address" class="form-label">Guide Address</label>
+                                        <input type="text" class="form-control" id="Guide_Address"
+                                               placeholder="Guide Address">
+                                        <div class="invalid-feedback">
+                                            Please enter a valid Guide Address.
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-4">
+                                        <label for="Gender_gui" class="form-label">Gender</label>
+                                        <select class="form-select" id="Gender_gui" required>
+                                            <option value="male">Male</option>
+                                            <option value="female">Fe-male</option>
+                                            <option value="other">Other</option>
+
+                                        </select>
+
+
+                                        <div class="invalid-feedback">
+                                            Please select a valid Gender.
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-4">
+                                        <label for="Guide_Contact" class="form-label">Contact Number</label>
+                                        <input type="text" class="form-control" id="Guide_Contact"
+                                               placeholder="Guide Address">
+                                        <div class="invalid-feedback">
+                                            Please enter a valid Guide Contact Number.
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-4">
+                                        <label for="nic-image_guide_f" class="form-label">NIC Image FrontEnd</label>
+                                        <input type="file" class="form-control" id="nic-image_guide_f"
+                                               placeholder="NIC Image FrontEnd">
+                                    </div>
+
+
+                                    <div class="col-4">
+                                        <label for="nic-image_guide_b" class="form-label">NIC Image BackEnd</label>
+                                        <input type="file" class="form-control" id="nic-image_guide_b"
+                                               placeholder="NIC Image BackEnd">
+                                    </div>
+
+
+                                    <div class="col-4">
+                                        <label for="id-image_guide_f" class="form-label">ID Image FrontEnd</label>
+                                        <input type="file" class="form-control" id="id-image_guide_f"
+                                               placeholder="ID Image FrontEnd">
+                                    </div>
+
+
+                                    <div class="col-4">
+                                        <label for="id-image_guide_b" class="form-label">ID Image BackEnd</label>
+                                        <input type="file" class="form-control" id="id-image_guide_b"
+                                               placeholder="ID Image BackEnd">
+                                    </div>
+
+
+                                    <div class="col-4">
+                                        <label for="experience" class="form-label">Experience</label>
+                                        <input type="text" class="form-control" id="experience"
+                                               placeholder="Experience">
+                                        <div class="invalid-feedback">
+                                            Please enter a valid Experience.
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-4">
+                                        <label for="Man-day_value" class="form-label">Man-day value</label>
+                                        <input type="number" class="form-control" id="Man-day_value"
+                                               placeholder="Man-day value">
+                                        <div class="invalid-feedback">
+                                            Please enter a valid Man-day value.
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-4">
+                                        <label for="remarks_Gu" class="form-label">Remarks</label>
+                                        <textarea type="textarea" class="form-control" id="remarks_Gu"
+                                                  placeholder="Remarks"></textarea>
+                                    </div>
+
+                                    <div class="col-3 pb-4 p-2 ">
+                                        <button class=" button-Booking " type="submit">Booking</button>
+                                    </div>
+
+                                    <div class="col-3 pb-5 p-2">
+                                        <button class=" button-Booking " type="submit">Update</button>
+                                    </div>
+
+                                    <div class="col-3 pb-4 p-2 ">
+                                        <button class=" button-Booking " type="submit">Delete</button>
+                                    </div>
+
+                                    <div class="col-3 pb-5 p-2">
+                                        <button class=" button-Booking " type="submit">Clear</button>
+                                    </div>
+
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </main>
+
+
+            </div>
+            <div class="  p-5 m-5 col-md-4">
+                <div class="container-fluid">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-lg-5" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- get all Guide details -->
+        <article class="d-flex justify-content-start">
+            <table class=" table mt-3 bg-body-tertiary tbl border m-5 ">
+                <thead class="table ">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Guide Id</th>
+                    <th scope="col">Guide Name</th>
+                    <th scope="col">Guide Address</th>
+                    <th scope="col">Gender</th>
+                    <th scope="col">Contact Number</th>
+                    <th scope="col">NIC Image FrontEnd</th>
+                    <th scope="col">NIC Image BackEnd</th>
+                    <th scope="col">ID Image FrontEnd</th>
+                    <th scope="col">ID Image BackEnd</th>
+                    <th scope="col">Experience</th>
+                    <th scope="col">Man-day value</th>
+                    <th scope="col">Remarks</th>
+
+                </tr>
+                </thead>
+                <tbody id="guide_table">
+                <tr>
+                    <th scope="row">1</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                </tbody>
+            </table>
+        </article>
+
+
+    </section>
+
+
+</section>
+
+
+<!--Admin for  Hotel Form-->
+<section class="hotel-form" id="sec-admin-hotel">
+    <!-- hotel for Admin topic-->
+    <article class="booking-tour-topic text-white visit_topic position-relative flex-column p-2">
+        <h1 class="justify-content-center d-flex p-3 text-warning">Hotel Form</h1>
+    </article>
+
+
+    <section class="user-reg ">
+
+        <!-- hotel Form container -->
+        <div class="d-flex">
+            <div class="container p-5 pb-5 m-5  d-flex ">
+                <main>
+                    <div class="row g-5 d-flex  ">
+
+                        <div class="reg-small-form  col-md-3 col-lg-12 ">
+                            <h3 class="p-4 mb-5">Hotel Form</h3>
+                            <form class="needs-validation" novalidate>
+                                <div class="row g-3">
+                                    <div class="col-4">
+                                        <label id="HotelId" class="form-label">Hotel Id</label>
+                                        <label class="form-label "></label>
+                                    </div>
+
+
+                                    <div class="col-4">
+                                        <label for="Hotel_Name" class="form-label">Hotel Name</label>
+                                        <input type="text" class="form-control" id="Hotel_Name"
+                                               placeholder="Hotel Name">
+                                        <div class="invalid-feedback">
+                                            Please enter a valid Hotel Name.
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-4">
+                                        <label for="Hotel_Location" class="form-label">Hotel Location</label>
+                                        <input type="text" class="form-control" id="Hotel_Location"
+                                               placeholder="Hotel Location">
+                                        <div class="invalid-feedback">
+                                            Please enter a valid Hotel Location.
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-4">
+                                        <label for="PetsAllowed_or_not" class="form-label">Pets allowed or not</label>
+                                        <select class="form-select" id="PetsAllowed_or_not" required>
+                                            <option value=""></option>
+
+
+                                        </select>
+
+
+                                        <div class="invalid-feedback">
+                                            Please select a valid Pet allowed or not.
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-4">
+                                        <label for="Hotel_Contact1" class="form-label">Contact Number 1</label>
+                                        <input type="text" class="form-control" id="Hotel_Contact1"
+                                               placeholder="Hotel contact number 1">
+                                        <div class="invalid-feedback">
+                                            Please enter a valid Guide Contact Number.
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-4">
+                                        <label for="Hotel_Contact2" class="form-label">Contact Number 2</label>
+                                        <input type="text" class="form-control" id="Hotel_Contact2"
+                                               placeholder="Hotel contact number 2">
+                                        <div class="invalid-feedback">
+                                            Please enter a valid Guide Contact Number.
+                                        </div>
+                                    </div>
+
+                                    <div class="col-4">
+                                        <label for="Hotel_Email" class="form-label">Hotel Email</label>
+                                        <input type="email" class="form-control" id="Hotel_Email"
+                                               placeholder="Hotel Email">
+                                        <div class="invalid-feedback">
+                                            Please enter a valid Hotel Email.
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-4">
+                                        <label for="opt1" class="form-label">option 1</label>
+                                        <input type="number" class="form-control" id="opt1" placeholder="option 1">
+                                        <div class="invalid-feedback">
+                                            Please enter a valid option 1 value.
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-4">
+                                        <label for="opt2" class="form-label">option 1</label>
+                                        <input type="number" class="form-control" id="opt2" placeholder="option 2">
+                                        <div class="invalid-feedback">
+                                            Please enter a valid option 2 value.
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-4">
+                                        <label for="opt3" class="form-label">option 1</label>
+                                        <input type="number" class="form-control" id="opt3" placeholder="option 3">
+                                        <div class="invalid-feedback">
+                                            Please enter a valid option 3 value.
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-8">
+                                        <label for="remarks_Hotel" class="form-label">Remarks</label>
+                                        <textarea type="textarea" class="form-control" id="remarks_Hotel"
+                                                  placeholder="Remarks"></textarea>
+                                    </div>
+
+                                    <div class="col-3 pb-4 p-2 ">
+                                        <button class=" button-Booking " type="submit">Add</button>
+                                    </div>
+
+                                    <div class="col-3 pb-5 p-2">
+                                        <button class=" button-Booking " type="submit">Update</button>
+                                    </div>
+
+                                    <div class="col-3 pb-4 p-2 ">
+                                        <button class=" button-Booking " type="submit">Delete</button>
+                                    </div>
+
+                                    <div class="col-3 pb-5 p-2">
+                                        <button class=" button-Booking " type="submit">Clear</button>
+                                    </div>
+
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </main>
+
+
+            </div>
+            <div class="  p-5 m-5 col-md-4">
+                <div class="container-fluid">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-lg-5" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- get all hotel details -->
+        <article class="d-flex justify-content-start">
+            <table class=" table mt-3 bg-body-tertiary tbl border m-5 ">
+                <thead class="table ">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Hotel Id</th>
+                    <th scope="col">Hotel Name</th>
+                    <th scope="col">Hotel Location</th>
+                    <th scope="col">Pets allowed or not</th>
+                    <th scope="col">Contact Number 1</th>
+                    <th scope="col">Contact Number 1</th>
+                    <th scope="col">Hotel Email</th>
+                    <th scope="col">option 1</th>
+                    <th scope="col">option 2</th>
+                    <th scope="col">option 3</th>
+                    <th scope="col">Remarks</th>
+
+                </tr>
+                </thead>
+                <tbody id="hotel-admin-table">
+                <tr>
+                    <th scope="row">1</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                </tbody>
+            </table>
+        </article>
+
+
+    </section>
+
+
+</section>
 
 
 
+<!-- admin dashboard-->
+<section id="sec-admin-dashBoard">
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="check2" viewBox="0 0 16 16">
+            <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+        </symbol>
+        <symbol id="circle-half" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+        </symbol>
+        <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+            <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+            <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+        </symbol>
+        <symbol id="sun-fill" viewBox="0 0 16 16">
+            <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+        </symbol>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="bootstrap" viewBox="0 0 118 94">
+            <title>Bootstrap</title>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"></path>
+        </symbol>
+        <symbol id="home" viewBox="0 0 16 16">
+            <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+        </symbol>
+        <symbol id="speedometer2" viewBox="0 0 16 16">
+            <path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z"/>
+            <path fill-rule="evenodd"
+                  d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z"/>
+        </symbol>
+        <symbol id="table" viewBox="0 0 16 16">
+            <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z"/>
+        </symbol>
+        <symbol id="people-circle" viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+            <path fill-rule="evenodd"
+                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+        </symbol>
+        <symbol id="grid" viewBox="0 0 16 16">
+            <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+        </symbol>
+    </svg>
 
-<script src="checkout.js"></script>
+    <main class="d-flex flex-nowrap">
+        <h1 class="visually-hidden">Sidebars examples</h1>
+
+        <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px; height:auto">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                <svg class="bi pe-none me-2" width="40" height="32">
+                    <use xlink:href="#bootstrap"/>
+                </svg>
+                <span class="fs-4">Sidebar</span>
+            </a>
+            <hr>
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active" aria-current="page">
+                        <svg class="bi pe-none me-2" width="16" height="16">
+                            <use xlink:href="#home"/>
+                        </svg>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-white">
+                        <svg class="bi pe-none me-2" width="16" height="16">
+                            <use xlink:href="#speedometer2"/>
+                        </svg>
+                        Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-white">
+                        <svg class="bi pe-none me-2" width="16" height="16">
+                            <use xlink:href="#table"/>
+                        </svg>
+                        Orders
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-white">
+                        <svg class="bi pe-none me-2" width="16" height="16">
+                            <use xlink:href="#grid"/>
+                        </svg>
+                        Products
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-white">
+                        <svg class="bi pe-none me-2" width="16" height="16">
+                            <use xlink:href="#people-circle"/>
+                        </svg>
+                        Customers
+                    </a>
+                </li>
+            </ul>
+
+
+        </div>
+    </main>
+
+</section>
+
+<!-- fixed -->
+<!-- Booking Now Fixed button -->
+<section>
+  <article id="btn-booking">
+    <button  class="button-Booking  position-fixed ">Booking Now</button>
+</article>
+
+</section>
+
+
 <script src="assests/jQuary/jquery-3.6.4.min.js"></script>
-<script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="checkout.js"></script>
+<script src="assests/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/navigation.js"></script>
+
 </body>
 </html>
 
