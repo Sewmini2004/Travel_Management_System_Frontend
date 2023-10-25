@@ -72,6 +72,12 @@ $(document).ready(function () {
         bookingPage();
     });
 
+    $('#btnLogIn').click(function () {
+        allNone();
+        loginPage();
+
+    });
+
 })
 
 function allNone() {
@@ -89,6 +95,7 @@ function allNone() {
     $('#sec-admin-hotel').addClass('d-none');
     $('#sec-admin-dashBoard').addClass('d-none');
     $('#sec-user-register').addClass('d-none');
+    $('#login-page').addClass('d-none');
 
 }
 
@@ -153,13 +160,27 @@ function transportPage() {
 
 
 
-/* sec-*/
+/* sec-contact */
 function contactPage() {
     let sec = $('#sec-contact');
     if (sec.hasClass("d-none")) {
         $('#sec-contact').removeClass('d-none');
     }
     $('#sec-contact').addClass('d-block');
+}
+
+
+
+
+
+
+/* sec-login*/
+function loginPage() {
+    let sec = $('#login-page');
+    if (sec.hasClass("d-none")) {
+        $('#login-page').removeClass('d-none');
+    }
+    $('#login-page').addClass('d-block');
 }
 
 
