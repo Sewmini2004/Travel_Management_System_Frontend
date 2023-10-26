@@ -1,6 +1,6 @@
 $(document).ready(function () {
     allNoneDash();
-    dashBoardPage();
+/*    dashBoardPage();*/
 
     $("#btn-admin-home").click(function () {
         allNoneDash();
@@ -62,7 +62,7 @@ $(document).ready(function () {
 
     $('#btn-admin-dashboard').click(function () {
         allNoneDash();
-        dashBoardPage();
+      /*  dashBoardPage();*/
     });
 
 
@@ -85,16 +85,15 @@ function allNoneDash(){
     $('#sec-bookingTour').addClass('d-none');
     $('#sec-admin-register').addClass('d-none');
     $('#sec-admin-hotel').addClass('d-none');
-    $('#sec-admin-dashBoard').addClass('d-none');
     $('#sec-user-register').addClass('d-none');
     $('#login-page').addClass('d-none');
     $('#sec-booking-dash').addClass('d-none');
     $('#sec-hotel-dash').addClass('d-none');
     $('#sec-guide-dash').addClass('d-none');
     $('#sec-vehicle-dash').addClass('d-none');
-    $('#btn-admin-dashboard').addClass('d-none');
+  /*  $('#sec-admin-dashBoard').addClass('d-none');
 
-
+*/
 }
 
 /* pages */
@@ -226,11 +225,12 @@ function vehicleForm() {
 
 /* sec-vehicle-dash */
 
+/*
 
 function dashBoardPage() {
-    let sec = $('#dashboard-page');
+    let sec = $('#sec-admin-dashBoard');
     if (sec.hasClass("d-none")) {
-        $('#dashboard-page').removeClass('d-none');
+        $('#sec-admin-dashBoard').removeClass('d-none');
     }
-    $('#dashboard-page').addClass('d-block');
-}
+    $('#sec-admin-dashBoard').addClass('d-block');
+}*/
