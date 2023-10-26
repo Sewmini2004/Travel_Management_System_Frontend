@@ -92,6 +92,7 @@
                             <p>Dashboard</p>
                         </a>
                     </li>
+                    <!-- pages-->
                     <li>
                         <a data-toggle="collapse" href="#pagesExamples">
                             <i class="tim-icons icon-image-02"></i>
@@ -135,6 +136,8 @@
                             </ul>
                         </div>
                     </li>
+
+                    <!-- froms-->
                     <li>
                         <a data-toggle="collapse" href="#formsExamples">
                             <i class="tim-icons icon-notes"></i>
@@ -145,33 +148,7 @@
                         </a>
                         <div class="collapse" id="formsExamples">
                             <ul class="nav">
-                                <li>
-                                    <a>
-                                        <span class="sidebar-mini-icon">log</span>
-                                        <span class="sidebar-normal" id="admin-login">Login</span>
-                                    </a>
-                                </li>
 
-                                <li>
-                                    <a>
-                                        <span class="sidebar-mini-icon">Sign</span>
-                                        <span class="sidebar-normal" id="admin-signup">Sign Up</span>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a>
-                                        <span class="sidebar-mini-icon" id="admin-booking">B</span>
-                                        <span class="sidebar-normal">Booking</span>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a id="admin-user-reg-form">
-                                        <span class="sidebar-mini-icon">Reg</span>
-                                        <span class="sidebar-normal">User Register Form </span>
-                                    </a>
-                                </li>
 
 
                                 <li>
@@ -217,7 +194,7 @@
             </div>
         </div>
 
-
+        <!-- form and page -->
         <div class="main-panel">
             <!-- Navbar -->
             <nav class="navbar navbar-expand-lg navbar-absolute navbar-transparent">
@@ -254,7 +231,7 @@
                             <li class="dropdown nav-item">
                                 <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
                                     <div class="photo">
-                                        <img src="../assets/img/mike.jpg" alt="Profile Photo">
+                                        <img src="assests/readme-images/HD-wallpaper-person-sitting-on-rock-facing-tree-thumbnail.jpg" alt="Profile Photo">
                                     </div>
                                     <b class="caret d-none d-lg-block d-xl-block"></b>
                                     <p class="d-lg-none">
@@ -283,13 +260,13 @@
                 </div>
             </nav>
 
-            <!-- End Navbar -->
+            <!-- container froms -->
             <div class="content">
 
                 <div class="row">
 
                     <!-- booking section -->
-                    <section id="sec-booking-dash">
+                    <section id="sec-booking-dash " class="booking-shadow">
                         <div class="row">
                             <div class="col-12">
                                 <div class="card card-chart">
@@ -761,12 +738,7 @@
                                         <!-- ratio btn table-->
                                         <div class="col-sm-5">
                                             <div class="container-fluid">
-                                                <form class="d-flex align-items-center" role="search">
-                                                    <input class="form-control me-lg-2 m-1 w-50 m-0" type="search"
-                                                           placeholder="Search" aria-label="Search">
-                                                    <button class="btn btn-outline-success m-1 w-25" type="submit">Search
-                                                    </button>
-                                                </form>
+
                                             </div>
                                         </div>
 
@@ -815,7 +787,7 @@
                     </section>
 
                     <!-- Hotel from section-->
-                    <section id="sec-hotel-dash">
+                    <section id="sec-hotel-dash"  class="hotel-shadow">
                         <div class="col-12">
                             <div class="card card-chart">
                                 <div class="card-header">
@@ -1051,7 +1023,7 @@
 
 
                     <!-- Guide from section-->
-                    <section id="sec-guide-dash">
+                    <section id="sec-guide-dash"  class="guide-shadow">
                         <div class="col-12">
                             <div class="card card-chart">
                                 <div class="card-header">
@@ -1287,6 +1259,281 @@
                     </section>
 
 
+                    <!-- Vehicle from section-->
+                    <section id="sec-vehicle-dash" class="vehicle-shadow">
+                        <div class="col-12">
+                            <div class="card card-chart">
+                                <div class="card-header">
+                                    <div class="row d-flex justify-content-center">
+                                        <div class="col-sm-6 text-left">
+                                            <h5 class="card-category">Vehicle</h5>
+                                            <h2 class="card-title">Vehicle Form</h2>
+                                        </div>
+
+                                        <!-- ratio btn table-->
+                                        <div class="col-sm-5">
+                                            <div class="container-fluid">
+                                                <form class="d-flex align-items-center" role="search">
+                                                    <input class="form-control me-lg-2 m-1 w-50 m-0" type="search"
+                                                           placeholder="Search" aria-label="Search">
+                                                    <button class="btn btn-outline-success m-1 w-25" type="submit">Search
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                                <!-- card -->
+                                <div class="card-body">
+                                    <!--  Vehicle form -->
+                                    <section class="booking-tours" id="sec-vehicle-form">
+
+                                        <section>
+                                            <!--Vehicle Form container -->
+                                            <div class="d-flex">
+                                                <div class="container p-5 pb-3   d-flex ">
+                                                    <main>
+                                                        <div class="row g-5 d-flex  ">
+                                                            <div class=" col-md-3 col-lg-12 ">
+                                                                <form class="needs-validation" novalidate>
+                                                                    <div class="row g-3">
+                                                                        <div class="col-4">
+                                                                            <label id="vehicleId" class="form-label">Vehicle Id</label>
+                                                                            <label  class="form-label "></label>
+                                                                        </div>
+
+
+                                                                        <div class="col-4">
+                                                                            <label for="Vehicle_brand" class="form-label">Vehicle brand</label>
+                                                                            <input type="text" class="form-control" id="Vehicle_brand" placeholder="Vehicle brand">
+                                                                            <div class="invalid-feedback">
+                                                                                Please enter a valid Vehicle brand.
+                                                                            </div>
+                                                                        </div>
+
+
+
+                                                                        <div class="col-4">
+                                                                            <label for="Fuel_type" class="form-label">Fuel type</label>
+                                                                            <input type="text" class="form-control" id="Fuel_type" placeholder="Fuel type">
+                                                                            <div class="invalid-feedback">
+                                                                                Please enter a valid Fuel type.
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                        <div class="col-4">
+                                                                            <label for="Hybrid_or_Non-Hybrid" class="form-label">Hybrid or Non-Hybrid</label>
+                                                                            <select class="form-select" id="Hybrid_or_Non-Hybrid" required>
+                                                                                <option value=""></option>
+
+
+                                                                            </select>
+
+
+                                                                            <div class="invalid-feedback">
+                                                                                Please select a valid Hybrid or Non-Hybrid.
+                                                                            </div>
+                                                                        </div>
+
+
+
+                                                                        <div class="col-4">
+                                                                            <label for="Fuel_usage" class="form-label">Fuel usage (km/l)</label>
+                                                                            <input type="text" class="form-control" id="Fuel_usage" placeholder="Fuel usage (km/l)">
+                                                                            <div class="invalid-feedback">
+                                                                                Please enter a valid Fuel usage (km/l).
+                                                                            </div>
+                                                                        </div>
+
+
+
+
+                                                                        <div class="col-4">
+                                                                            <label for="Transmission_type" class="form-label">Transmission type</label>
+                                                                            <input type="text" class="form-control" id="Transmission_type" placeholder="Transmission type">
+                                                                            <div class="invalid-feedback">
+                                                                                Please enter a valid Transmission type.
+                                                                            </div>
+                                                                        </div>
+
+
+
+                                                                        <div class="col-4">
+                                                                            <label for="license_Image_front" class="form-label">Driver's license Image frontEnd</label>
+                                                                            <input type="file" class="form-control" id="license_Image_front" placeholder="Driver's license Image frontEnd">
+                                                                            <div class="invalid-feedback">
+                                                                                Please enter a validDriver's license Image.
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                        <div class="col-4">
+                                                                            <label for="license_Image_back" class="form-label">Driver's license Image backEnd</label>
+                                                                            <input type="file" class="form-control" id="license_Image_back" placeholder="Driver's license Image BackEnd">
+                                                                            <div class="invalid-feedback">
+                                                                                Please enter a validDriver's license Image.
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                        <div class="col-4">
+                                                                            <label for="Driver_Contact" class="form-label">Driver’ Contact No.</label>
+                                                                            <input type="text" class="form-control" id="Driver_Contact" placeholder="Driver’ Contact No.">
+                                                                            <div class="invalid-feedback">
+                                                                                Please enter a valid Driver’Contact.
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                        <div class="col-4">
+                                                                            <label for="Driver_Name" class="form-label">Driver’ Name</label>
+                                                                            <input type="text" class="form-control" id="Driver_Name" placeholder="Driver’ Name">
+                                                                            <div class="invalid-feedback">
+                                                                                Please enter a valid Driver’ Name.
+                                                                            </div>
+                                                                        </div>
+
+
+
+                                                                        <div class="col-4">
+                                                                            <label for="Images _vehicle_front" class="form-label">Images of the vehicle frontEnd</label>
+                                                                            <input type="file" class="form-control" id="Images _vehicle_front" placeholder="Images of the vehicle frontEnd">
+                                                                            <div class="invalid-feedback">
+                                                                                Please enter a valid Images of the vehicle.
+                                                                            </div>
+                                                                        </div>
+
+
+
+
+                                                                        <div class="col-4">
+                                                                            <label for="Images _vehicle_back" class="form-label">Images of the vehicle BackEnd</label>
+                                                                            <input type="file" class="form-control" id="Images _vehicle_back" placeholder="Images of the vehicle BackEnd">
+                                                                            <div class="invalid-feedback">
+                                                                                Please enter a valid Images of the vehicle.
+                                                                            </div>
+                                                                        </div>
+
+
+
+                                                                        <div class="col-4">
+                                                                            <label for="Seat_capacity" class="form-label">Seat capacity</label>
+                                                                            <input type="number" class="form-control" id="Seat_capacity" placeholder="Seat capacity">
+                                                                            <div class="invalid-feedback">
+                                                                                Please enter a valid Seat capacity.
+                                                                            </div>
+                                                                        </div>
+
+
+
+
+                                                                        <div class="col-8">
+                                                                            <label for="remarks_Vehicle" class="form-label">Remarks</label>
+                                                                            <textarea type="textarea" class="form-control" id="remarks_Vehicle" placeholder="Remarks"></textarea>
+                                                                        </div>
+
+                                                                        <div class="col-3 pb-4 p-2 " >
+                                                                            <button class=" button-Booking " type="submit">Add</button>
+                                                                        </div>
+
+                                                                        <div class="col-3 pb-5 p-2" >
+                                                                            <button class=" button-Booking " type="submit">Update</button>
+                                                                        </div>
+
+                                                                        <div class="col-3 pb-4 p-2 " >
+                                                                            <button class=" button-Booking " type="submit">Delete</button>
+                                                                        </div>
+
+                                                                        <div class="col-3 pb-5 p-2" >
+                                                                            <button class=" button-Booking " type="submit">Clear</button>
+                                                                        </div>
+
+                                                                    </div >
+
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </main>
+                                                </div>
+                                            </div>
+
+
+                                        </section>
+
+
+                                    </section>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <!-- get all table Vehicle-->
+                            <div class="card card-chart">
+                                <div class="card-header">
+                                    <div class="row d-flex justify-content-center">
+                                        <div class="col-sm-6 text-left">
+                                            <h5 class="card-category">Vehicle</h5>
+                                            <h2 class="card-title">View All Vehicle Details</h2>
+                                        </div>
+
+                                        <!-- ratio btn table-->
+                                        <div class="col-sm-5">
+                                            <div class="container-fluid">
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                                <!-- get all Vehicle details -->
+                                <article class="d-flex justify-content-start">
+                                    <article class="d-flex justify-content-start" >
+                                        <table class=" table mt-3  table-dark tbl border m-5 ">
+                                            <thead class="table table-dark"  >
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Vehicle Id </th>
+                                                <th scope="col">Vehicle brand</th>
+                                                <th scope="col">Fuel type</th>
+                                                <th scope="col">Hybrid or Non-Hybrid</th>
+                                                <th scope="col">Fuel usage (km/l)</th>
+                                                <th scope="col">Transmission type</th>
+                                                <th scope="col">Driver's license Image frontEnd</th>
+                                                <th scope="col">Driver's license Image backEnd</th>
+                                                <th scope="col">Driver’ Contact No.</th>
+                                                <th scope="col">Driver’ Name</th>
+                                                <th scope="col">Images of the vehicle frontEnd</th>
+                                                <th scope="col">Images of the vehicle BackEnd</th>
+                                                <th scope="col">Seat capacity</th>
+                                                <th scope="col">Remarks</th>
+
+                                            </tr>
+                                            </thead>
+                                            <tbody id="Vehicle-admin-table">
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </article>
+                                </article>
+
+                            </div>
+                        </div>
+                    </section>
+
+
+
                     <div class="col-lg-3 col-md-6">
                         <div class="card card-stats">
                             <div class="card-body">
@@ -1467,7 +1714,7 @@
 </section>
 
 
-<!-- oo-->
+
 
 
 <!--   Core JS Files   -->
