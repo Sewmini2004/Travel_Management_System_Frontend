@@ -1506,13 +1506,13 @@
                             <form class="needs-validation" novalidate id="user-booking-form">
                                 <div class="row g-3">
                                     <div class="col-4">
-                                        <label id="packageId" class="form-label text-white">Package Id</label>
+                                        <label id="packageId" class="form-label text-white" name="packageId">Package Id</label>
                                         <label class="form-label "></label>
                                     </div>
 
                                     <div class="col-4">
                                         <label for="package_cate" class="form-label text-white">Package category</label>
-                                        <select class="form-select" id="package_cate" required>
+                                        <select class="form-select" id="package_cate" required name="package_cate">
                                             <option value="regular" selected>Regular</option>
                                             <option value="luxury">Luxury</option>
 
@@ -1527,7 +1527,8 @@
 
                                     <div class="col-4">
                                         <label for="hotel_Category" class="form-label text-white">Choose Hotel</label>
-                                        <select class="form-select" id="hotel_Category" required>
+                                        <select class="form-select" id="hotel_Category" name="hotel_Category"
+                                                required>
                                             <option value=""></option>
 
 
@@ -1542,7 +1543,7 @@
 
                                     <div class="col-4">
                                         <label for="hotel_opt" class="form-label text-white">Choose Hotel options</label>
-                                        <select class="form-select" id="hotel_opt" required>
+                                        <select class="form-select" id="hotel_opt" name="hotel_opt" required>
                                             <option value=""></option>
 
 
@@ -1557,7 +1558,7 @@
 
                                     <div class="col-4">
                                         <label for="Vehicle_Category" class="form-label text-white">Vehicle Category</label>
-                                        <select class="form-select" id="Vehicle_Category" required>
+                                        <select class="form-select" id="Vehicle_Category" name="Vehicle_Category" required>
                                             <option value="r"></option>
 
 
@@ -1571,9 +1572,9 @@
 
 
                                     <div class="col-4">
-                                        <label for="start-date " class="form-label text-white">Start Date </label>
+                                        <label for="start_date" class="form-label text-white">Start Date </label>
                                         <div class="input-group has-validation">
-                                            <input type="date" class="form-control" id="start-date " placeholder=""
+                                            <input type="date" class="form-control" id="start_date" placeholder="Start Date" name="start_date"
                                                    required>
                                             <div class="invalid-feedback">
                                                 Your Start Date is required.
@@ -1583,9 +1584,9 @@
 
 
                                     <div class="col-4">
-                                        <label for="end-date " class="form-label text-white">End Date </label>
+                                        <label for="end_date" class="form-label text-white">End Date </label>
                                         <div class="input-group has-validation">
-                                            <input type="date" class="form-control" id="end-date " placeholder=""
+                                            <input type="date" class="form-control" id="end_date" placeholder="End Date" name="end_date"
                                                    required>
                                             <div class="invalid-feedback">
                                                 Your End Date is required.
@@ -1596,7 +1597,7 @@
 
                                     <div class="col-4">
                                         <label for="days" class="form-label text-white">Count of days</label>
-                                        <input type="number" class="form-control" id="days" placeholder="Count of days">
+                                        <input type="number" class="form-control" id="days" placeholder="Count of days" name="days" required>
                                         <div class="invalid-feedback">
                                             Please enter a valid Count of days.
                                         </div>
@@ -1606,7 +1607,7 @@
                                     <div class="col-4">
                                         <label for="nights" class="form-label text-white">Count of nights</label>
                                         <input type="number" class="form-control" id="nights"
-                                               placeholder="Count of nights">
+                                               placeholder="Count of nights" name="nights" required>
                                         <div class="invalid-feedback">
                                             Please enter a valid Count of days.
                                         </div>
@@ -1615,7 +1616,7 @@
 
                                     <div class="col-4">
                                         <label for="travel_area" class="form-label text-white">Travel Area</label>
-                                        <select class="form-select" id="travel_area" required>
+                                        <select class="form-select" id="travel_area" name="travel_area" required>
                                             <option value="Anuradhapura">Anuradhapura and Polonnaruwa</option>
                                             <option value="Sigiriya">Sigiriya and Dambulla</option>
                                             <option value="Down South">Down South</option>
@@ -1634,9 +1635,9 @@
 
 
                                     <div class="col-4">
-                                        <label for="No_of_adults" class="form-label text-white">No of adults</label>
-                                        <input type="number" class="form-control" id="No_of_adults"
-                                               placeholder="No of adults">
+                                        <label for="no_of_adults" class="form-label text-white">No of adults</label>
+                                        <input type="number" class="form-control" id="no_of_adults" name="no_of_adults"
+                                               placeholder="No of adults" required>
                                         <div class="invalid-feedback">
                                             Please enter a valid No of Adults.
                                         </div>
@@ -1645,8 +1646,8 @@
 
                                     <div class="col-4">
                                         <label for="No_of_children" class="form-label text-white">No of Children</label>
-                                        <input type="number" class="form-control" id="No_of_children"
-                                               placeholder="No of Children">
+                                        <input type="number" class="form-control" id="No_of_children" name="No_of_children"
+                                               placeholder="No of Children" required>
                                         <div class="invalid-feedback">
                                             Please enter a valid No of Children.
                                         </div>
@@ -1654,9 +1655,9 @@
 
 
                                     <div class="col-4">
-                                        <label for="Total_headcount" class="form-label text-white">Total headcount</label>
-                                        <input type="number" class="form-control" id="Total_headcount"
-                                               placeholder="Total headcount">
+                                        <label for="total_headcount" class="form-label text-white">Total headcount</label>
+                                        <input type="number" class="form-control" id="total_headcount" name="total_headcount"
+                                               placeholder="Total headcount" required>
                                         <div class="invalid-feedback">
                                             Please enter a valid Total headcount.
                                         </div>
@@ -1664,8 +1665,8 @@
 
 
                                     <div class="col-4">
-                                        <label for="With_Pets_or_no" class="form-label text-white">With Pets or no</label>
-                                        <select class="form-select" id="With_Pets_or_no" required>
+                                        <label for="with_Pets_or_no" class="form-label text-white">With Pets or no</label>
+                                        <select class="form-select" id="with_Pets_or_no" name="with_Pets_or_not" required>
                                             <option value="no">No</option>
                                             <option value="yes">Yes</option>
 
@@ -1679,8 +1680,8 @@
 
 
                                     <div class="col-4">
-                                        <label for="Need_guide_or_no" class="form-label text-white">Need a guide or no</label>
-                                        <select class="form-select" id="Need_guide_or_no" required>
+                                        <label for="need_guide_or_no" class="form-label text-white">Need a guide or no</label>
+                                        <select class="form-select" id="need_guide_or_no" name="need_guide_or_no" required>
                                             <option value="no">No</option>
                                             <option value="yes">Yes</option>
 
@@ -1694,9 +1695,9 @@
 
 
                                     <div class="col-4">
-                                        <label for="hotel-fee" class="form-label text-white">Per Day Hotel Fee</label>
-                                        <input type="number" class="form-control" id="hotel-fee"
-                                               placeholder="Per Day Hotel Fee">
+                                        <label for="hotel_fee" class="form-label text-white">Per Day Hotel Fee</label>
+                                        <input type="number" class="form-control" id="hotel_fee" name="hotel_fee"
+                                               placeholder="Per Day Hotel Fee" required>
                                         <div class="invalid-feedback">
                                             Please enter a valid Per Day Hotel Fee.
                                         </div>
@@ -1705,8 +1706,8 @@
 
                                     <div class="col-4">
                                         <label for="guide_fee" class="form-label text-white">Guide Fee</label>
-                                        <input type="number" class="form-control" id="guide_fee"
-                                               placeholder="Guide Fee">
+                                        <input type="number" class="form-control" id="guide_fee" name="guide_fee"
+                                               placeholder="Guide Fee" required>
                                         <div class="invalid-feedback">
                                             Please enter a valid Guide Fee.
                                         </div>
@@ -1715,9 +1716,9 @@
 
                                     <div class="col-4">
                                         <label for="vehicle_fee" class="form-label text-white">Vehicle Fee</label>
-                                        <input type="number" class="form-control" id="vehicle_fee"
-                                               placeholder="Vehicle Fee">
-                                        <div class="invalid-feedback">
+                                        <input type="number" class="form-control" id="vehicle_fee" name="vehicle_fee"
+                                               placeholder="Vehicle Fee" required>
+                                        <div class="invalid-feedback" >
                                             Please enter a valid Vehicle Fee.
                                         </div>
                                     </div>
@@ -1725,8 +1726,8 @@
 
                                     <div class="col-4">
                                         <label for="paid_value" class="form-label text-white">Paid value</label>
-                                        <input type="number" class="form-control" id="paid_value"
-                                               placeholder="Paid value">
+                                        <input type="number" class="form-control" id="paid_value" name="paid_value"
+                                               placeholder="Paid value" required>
                                         <div class="invalid-feedback">
                                             Please enter a valid Vehicle Fee.
                                         </div>
@@ -1735,8 +1736,8 @@
 
                                     <div class="col-8">
                                         <label for="remarks3" class="form-label text-white">Remarks</label>
-                                        <textarea type="textarea" class="form-control" id="remarks3"
-                                                  placeholder="Remarks"></textarea>
+                                        <textarea type="textarea" class="form-control" id="remarks3" name="remarks3"
+                                                  placeholder="Remarks" required></textarea>
                                     </div>
 
                                     <div class="col-3 pb-4 p-2 ">
@@ -2403,4 +2404,5 @@
 
 </body>
 </html>
+
 

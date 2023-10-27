@@ -33,18 +33,28 @@ function loadAllBooking() {
     $.ajax({
         url:baseurl,
         method: "GET",
-        dataType: "json", //please convert the response into JSON
+        dataType: "json",
         success: function (resp) {
-            console.log(resp);
-
-
-            for (const student of resp.data) {
-                let row = `<tr><td>${student.id}</td><td>${student.name}</td><td>${student.address}</td><td>${student.salary}</td></tr>`;
-                $("#tblStudentJson").append(row);
+        for (const booking of resp.data) {
+                let row = `<tr><td>${booking.packageId}</td>
+                           <td>${booking.package_cate}</td>
+                           <td>${booking.hotel_Category}</td>
+                           <td>${booking.hotel_opt}</td>
+                           <td>${booking.vehicle_Category}</td>
+                           <td>${booking.start_date}</td>
+                           <td>${booking.end_date}</td>
+                           <td>${booking.days}</td>
+                           <td>${booking.travel_area}</td>
+                           <td>${booking.total_headcount}</td>
+                           <td>${booking.need_guide_or_no}</td>
+                           <td>${booking.hotel_fee}</td>
+                           <td>${booking.guide_fee}</td>
+                           <td>${booking.vehicle_fee}</td></tr>`;
+                $("#booking_table").append(row);
 
             }
             bindClickEvents();
-            clearForm();
+
         }
 
     });
@@ -89,7 +99,7 @@ function deleteBooking() {
         success: function (res) {
             console.log(res);
             if (res.code == 200) {
-                alert("Customer Successfully deleted");
+                alert("Booking Successfully deleted");
                 loadAllUser();
                 clearForm();
             }
@@ -107,17 +117,28 @@ function deleteBooking() {
 function updateBooking() {
     // Json format
 
-    var userData = {
+    var bookingData = {
         packageId: $("#packageId").val(),
         package_cate: $("#package_cate").val(),
         hotel_Category: $("#hotel_Category").val(),
-        email: $("#email2").val(),
-        address: $("#address").val(),
-        nic: $("#nic").val(),
-        gender: $("#gender").val(),
-        remarks: $("#remarks").val(),
-        nic_image_front: $("#nic-image").val(),
-        nic_image_back: $("#nic-imag3").val(),
+        hotel_opt: $("#hotel_opt").val(),
+        vehicle_Category: $("#Vehicle_Category").val(),
+        start_date: $("#start_date").val(),
+        end_date: $("#end_date").val(),
+        days: $("#days").val(),
+        nights: $("#nights").val(),
+        travel_area: $("#travel_area").val(),
+        no_of_adults: $("#no_of_adults").val(),
+        No_of_children: $("#No_of_children").val(),
+        total_headcount: $("#total_headcount").val(),
+        with_Pets_or_not: $("#with_Pets_or_no").val(),
+        need_guide_or_no: $("#need_guide_or_no").val(),
+        hotel_fee: $("#hotel_fee").val(),
+        guide_fee: $("#guide_fee").val(),
+        vehicle_fee: $("#vehicle_fee").val(),
+        paid_value: $("#paid_value").val(),
+        remarks3: $("#remarks3").val(),
+
 
     }
 
@@ -126,7 +147,7 @@ function updateBooking() {
         url: baseurl,
         method: "PUT",
         contentType: "application/json",
-        data: JSON.stringify(userData),
+        data: JSON.stringify(bookingData),
         success: function (res) {
             if (res.code == 200) { //process is ok
                 alert("Successfully Updated");
@@ -145,25 +166,35 @@ function updateBooking() {
 
 //Search Booking
 function searchBooking() {
-    var userId = $("#input-search-bookingd").val();
+    var bookingId = $("#input-search-booking").val();
     $.ajax({
-        url: baseurl+"/"+userId,
+        url: baseurl+"/"+bookingId,
         method: "GET",
 
         success: function (res) {
             if (res.code==200) {
-                var user = res.data;
+                var booking = res.data;
 
-                $("#userId").val(user.id);
-                $("#username").val(user.name);
-                $("#password").val(user.password);
-                $("#email2").val(user.email);
-                $("#address").val(user.address);
-                $("#nic").val(user.nic);
-                $("#gender").val(user.gender);
-                $("#remarks").val(user.remarks);
-                $("#nic-image").val(user.nic_image_front);
-                $("#nic-imag3").val(user.nic_image_back);
+                   $("#packageId").val(booking.packageId);
+                   $("#package_cate").val(booking.package_cate);
+                   $("#hotel_Category").val(booking.hotel_Category);
+                   $("#hotel_opt").val(booking.hotel_opt);
+                   $("#Vehicle_Category").val(booking.Vehicle_Category);
+                   $("#start_date").val(booking.start_date);
+                   $("#end_date").val(booking.end_date);
+                   $("#days").val(booking.days);
+                   $("#nights").val(booking.nights);
+                   $("#travel_area").val(booking.travel_area);
+                   $("#no_of_adults").val(booking.no_of_adults);
+                   $("#No_of_children").val(booking.No_of_children);
+                   $("#total_headcount").val(booking.total_headcount);
+                   $("#with_Pets_or_no").val(booking.with_Pets_or_not);
+                   $("#need_guide_or_no").val(booking.need_guide_or_no);
+                   $("#hotel_fee").val(booking.hotel_fee);
+                   $("#guide_fee").val(booking.guide_fee);
+                   $("#vehicle_fee").val(booking.vehicle_fee);
+                   $("#paid_value").val(booking.paid_value);
+                   $("#remarks3").val(booking.remarks3);
 
             }else {
                 clearForm();
@@ -181,16 +212,67 @@ function searchBooking() {
 
 //Clear Booking Input Fields
 function clearForm() {
-    $("#userId").val("");
-    $("#username").val("");
-    $("#password").val("");
-    $("#email2").val("");
-    $("#address").val("");
-    $("#nic").val("");
-    $("#gender").val("");
-    $("#remarks").val("");
-    $("#nic-image").val("");
-    $("#nic-imag3").val("");
-    $("#userId").focus();
 
+    $("#packageId").val("");
+    $("#package_cate").val("");
+    $("#hotel_Category").val("");
+    $("#hotel_opt").val("");
+    $("#Vehicle_Category").val("");
+    $("#start_date").val("");
+    $("#end_date").val("");
+    $("#days").val("");
+    $("#nights").val("");
+    $("#travel_area").val("");
+    $("#no_of_adults").val("");
+    $("#No_of_children").val("");
+    $("#total_headcount").val("");
+    $("#with_Pets_or_no").val("");
+    $("#need_guide_or_no").val("");
+    $("#hotel_fee").val("");
+    $("#guide_fee").val("");
+    $("#vehicle_fee").val("");
+    $("#paid_value").val("");
+    $("#remarks3").val("");
+    $("#packageId").focus("");
+
+}
+
+
+
+//bind click events to the table row
+function bindClickEvents() {
+    //Get values from the selected row
+    $("#booking_table>tr").click(function () {
+        let  packageId= $(this).children().eq(0).text();
+        let package_cate= $(this).children().eq(1).text();
+        let hotel_Category= $(this).children().eq(2).text();
+        let hotel_opt = $(this).children().eq(3).text();
+        let vehicle_Category= $(this).children().eq(4).text();
+        let start_date = $(this).children().eq(5).text();
+        let end_date = $(this).children().eq(6).text();
+        let days = $(this).children().eq(7).text();
+        let travel_area = $(this).children().eq(8).text();
+        let total_headcount = $(this).children().eq(9).text();
+        let  need_guide_or_no= $(this).children().eq(10).text();
+        let hotel_fee = $(this).children().eq(11).text();
+        let guide_fee = $(this).children().eq(12).text();
+        let vehicle_fee = $(this).children().eq(13).text();
+
+        //Set values to the text-fields
+        $("#packageId").val(packageId);
+        $("#package_cate").val(package_cate);
+        $("#hotel_Category").val(hotel_Category);
+        $("#hotel_opt").val(hotel_opt);
+        $("#Vehicle_Category").val(vehicle_Category);
+        $("#start_date").val(start_date);
+        $("#end_date").val(end_date);
+        $("#days").val(days);
+        $("#travel_area").val(travel_area);
+        $("#total_headcount").val(total_headcount);
+        $("#need_guide_or_no").val(need_guide_or_no);
+        $("#hotel_fee").val(hotel_fee);
+        $("#guide_fee").val(guide_fee);
+        $("#vehicle_fee").val(vehicle_fee);
+
+    });
 }
