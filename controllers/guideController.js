@@ -213,7 +213,7 @@ function clearForm() {
 //bind click events to the table row
 function bindClickEvents() {
     //Get values from the selected row
-    $("#booking_table>tr").click(function () {
+    $("#guide_table>tr").click(function () {
         let  guideId= $(this).children().eq(0).text();
         let guide_Name= $(this).children().eq(1).text();
         let guide_Address= $(this).children().eq(2).text();

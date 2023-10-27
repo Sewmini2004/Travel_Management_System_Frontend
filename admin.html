@@ -1201,8 +1201,8 @@
                                             <div class="container-fluid">
                                                 <form class="d-flex align-items-center" role="search">
                                                     <input class="form-control me-lg-2 m-1 w-50 m-0" type="search"
-                                                           placeholder="Search" aria-label="Search">
-                                                    <button class="btn btn-outline-success m-1 w-25" type="submit">Search
+                                                           placeholder="Search" aria-label="Search" id="input-search-vehicle">
+                                                    <button class="btn btn-outline-success m-1 w-25" type="submit" id="btn-search-vehicle">Search
                                                     </button>
                                                 </form>
                                             </div>
@@ -1215,7 +1215,7 @@
                                 <!-- card -->
                                 <div class="card-body">
                                     <!--  Vehicle form -->
-                                    <section class="booking-tours" id="sec-vehicle-form">
+                                    <section class="booking-tours" id="sec-vehicle-form" >
 
                                         <section>
                                             <!--Vehicle Form container -->
@@ -1224,17 +1224,17 @@
                                                     <main>
                                                         <div class="row g-5 d-flex  ">
                                                             <div class=" col-md-3 col-lg-12 ">
-                                                                <form class="needs-validation" novalidate>
+                                                                <form class="needs-validation" novalidate id="vehicle-form">
                                                                     <div class="row g-3">
                                                                         <div class="col-4">
-                                                                            <label id="vehicleId" class="form-label">Vehicle Id</label>
-                                                                            <label  class="form-label "></label>
+                                                                            <label class="form-label">Vehicle Id</label>
+                                                                            <label  class="form-label " id="vehicleId" name="vehicleId"></label>
                                                                         </div>
 
 
                                                                         <div class="col-4">
                                                                             <label for="Vehicle_brand" class="form-label">Vehicle brand</label>
-                                                                            <input type="text" class="form-control" id="Vehicle_brand" placeholder="Vehicle brand">
+                                                                            <input type="text" class="form-control" id="Vehicle_brand" placeholder="Vehicle brand" name="vehicle_brand" required>
                                                                             <div class="invalid-feedback">
                                                                                 Please enter a valid Vehicle brand.
                                                                             </div>
@@ -1244,7 +1244,7 @@
 
                                                                         <div class="col-4">
                                                                             <label for="Fuel_type" class="form-label">Fuel type</label>
-                                                                            <input type="text" class="form-control" id="Fuel_type" placeholder="Fuel type">
+                                                                            <input type="text" class="form-control" id="Fuel_type" placeholder="Fuel type" name="fuel_type" required>
                                                                             <div class="invalid-feedback">
                                                                                 Please enter a valid Fuel type.
                                                                             </div>
@@ -1253,7 +1253,7 @@
 
                                                                         <div class="col-4">
                                                                             <label for="Hybrid_or_Non-Hybrid" class="form-label">Hybrid or Non-Hybrid</label>
-                                                                            <select class="form-select" id="Hybrid_or_Non-Hybrid" required>
+                                                                            <select class="form-select" id="Hybrid_or_Non-Hybrid" required name="hybrid_or_Non_Hybrid">
                                                                                 <option value=""></option>
 
 
@@ -1269,7 +1269,7 @@
 
                                                                         <div class="col-4">
                                                                             <label for="Fuel_usage" class="form-label">Fuel usage (km/l)</label>
-                                                                            <input type="text" class="form-control" id="Fuel_usage" placeholder="Fuel usage (km/l)">
+                                                                            <input type="text" class="form-control" id="Fuel_usage" placeholder="Fuel usage (km/l)" name="fuel_usage" required>
                                                                             <div class="invalid-feedback">
                                                                                 Please enter a valid Fuel usage (km/l).
                                                                             </div>
@@ -1280,7 +1280,7 @@
 
                                                                         <div class="col-4">
                                                                             <label for="Transmission_type" class="form-label">Transmission type</label>
-                                                                            <input type="text" class="form-control" id="Transmission_type" placeholder="Transmission type">
+                                                                            <input type="text" class="form-control" id="Transmission_type" placeholder="Transmission type" name="transmission_type" required>
                                                                             <div class="invalid-feedback">
                                                                                 Please enter a valid Transmission type.
                                                                             </div>
@@ -1290,7 +1290,7 @@
 
                                                                         <div class="col-4">
                                                                             <label for="license_Image_front" class="form-label">Driver's license Image frontEnd</label>
-                                                                            <input type="file" class="form-control" id="license_Image_front" placeholder="Driver's license Image frontEnd">
+                                                                            <input type="file" class="form-control" id="license_Image_front" placeholder="Driver's license Image frontEnd" name="license_Image_front" required>
                                                                             <div class="invalid-feedback">
                                                                                 Please enter a validDriver's license Image.
                                                                             </div>
@@ -1299,7 +1299,7 @@
 
                                                                         <div class="col-4">
                                                                             <label for="license_Image_back" class="form-label">Driver's license Image backEnd</label>
-                                                                            <input type="file" class="form-control" id="license_Image_back" placeholder="Driver's license Image BackEnd">
+                                                                            <input type="file" class="form-control" id="license_Image_back" placeholder="Driver's license Image BackEnd" name="license_Image_back" required>
                                                                             <div class="invalid-feedback">
                                                                                 Please enter a validDriver's license Image.
                                                                             </div>
@@ -1308,7 +1308,7 @@
 
                                                                         <div class="col-4">
                                                                             <label for="Driver_Contact" class="form-label">Driver’ Contact No.</label>
-                                                                            <input type="text" class="form-control" id="Driver_Contact" placeholder="Driver’ Contact No.">
+                                                                            <input type="text" class="form-control" id="Driver_Contact" placeholder="Driver’ Contact No." name="driver_Contact" required>
                                                                             <div class="invalid-feedback">
                                                                                 Please enter a valid Driver’Contact.
                                                                             </div>
@@ -1317,7 +1317,7 @@
 
                                                                         <div class="col-4">
                                                                             <label for="Driver_Name" class="form-label">Driver’ Name</label>
-                                                                            <input type="text" class="form-control" id="Driver_Name" placeholder="Driver’ Name">
+                                                                            <input type="text" class="form-control" id="Driver_Name" placeholder="Driver’ Name" name="driver_Name" required>
                                                                             <div class="invalid-feedback">
                                                                                 Please enter a valid Driver’ Name.
                                                                             </div>
@@ -1326,8 +1326,8 @@
 
 
                                                                         <div class="col-4">
-                                                                            <label for="Images _vehicle_front" class="form-label">Images of the vehicle frontEnd</label>
-                                                                            <input type="file" class="form-control" id="Images _vehicle_front" placeholder="Images of the vehicle frontEnd">
+                                                                            <label for="Images_vehicle_front" class="form-label">Images of the vehicle frontEnd</label>
+                                                                            <input type="file" class="form-control" id="Images_vehicle_front" placeholder="Images of the vehicle frontEnd" name="images_vehicle_front" required>
                                                                             <div class="invalid-feedback">
                                                                                 Please enter a valid Images of the vehicle.
                                                                             </div>
@@ -1337,8 +1337,8 @@
 
 
                                                                         <div class="col-4">
-                                                                            <label for="Images _vehicle_back" class="form-label">Images of the vehicle BackEnd</label>
-                                                                            <input type="file" class="form-control" id="Images _vehicle_back" placeholder="Images of the vehicle BackEnd">
+                                                                            <label for="Images_vehicle_back" class="form-label">Images of the vehicle BackEnd</label>
+                                                                            <input type="file" class="form-control" id="Images_vehicle_back" placeholder="Images of the vehicle BackEnd" name="images_vehicle_back" required>
                                                                             <div class="invalid-feedback">
                                                                                 Please enter a valid Images of the vehicle.
                                                                             </div>
@@ -1348,7 +1348,7 @@
 
                                                                         <div class="col-4">
                                                                             <label for="Seat_capacity" class="form-label">Seat capacity</label>
-                                                                            <input type="number" class="form-control" id="Seat_capacity" placeholder="Seat capacity">
+                                                                            <input type="number" class="form-control" id="Seat_capacity" placeholder="Seat capacity" name="seat_capacity" required>
                                                                             <div class="invalid-feedback">
                                                                                 Please enter a valid Seat capacity.
                                                                             </div>
@@ -1359,23 +1359,23 @@
 
                                                                         <div class="col-8">
                                                                             <label for="remarks_Vehicle" class="form-label">Remarks</label>
-                                                                            <textarea type="textarea" class="form-control" id="remarks_Vehicle" placeholder="Remarks"></textarea>
+                                                                            <textarea type="textarea" class="form-control" id="remarks_Vehicle" placeholder="Remarks" name="remarks_Vehicle" required></textarea>
                                                                         </div>
 
                                                                         <div class="col-3 pb-4 p-2 " >
-                                                                            <button class=" button-Booking " type="submit">Add</button>
+                                                                            <button class=" button-Booking " type="submit" id="btn-save-vehicle">Add</button>
                                                                         </div>
 
                                                                         <div class="col-3 pb-5 p-2" >
-                                                                            <button class=" button-Booking " type="submit">Update</button>
+                                                                            <button class=" button-Booking " type="submit" id="btn-update-vehicle">Update</button>
                                                                         </div>
 
                                                                         <div class="col-3 pb-4 p-2 " >
-                                                                            <button class=" button-Booking " type="submit">Delete</button>
+                                                                            <button class=" button-Booking " type="submit" id="btn-delete-vehicle">Delete</button>
                                                                         </div>
 
                                                                         <div class="col-3 pb-5 p-2" >
-                                                                            <button class=" button-Booking " type="submit">Clear</button>
+                                                                            <button class=" button-Booking " type="submit" id="btn-clear-vehicle">Clear</button>
                                                                         </div>
 
                                                                     </div >
@@ -1430,12 +1430,8 @@
                                                 <th scope="col">Hybrid or Non-Hybrid</th>
                                                 <th scope="col">Fuel usage (km/l)</th>
                                                 <th scope="col">Transmission type</th>
-                                                <th scope="col">Driver's license Image frontEnd</th>
-                                                <th scope="col">Driver's license Image backEnd</th>
                                                 <th scope="col">Driver’ Contact No.</th>
                                                 <th scope="col">Driver’ Name</th>
-                                                <th scope="col">Images of the vehicle frontEnd</th>
-                                                <th scope="col">Images of the vehicle BackEnd</th>
                                                 <th scope="col">Seat capacity</th>
                                                 <th scope="col">Remarks</th>
 
@@ -1935,3 +1931,5 @@
 
 </body>
 </html>
+
+
