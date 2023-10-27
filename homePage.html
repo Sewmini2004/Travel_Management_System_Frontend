@@ -1177,17 +1177,17 @@
 
                 <div class="reg-small-form  col-md-5 col-lg-8 ">
                     <h3 class="p-4 mb-5 text-white">User Register Form</h3>
-                    <form class="needs-validation" novalidate>
+                    <form class="needs-validation" id="user-reg-form" novalidate>
                         <div class="row g-3">
                             <div class="col-6">
-                                <label id="userId" class="form-label text-white">User Id</label>
+                                <label id="userId" class="form-label text-white" name="id">UserId</label>
                                 <label class="form-label "></label>
                             </div>
 
                             <div class="col-6">
                                 <label for="username" class="form-label text-white">Username</label>
                                 <div class="input-group has-validation">
-                                    <input type="text" class="form-control" id="username" placeholder="Username"
+                                    <input type="text" class="form-control" id="username" placeholder="Username" name="name"
                                            required>
                                     <div class="invalid-feedback">
                                         Your username is required.
@@ -1195,9 +1195,22 @@
                                 </div>
                             </div>
 
+
+                            <div class="col-6">
+                                <label for="password" class="form-label text-white">Password</label>
+                                <div class="input-group has-validation">
+                                    <input type="password" class="form-control" id="password" placeholder="Password" name="password"
+                                           required>
+                                    <div class="invalid-feedback">
+                                        Your password is required.
+                                    </div>
+                                </div>
+                            </div>
+
+
                             <div class="col-6">
                                 <label for="email" class="form-label text-white">Email</label>
-                                <input type="email" class="form-control" id="email2" placeholder="you@example.com">
+                                <input type="email" class="form-control" id="email2" placeholder="you@example.com" name="email" required>
                                 <div class="invalid-feedback">
                                     Please enter a valid email address for shipping updates.
                                 </div>
@@ -1205,7 +1218,7 @@
 
                             <div class="col-6">
                                 <label for="address" class="form-label text-white">Address</label>
-                                <input type="text" class="form-control" id="address" placeholder="1234 Main St"
+                                <input type="text" class="form-control" id="address" placeholder="1234 Main St" name="address"
                                        required>
                                 <div class="invalid-feedback">
                                     Please enter your shipping address.
@@ -1214,12 +1227,12 @@
 
                             <div class="col-6">
                                 <label for="nic" class="form-label text-white">NIC</label>
-                                <input type="text" class="form-control" id="nic" placeholder="NIC">
+                                <input type="text" class="form-control" id="nic" placeholder="NIC" name="nic" required>
                             </div>
 
                             <div class="col-6">
                                 <label for="gender" class="form-label text-white">Gender</label>
-                                <select class="form-select" id="gender" required>
+                                <select class="form-select" id="gender" name="gender" required  >
                                     <option value="male">Male</option>
                                     <option value="female">Female</option>
                                     <option value="other">Other</option>
@@ -1228,28 +1241,38 @@
                                     Please select a valid gender.
                                 </div>
                             </div>
-                            <div class="col-12">
+
+
+                            <div class="col-6">
                                 <label for="remarks" class="form-label text-white">Remarks</label>
-                                <textarea type="textarea" class="form-control" id="remarks"
+                                <textarea type="textarea" class="form-control" id="remarks" name="remarks"
                                           placeholder="Remarks"></textarea>
                             </div>
 
                             <div class="col-6">
                                 <label for="nic-image1" class="form-label text-white">NIC Image FrontEnd</label>
-                                <input type="file" class="form-control" id="nic-image" placeholder="Remarks">
+                                <input type="file" class="form-control" id="nic-image" placeholder="Remarks" name="nic_image_front" required>
                             </div>
 
                             <div class="col-6">
                                 <label for="nic-image2" class="form-label text-white">NIC Image BackEnd</label>
-                                <input type="file" class="form-control" id="nic-imag3" placeholder="NIC Image BackEnd">
+                                <input type="file" class="form-control" id="nic-imag3" placeholder="NIC Image BackEnd" name="nic_image_back" required>
                             </div>
 
-                            <div class="col-6 pb-4 p-2 ">
-                                <button class=" button-Booking " type="submit">Register</button>
+                            <div class="col-3 pb-5 p-2 ">
+                                <button class=" button-Booking " id="btn-register" type="submit">Register</button>
+                            </div>
+                            <div class="col-3 pb-5 p-2">
+                                <button class=" button-Booking " type="submit" id="btn-update" >Update</button>
                             </div>
 
-                            <div class="col-6 pb-5 p-2">
-                                <button class=" button-Booking " type="submit">Clear</button>
+                            <div class="col-3 pb-5 p-2 ">
+                                <button class=" button-Booking " type="submit" id="btn-delete">Delete</button>
+                            </div>
+
+
+                            <div class="col-3 pb-5 p-2">
+                                <button class=" button-Booking " id="btn-clear" type="submit">Clear</button>
                             </div>
 
                         </div>
@@ -1348,11 +1371,11 @@
                                 </div>
 
                                 <div class="col-3 pb-4 p-2 ">
-                                    <button class=" button-Booking " type="submit">Register</button>
+                                    <button class=" button-Booking " type="submit" id="btn-register1">Register</button>
                                 </div>
 
                                 <div class="col-3 pb-5 p-2">
-                                    <button class=" button-Booking " type="submit">Update</button>
+                                    <button class=" button-Booking " type="submit"  >Update</button>
                                 </div>
 
                                 <div class="col-3 pb-4 p-2 ">
