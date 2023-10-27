@@ -1,4 +1,4 @@
-var baseurl="http://localhost:8081//api/userService";
+var baseurl="http://localhost:8081/api/userService";
 
 
 

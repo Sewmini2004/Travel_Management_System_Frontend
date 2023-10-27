@@ -1233,9 +1233,10 @@
                             <div class="col-6">
                                 <label for="gender" class="form-label text-white">Gender</label>
                                 <select class="form-select" id="gender" name="gender" required  >
-                                    <option value="male">Male</option>
+                                    <option selected value="male">Male</option>
                                     <option value="female">Female</option>
                                     <option value="other">Other</option>
+
                                 </select>
                                 <div class="invalid-feedback">
                                     Please select a valid gender.
@@ -1502,7 +1503,7 @@
 
                         <div class="reg-small-form  col-md-3 col-lg-12 ">
                             <h3 class="p-4 mb-5 text-warning">Booking Day Tours Form</h3>
-                            <form class="needs-validation" novalidate>
+                            <form class="needs-validation" novalidate id="user-booking-form">
                                 <div class="row g-3">
                                     <div class="col-4">
                                         <label id="packageId" class="form-label text-white">Package Id</label>
@@ -1512,7 +1513,7 @@
                                     <div class="col-4">
                                         <label for="package_cate" class="form-label text-white">Package category</label>
                                         <select class="form-select" id="package_cate" required>
-                                            <option value="regular">Regular</option>
+                                            <option value="regular" selected>Regular</option>
                                             <option value="luxury">Luxury</option>
 
                                         </select>
@@ -1739,19 +1740,19 @@
                                     </div>
 
                                     <div class="col-3 pb-4 p-2 ">
-                                        <button class=" button-Booking " type="submit">Booking</button>
+                                        <button class=" button-Booking " type="submit" id="btn-save-booking">Booking</button>
                                     </div>
 
                                     <div class="col-3 pb-5 p-2">
-                                        <button class=" button-Booking " type="submit">Update</button>
+                                        <button class=" button-Booking " type="submit" id="btn-update-booking">Update</button>
                                     </div>
 
                                     <div class="col-3 pb-4 p-2 ">
-                                        <button class=" button-Booking " type="submit">Delete</button>
+                                        <button class=" button-Booking " type="submit" id="btn-delete-booking">Delete</button>
                                     </div>
 
                                     <div class="col-3 pb-5 p-2">
-                                        <button class=" button-Booking " type="submit">Clear</button>
+                                        <button class=" button-Booking " type="submit" id="btn-clear-booking">Clear</button>
                                     </div>
 
                                 </div>
@@ -1766,8 +1767,8 @@
             <div class="  p-5 m-5 col-md-4">
                 <div class="container-fluid">
                     <form class="d-flex" role="search">
-                        <input class="form-control me-lg-5" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <input class="form-control me-lg-5" type="search" placeholder="Search" aria-label="Search" id="input-search-booking">
+                        <button class="btn btn-outline-success" type="submit" id="btn-search-booking">Search</button>
                     </form>
                 </div>
             </div>
