@@ -100,7 +100,7 @@ function deleteBooking() {
             console.log(res);
             if (res.code == 200) {
                 alert("Booking Successfully deleted");
-                loadAllUser();
+                loadAllBooking();
                 clearForm();
             }
         },
@@ -151,7 +151,7 @@ function updateBooking() {
         success: function (res) {
             if (res.code == 200) { //process is ok
                 alert("Successfully Updated");
-                loadAllUser();
+                loadAllBooking();
                 clearForm();
             }
         },

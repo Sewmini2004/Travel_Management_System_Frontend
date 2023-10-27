@@ -356,8 +356,8 @@
                                             <div class="container-fluid">
                                                 <form class="d-flex align-items-center" role="search">
                                                     <input class="form-control me-lg-2 m-1 w-50 m-0" type="search"
-                                                           placeholder="Search" aria-label="Search">
-                                                    <button class="btn btn-outline-success m-1 w-25" type="submit">Search
+                                                           placeholder="Search" aria-label="Search" id="input-search-booking">
+                                                    <button class="btn btn-outline-success m-1 w-25" type="submit" id="btn-search-booking">Search
                                                     </button>
                                                 </form>
                                             </div>
@@ -379,22 +379,17 @@
                                                     <main>
                                                         <div class="row g-5 d-flex  ">
                                                             <div class=" col-md-3 col-lg-12 ">
-                                                                <form class="needs-validation" novalidate>
+                                                                <form class="needs-validation" novalidate id="user-booking-form">
                                                                     <div class="row g-3">
                                                                         <div class="col-4">
-                                                                            <label id="packageId"
-                                                                                   class="form-label text-white">Package
-                                                                                Id</label>
+                                                                            <label id="packageId" class="form-label text-white" name="packageId">Package Id</label>
                                                                             <label class="form-label "></label>
                                                                         </div>
 
                                                                         <div class="col-4">
-                                                                            <label for="package_cate"
-                                                                                   class="form-label text-white">Package
-                                                                                category</label>
-                                                                            <select class="form-select" id="package_cate"
-                                                                                    required>
-                                                                                <option value="regular">Regular</option>
+                                                                            <label for="package_cate" class="form-label text-white">Package category</label>
+                                                                            <select class="form-select" id="package_cate" required name="package_cate">
+                                                                                <option value="regular" selected>Regular</option>
                                                                                 <option value="luxury">Luxury</option>
 
                                                                             </select>
@@ -407,10 +402,8 @@
 
 
                                                                         <div class="col-4">
-                                                                            <label for="hotel_Category"
-                                                                                   class="form-label text-white">Choose
-                                                                                Hotel</label>
-                                                                            <select class="form-select" id="hotel_Category"
+                                                                            <label for="hotel_Category" class="form-label text-white">Choose Hotel</label>
+                                                                            <select class="form-select" id="hotel_Category" name="hotel_Category"
                                                                                     required>
                                                                                 <option value=""></option>
 
@@ -425,11 +418,8 @@
 
 
                                                                         <div class="col-4">
-                                                                            <label for="hotel_opt"
-                                                                                   class="form-label text-white">Choose
-                                                                                Hotel options</label>
-                                                                            <select class="form-select" id="hotel_opt"
-                                                                                    required>
+                                                                            <label for="hotel_opt" class="form-label text-white">Choose Hotel options</label>
+                                                                            <select class="form-select" id="hotel_opt" name="hotel_opt" required>
                                                                                 <option value=""></option>
 
 
@@ -443,11 +433,8 @@
 
 
                                                                         <div class="col-4">
-                                                                            <label for="Vehicle_Category"
-                                                                                   class="form-label text-white">Vehicle
-                                                                                Category</label>
-                                                                            <select class="form-select"
-                                                                                    id="Vehicle_Category" required>
+                                                                            <label for="Vehicle_Category" class="form-label text-white">Vehicle Category</label>
+                                                                            <select class="form-select" id="Vehicle_Category" name="Vehicle_Category" required>
                                                                                 <option value="r"></option>
 
 
@@ -461,12 +448,9 @@
 
 
                                                                         <div class="col-4">
-                                                                            <label for="start-date "
-                                                                                   class="form-label text-white">Start
-                                                                                Date </label>
+                                                                            <label for="start_date" class="form-label text-white">Start Date </label>
                                                                             <div class="input-group has-validation">
-                                                                                <input type="date" class="form-control"
-                                                                                       id="start-date " placeholder=""
+                                                                                <input type="date" class="form-control" id="start_date" placeholder="Start Date" name="start_date"
                                                                                        required>
                                                                                 <div class="invalid-feedback">
                                                                                     Your Start Date is required.
@@ -476,12 +460,9 @@
 
 
                                                                         <div class="col-4">
-                                                                            <label for="end-date "
-                                                                                   class="form-label text-white">End
-                                                                                Date </label>
+                                                                            <label for="end_date" class="form-label text-white">End Date </label>
                                                                             <div class="input-group has-validation">
-                                                                                <input type="date" class="form-control"
-                                                                                       id="end-date " placeholder=""
+                                                                                <input type="date" class="form-control" id="end_date" placeholder="End Date" name="end_date"
                                                                                        required>
                                                                                 <div class="invalid-feedback">
                                                                                     Your End Date is required.
@@ -491,10 +472,8 @@
 
 
                                                                         <div class="col-4">
-                                                                            <label for="days" class="form-label text-white">Count
-                                                                                of days</label>
-                                                                            <input type="number" class="form-control"
-                                                                                   id="days" placeholder="Count of days">
+                                                                            <label for="days" class="form-label text-white">Count of days</label>
+                                                                            <input type="number" class="form-control" id="days" placeholder="Count of days" name="days" required>
                                                                             <div class="invalid-feedback">
                                                                                 Please enter a valid Count of days.
                                                                             </div>
@@ -502,12 +481,9 @@
 
 
                                                                         <div class="col-4">
-                                                                            <label for="nights"
-                                                                                   class="form-label text-white">Count of
-                                                                                nights</label>
-                                                                            <input type="number" class="form-control"
-                                                                                   id="nights"
-                                                                                   placeholder="Count of nights">
+                                                                            <label for="nights" class="form-label text-white">Count of nights</label>
+                                                                            <input type="number" class="form-control" id="nights"
+                                                                                   placeholder="Count of nights" name="nights" required>
                                                                             <div class="invalid-feedback">
                                                                                 Please enter a valid Count of days.
                                                                             </div>
@@ -515,28 +491,14 @@
 
 
                                                                         <div class="col-4">
-                                                                            <label for="travel_area"
-                                                                                   class="form-label text-white">Travel
-                                                                                Area</label>
-                                                                            <select class="form-select" id="travel_area"
-                                                                                    required>
-                                                                                <option value="Anuradhapura">Anuradhapura
-                                                                                    and Polonnaruwa
-                                                                                </option>
-                                                                                <option value="Sigiriya">Sigiriya and
-                                                                                    Dambulla
-                                                                                </option>
-                                                                                <option value="Down South">Down South
-                                                                                </option>
-                                                                                <option value="Capital Colombo">Capital
-                                                                                    Colombo
-                                                                                </option>
-                                                                                <option value="Kandy and Upcountry">Kandy
-                                                                                    and Upcountry
-                                                                                </option>
-                                                                                <option value="Western Coast">Western
-                                                                                    Coast
-                                                                                </option>
+                                                                            <label for="travel_area" class="form-label text-white">Travel Area</label>
+                                                                            <select class="form-select" id="travel_area" name="travel_area" required>
+                                                                                <option value="Anuradhapura">Anuradhapura and Polonnaruwa</option>
+                                                                                <option value="Sigiriya">Sigiriya and Dambulla</option>
+                                                                                <option value="Down South">Down South</option>
+                                                                                <option value="Capital Colombo">Capital Colombo</option>
+                                                                                <option value="Kandy and Upcountry">Kandy and Upcountry</option>
+                                                                                <option value="Western Coast">Western Coast</option>
                                                                                 <option value="Matale">Matale</option>
 
                                                                             </select>
@@ -549,12 +511,9 @@
 
 
                                                                         <div class="col-4">
-                                                                            <label for="No_of_adults"
-                                                                                   class="form-label text-white">No of
-                                                                                adults</label>
-                                                                            <input type="number" class="form-control"
-                                                                                   id="No_of_adults"
-                                                                                   placeholder="No of adults">
+                                                                            <label for="no_of_adults" class="form-label text-white">No of adults</label>
+                                                                            <input type="number" class="form-control" id="no_of_adults" name="no_of_adults"
+                                                                                   placeholder="No of adults" required>
                                                                             <div class="invalid-feedback">
                                                                                 Please enter a valid No of Adults.
                                                                             </div>
@@ -562,12 +521,9 @@
 
 
                                                                         <div class="col-4">
-                                                                            <label for="No_of_children"
-                                                                                   class="form-label text-white">No of
-                                                                                Children</label>
-                                                                            <input type="number" class="form-control"
-                                                                                   id="No_of_children"
-                                                                                   placeholder="No of Children">
+                                                                            <label for="No_of_children" class="form-label text-white">No of Children</label>
+                                                                            <input type="number" class="form-control" id="No_of_children" name="No_of_children"
+                                                                                   placeholder="No of Children" required>
                                                                             <div class="invalid-feedback">
                                                                                 Please enter a valid No of Children.
                                                                             </div>
@@ -575,12 +531,9 @@
 
 
                                                                         <div class="col-4">
-                                                                            <label for="Total_headcount"
-                                                                                   class="form-label text-white">Total
-                                                                                headcount</label>
-                                                                            <input type="number" class="form-control"
-                                                                                   id="Total_headcount"
-                                                                                   placeholder="Total headcount">
+                                                                            <label for="total_headcount" class="form-label text-white">Total headcount</label>
+                                                                            <input type="number" class="form-control" id="total_headcount" name="total_headcount"
+                                                                                   placeholder="Total headcount" required>
                                                                             <div class="invalid-feedback">
                                                                                 Please enter a valid Total headcount.
                                                                             </div>
@@ -588,11 +541,8 @@
 
 
                                                                         <div class="col-4">
-                                                                            <label for="With_Pets_or_no"
-                                                                                   class="form-label text-white">With Pets
-                                                                                or no</label>
-                                                                            <select class="form-select" id="With_Pets_or_no"
-                                                                                    required>
+                                                                            <label for="with_Pets_or_no" class="form-label text-white">With Pets or no</label>
+                                                                            <select class="form-select" id="with_Pets_or_no" name="with_Pets_or_not" required>
                                                                                 <option value="no">No</option>
                                                                                 <option value="yes">Yes</option>
 
@@ -606,11 +556,8 @@
 
 
                                                                         <div class="col-4">
-                                                                            <label for="Need_guide_or_no"
-                                                                                   class="form-label text-white">Need a
-                                                                                guide or no</label>
-                                                                            <select class="form-select"
-                                                                                    id="Need_guide_or_no" required>
+                                                                            <label for="need_guide_or_no" class="form-label text-white">Need a guide or no</label>
+                                                                            <select class="form-select" id="need_guide_or_no" name="need_guide_or_no" required>
                                                                                 <option value="no">No</option>
                                                                                 <option value="yes">Yes</option>
 
@@ -624,12 +571,9 @@
 
 
                                                                         <div class="col-4">
-                                                                            <label for="hotel-fee"
-                                                                                   class="form-label text-white">Per Day
-                                                                                Hotel Fee</label>
-                                                                            <input type="number" class="form-control"
-                                                                                   id="hotel-fee"
-                                                                                   placeholder="Per Day Hotel Fee">
+                                                                            <label for="hotel_fee" class="form-label text-white">Per Day Hotel Fee</label>
+                                                                            <input type="number" class="form-control" id="hotel_fee" name="hotel_fee"
+                                                                                   placeholder="Per Day Hotel Fee" required>
                                                                             <div class="invalid-feedback">
                                                                                 Please enter a valid Per Day Hotel Fee.
                                                                             </div>
@@ -637,12 +581,9 @@
 
 
                                                                         <div class="col-4">
-                                                                            <label for="guide_fee"
-                                                                                   class="form-label text-white">Guide
-                                                                                Fee</label>
-                                                                            <input type="number" class="form-control"
-                                                                                   id="guide_fee"
-                                                                                   placeholder="Guide Fee">
+                                                                            <label for="guide_fee" class="form-label text-white">Guide Fee</label>
+                                                                            <input type="number" class="form-control" id="guide_fee" name="guide_fee"
+                                                                                   placeholder="Guide Fee" required>
                                                                             <div class="invalid-feedback">
                                                                                 Please enter a valid Guide Fee.
                                                                             </div>
@@ -650,25 +591,19 @@
 
 
                                                                         <div class="col-4">
-                                                                            <label for="vehicle_fee"
-                                                                                   class="form-label text-white">Vehicle
-                                                                                Fee</label>
-                                                                            <input type="number" class="form-control"
-                                                                                   id="vehicle_fee"
-                                                                                   placeholder="Vehicle Fee">
-                                                                            <div class="invalid-feedback">
+                                                                            <label for="vehicle_fee" class="form-label text-white">Vehicle Fee</label>
+                                                                            <input type="number" class="form-control" id="vehicle_fee" name="vehicle_fee"
+                                                                                   placeholder="Vehicle Fee" required>
+                                                                            <div class="invalid-feedback" >
                                                                                 Please enter a valid Vehicle Fee.
                                                                             </div>
                                                                         </div>
 
 
                                                                         <div class="col-4">
-                                                                            <label for="paid_value"
-                                                                                   class="form-label text-white">Paid
-                                                                                value</label>
-                                                                            <input type="number" class="form-control"
-                                                                                   id="paid_value"
-                                                                                   placeholder="Paid value">
+                                                                            <label for="paid_value" class="form-label text-white">Paid value</label>
+                                                                            <input type="number" class="form-control" id="paid_value" name="paid_value"
+                                                                                   placeholder="Paid value" required>
                                                                             <div class="invalid-feedback">
                                                                                 Please enter a valid Vehicle Fee.
                                                                             </div>
@@ -676,35 +611,25 @@
 
 
                                                                         <div class="col-8">
-                                                                            <label for="remarks3"
-                                                                                   class="form-label text-white">Remarks</label>
-                                                                            <textarea type="textarea" class="form-control"
-                                                                                      id="remarks3"
-                                                                                      placeholder="Remarks"></textarea>
+                                                                            <label for="remarks3" class="form-label text-white">Remarks</label>
+                                                                            <textarea type="textarea" class="form-control" id="remarks3" name="remarks3"
+                                                                                      placeholder="Remarks" required></textarea>
                                                                         </div>
 
                                                                         <div class="col-3 pb-4 p-2 ">
-                                                                            <button class=" button-Booking " type="submit">
-                                                                                Booking
-                                                                            </button>
+                                                                            <button class=" button-Booking " type="submit" id="btn-save-booking">Booking</button>
                                                                         </div>
 
                                                                         <div class="col-3 pb-5 p-2">
-                                                                            <button class=" button-Booking " type="submit">
-                                                                                Update
-                                                                            </button>
+                                                                            <button class=" button-Booking " type="submit" id="btn-update-booking">Update</button>
                                                                         </div>
 
                                                                         <div class="col-3 pb-4 p-2 ">
-                                                                            <button class=" button-Booking " type="submit">
-                                                                                Delete
-                                                                            </button>
+                                                                            <button class=" button-Booking " type="submit" id="btn-delete-booking">Delete</button>
                                                                         </div>
 
                                                                         <div class="col-3 pb-5 p-2">
-                                                                            <button class=" button-Booking " type="submit">
-                                                                                Clear
-                                                                            </button>
+                                                                            <button class=" button-Booking " type="submit" id="btn-clear-booking">Clear</button>
                                                                         </div>
 
                                                                     </div>
@@ -1038,8 +963,8 @@
                                             <div class="container-fluid">
                                                 <form class="d-flex align-items-center" role="search">
                                                     <input class="form-control me-lg-2 m-1 w-50 m-0" type="search"
-                                                           placeholder="Search" aria-label="Search">
-                                                    <button class="btn btn-outline-success m-1 w-25" type="submit">Search
+                                                           placeholder="Search" aria-label="Search"  id="input-search-guide">
+                                                    <button class="btn btn-outline-success m-1 w-25" type="submit" id="btn-search-guide">Search
                                                     </button>
                                                 </form>
                                             </div>
@@ -1061,27 +986,28 @@
                                                     <main>
                                                         <div class="row g-5 d-flex  ">
                                                             <div class=" col-md-3 col-lg-12 ">
-                                                                <form class="needs-validation" novalidate>
+                                                                <form class="needs-validation" novalidate id="Guide-form">
                                                                     <div class="row g-3">
                                                                         <div class="col-4">
-                                                                            <label id="GuideId" class="form-label">Guide Id</label>
-                                                                            <label  class="form-label "></label>
+                                                                            <label  class="form-label">Guide Id</label>
+                                                                            <label class="form-label " id="GuideId" name="guideId"></label>
                                                                         </div>
 
 
                                                                         <div class="col-4">
                                                                             <label for="Guide_Name" class="form-label">Guide Name</label>
-                                                                            <input type="text" class="form-control" id="Guide_Name" placeholder="Guide Name">
+                                                                            <input type="text" class="form-control" id="Guide_Name" name="guide_Name"
+                                                                                   placeholder="Guide Name">
                                                                             <div class="invalid-feedback">
                                                                                 Please enter a valid Guide Name.
                                                                             </div>
                                                                         </div>
 
 
-
                                                                         <div class="col-4">
                                                                             <label for="Guide_Address" class="form-label">Guide Address</label>
-                                                                            <input type="text" class="form-control" id="Guide_Address" placeholder="Guide Address">
+                                                                            <input type="text" class="form-control" id="Guide_Address" name="guide_Address"
+                                                                                   placeholder="Guide Address">
                                                                             <div class="invalid-feedback">
                                                                                 Please enter a valid Guide Address.
                                                                             </div>
@@ -1090,7 +1016,7 @@
 
                                                                         <div class="col-4">
                                                                             <label for="Gender_gui" class="form-label">Gender</label>
-                                                                            <select class="form-select" id="Gender_gui" required>
+                                                                            <select class="form-select" id="Gender_gui" name="gender_gui" required>
                                                                                 <option value="male">Male</option>
                                                                                 <option value="female">Fe-male</option>
                                                                                 <option value="other">Other</option>
@@ -1104,10 +1030,10 @@
                                                                         </div>
 
 
-
                                                                         <div class="col-4">
                                                                             <label for="Guide_Contact" class="form-label">Contact Number</label>
-                                                                            <input type="text" class="form-control" id="Guide_Contact" placeholder="Guide Address">
+                                                                            <input type="text" class="form-control" id="Guide_Contact" name="guide_Contact"
+                                                                                   placeholder="Guide Address">
                                                                             <div class="invalid-feedback">
                                                                                 Please enter a valid Guide Contact Number.
                                                                             </div>
@@ -1116,33 +1042,36 @@
 
                                                                         <div class="col-4">
                                                                             <label for="nic-image_guide_f" class="form-label">NIC Image FrontEnd</label>
-                                                                            <input type="file" class="form-control" id="nic-image_guide_f" placeholder="NIC Image FrontEnd">
+                                                                            <input type="file" class="form-control" id="nic-image_guide_f" name="nic_image_guide_f"
+                                                                                   placeholder="NIC Image FrontEnd">
                                                                         </div>
-
 
 
                                                                         <div class="col-4">
                                                                             <label for="nic-image_guide_b" class="form-label">NIC Image BackEnd</label>
-                                                                            <input type="file" class="form-control" id="nic-image_guide_b" placeholder="NIC Image BackEnd">
+                                                                            <input type="file" class="form-control" id="nic-image_guide_b" name="nic_image_guide_b"
+                                                                                   placeholder="NIC Image BackEnd">
                                                                         </div>
 
 
                                                                         <div class="col-4">
                                                                             <label for="id-image_guide_f" class="form-label">ID Image FrontEnd</label>
-                                                                            <input type="file" class="form-control" id="id-image_guide_f" placeholder="ID Image FrontEnd">
+                                                                            <input type="file" class="form-control" id="id-image_guide_f" name="id_image_guide_f"
+                                                                                   placeholder="ID Image FrontEnd">
                                                                         </div>
 
 
                                                                         <div class="col-4">
                                                                             <label for="id-image_guide_b" class="form-label">ID Image BackEnd</label>
-                                                                            <input type="file" class="form-control" id="id-image_guide_b" placeholder="ID Image BackEnd">
+                                                                            <input type="file" class="form-control" id="id-image_guide_b" name="id_image_guide_b"
+                                                                                   placeholder="ID Image BackEnd">
                                                                         </div>
-
 
 
                                                                         <div class="col-4">
                                                                             <label for="experience" class="form-label">Experience</label>
-                                                                            <input type="text" class="form-control" id="experience" placeholder="Experience">
+                                                                            <input type="text" class="form-control" id="experience" name="experience"
+                                                                                   placeholder="Experience">
                                                                             <div class="invalid-feedback">
                                                                                 Please enter a valid Experience.
                                                                             </div>
@@ -1151,36 +1080,37 @@
 
                                                                         <div class="col-4">
                                                                             <label for="Man-day_value" class="form-label">Man-day value</label>
-                                                                            <input type="number" class="form-control" id="Man-day_value" placeholder="Man-day value">
+                                                                            <input type="number" class="form-control" id="Man-day_value" name="man_day_value"
+                                                                                   placeholder="Man-day value">
                                                                             <div class="invalid-feedback">
                                                                                 Please enter a valid Man-day value.
                                                                             </div>
                                                                         </div>
 
 
-
                                                                         <div class="col-4">
                                                                             <label for="remarks_Gu" class="form-label">Remarks</label>
-                                                                            <textarea type="textarea" class="form-control" id="remarks_Gu" placeholder="Remarks"></textarea>
+                                                                            <textarea type="textarea" class="form-control" id="remarks_Gu" name="remarks_Gu"
+                                                                                      placeholder="Remarks"></textarea>
                                                                         </div>
 
-                                                                        <div class="col-3 pb-4 p-2 " >
-                                                                            <button class=" button-Booking " type="submit">Booking</button>
+                                                                        <div class="col-3 pb-4 p-2 ">
+                                                                            <button class=" button-Booking " type="submit" id="btn-save-guide">Save</button>
                                                                         </div>
 
-                                                                        <div class="col-3 pb-5 p-2" >
-                                                                            <button class=" button-Booking " type="submit">Update</button>
+                                                                        <div class="col-3 pb-5 p-2">
+                                                                            <button class=" button-Booking " type="submit" id="btn-update-guide" >Update</button>
                                                                         </div>
 
-                                                                        <div class="col-3 pb-4 p-2 " >
-                                                                            <button class=" button-Booking " type="submit">Delete</button>
+                                                                        <div class="col-3 pb-4 p-2 ">
+                                                                            <button class=" button-Booking " type="submit" id="btn-delete-guide">Delete</button>
                                                                         </div>
 
-                                                                        <div class="col-3 pb-5 p-2" >
-                                                                            <button class=" button-Booking " type="submit">Clear</button>
+                                                                        <div class="col-3 pb-5 p-2">
+                                                                            <button class=" button-Booking " type="submit" id="btn-clear-guide">Clear</button>
                                                                         </div>
 
-                                                                    </div >
+                                                                    </div>
 
                                                                 </form>
                                                             </div>
@@ -1231,10 +1161,6 @@
                                                 <th scope="col">Guide Address</th>
                                                 <th scope="col">Gender</th>
                                                 <th scope="col">Contact Number</th>
-                                                <th scope="col">NIC Image FrontEnd</th>
-                                                <th scope="col">NIC Image BackEnd</th>
-                                                <th scope="col">ID Image FrontEnd</th>
-                                                <th scope="col">ID Image BackEnd</th>
                                                 <th scope="col">Experience</th>
                                                 <th scope="col">Man-day value</th>
                                                 <th scope="col">Remarks</th>

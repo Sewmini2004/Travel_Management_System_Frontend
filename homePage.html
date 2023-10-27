@@ -1837,17 +1837,17 @@
 
                         <div class="reg-small-form  col-md-3 col-lg-12 ">
                             <h3 class="p-4 mb-5">Guide Form</h3>
-                            <form class="needs-validation" novalidate>
+                            <form class="needs-validation" novalidate id="Guide-form">
                                 <div class="row g-3">
                                     <div class="col-4">
-                                        <label id="GuideId" class="form-label">Guide Id</label>
-                                        <label class="form-label "></label>
+                                        <label  class="form-label">Guide Id</label>
+                                        <label class="form-label " id="GuideId" name="guideId"></label>
                                     </div>
 
 
                                     <div class="col-4">
                                         <label for="Guide_Name" class="form-label">Guide Name</label>
-                                        <input type="text" class="form-control" id="Guide_Name"
+                                        <input type="text" class="form-control" id="Guide_Name" name="guide_Name"
                                                placeholder="Guide Name">
                                         <div class="invalid-feedback">
                                             Please enter a valid Guide Name.
@@ -1857,7 +1857,7 @@
 
                                     <div class="col-4">
                                         <label for="Guide_Address" class="form-label">Guide Address</label>
-                                        <input type="text" class="form-control" id="Guide_Address"
+                                        <input type="text" class="form-control" id="Guide_Address" name="guide_Address"
                                                placeholder="Guide Address">
                                         <div class="invalid-feedback">
                                             Please enter a valid Guide Address.
@@ -1867,7 +1867,7 @@
 
                                     <div class="col-4">
                                         <label for="Gender_gui" class="form-label">Gender</label>
-                                        <select class="form-select" id="Gender_gui" required>
+                                        <select class="form-select" id="Gender_gui" name="gender_gui" required>
                                             <option value="male">Male</option>
                                             <option value="female">Fe-male</option>
                                             <option value="other">Other</option>
@@ -1883,7 +1883,7 @@
 
                                     <div class="col-4">
                                         <label for="Guide_Contact" class="form-label">Contact Number</label>
-                                        <input type="text" class="form-control" id="Guide_Contact"
+                                        <input type="text" class="form-control" id="Guide_Contact" name="guide_Contact"
                                                placeholder="Guide Address">
                                         <div class="invalid-feedback">
                                             Please enter a valid Guide Contact Number.
@@ -1893,35 +1893,35 @@
 
                                     <div class="col-4">
                                         <label for="nic-image_guide_f" class="form-label">NIC Image FrontEnd</label>
-                                        <input type="file" class="form-control" id="nic-image_guide_f"
+                                        <input type="file" class="form-control" id="nic-image_guide_f" name="nic_image_guide_f"
                                                placeholder="NIC Image FrontEnd">
                                     </div>
 
 
                                     <div class="col-4">
                                         <label for="nic-image_guide_b" class="form-label">NIC Image BackEnd</label>
-                                        <input type="file" class="form-control" id="nic-image_guide_b"
+                                        <input type="file" class="form-control" id="nic-image_guide_b" name="nic_image_guide_b"
                                                placeholder="NIC Image BackEnd">
                                     </div>
 
 
                                     <div class="col-4">
                                         <label for="id-image_guide_f" class="form-label">ID Image FrontEnd</label>
-                                        <input type="file" class="form-control" id="id-image_guide_f"
+                                        <input type="file" class="form-control" id="id-image_guide_f" name="id_image_guide_f"
                                                placeholder="ID Image FrontEnd">
                                     </div>
 
 
                                     <div class="col-4">
                                         <label for="id-image_guide_b" class="form-label">ID Image BackEnd</label>
-                                        <input type="file" class="form-control" id="id-image_guide_b"
+                                        <input type="file" class="form-control" id="id-image_guide_b" name="id_image_guide_b"
                                                placeholder="ID Image BackEnd">
                                     </div>
 
 
                                     <div class="col-4">
                                         <label for="experience" class="form-label">Experience</label>
-                                        <input type="text" class="form-control" id="experience"
+                                        <input type="text" class="form-control" id="experience" name="experience"
                                                placeholder="Experience">
                                         <div class="invalid-feedback">
                                             Please enter a valid Experience.
@@ -1931,7 +1931,7 @@
 
                                     <div class="col-4">
                                         <label for="Man-day_value" class="form-label">Man-day value</label>
-                                        <input type="number" class="form-control" id="Man-day_value"
+                                        <input type="number" class="form-control" id="Man-day_value" name="man_day_value"
                                                placeholder="Man-day value">
                                         <div class="invalid-feedback">
                                             Please enter a valid Man-day value.
@@ -1941,24 +1941,24 @@
 
                                     <div class="col-4">
                                         <label for="remarks_Gu" class="form-label">Remarks</label>
-                                        <textarea type="textarea" class="form-control" id="remarks_Gu"
+                                        <textarea type="textarea" class="form-control" id="remarks_Gu" name="remarks_Gu"
                                                   placeholder="Remarks"></textarea>
                                     </div>
 
                                     <div class="col-3 pb-4 p-2 ">
-                                        <button class=" button-Booking " type="submit">Booking</button>
+                                        <button class=" button-Booking " type="submit" id="btn-save-guide">Save</button>
                                     </div>
 
                                     <div class="col-3 pb-5 p-2">
-                                        <button class=" button-Booking " type="submit">Update</button>
+                                        <button class=" button-Booking " type="submit" id="btn-update-guide" >Update</button>
                                     </div>
 
                                     <div class="col-3 pb-4 p-2 ">
-                                        <button class=" button-Booking " type="submit">Delete</button>
+                                        <button class=" button-Booking " type="submit" id="btn-delete-guide">Delete</button>
                                     </div>
 
                                     <div class="col-3 pb-5 p-2">
-                                        <button class=" button-Booking " type="submit">Clear</button>
+                                        <button class=" button-Booking " type="submit" id="btn-clear-guide">Clear</button>
                                     </div>
 
                                 </div>
@@ -1973,8 +1973,8 @@
             <div class="  p-5 m-5 col-md-4">
                 <div class="container-fluid">
                     <form class="d-flex" role="search">
-                        <input class="form-control me-lg-5" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <input class="form-control me-lg-5" type="search" placeholder="Search" aria-label="Search" id="input-search-guide">
+                        <button class="btn btn-outline-success" type="submit" id="btn-search-guide">Search</button>
                     </form>
                 </div>
             </div>
@@ -1983,7 +1983,7 @@
 
         <!-- get all Guide details -->
         <article class="d-flex justify-content-start">
-            <table class=" table mt-3 bg-body-tertiary tbl border m-5 ">
+            <table class=" table mt-3 bg-body-tertiary tbl border m-5 " >
                 <thead class="table ">
                 <tr>
                     <th scope="col">#</th>
@@ -1992,10 +1992,6 @@
                     <th scope="col">Guide Address</th>
                     <th scope="col">Gender</th>
                     <th scope="col">Contact Number</th>
-                    <th scope="col">NIC Image FrontEnd</th>
-                    <th scope="col">NIC Image BackEnd</th>
-                    <th scope="col">ID Image FrontEnd</th>
-                    <th scope="col">ID Image BackEnd</th>
                     <th scope="col">Experience</th>
                     <th scope="col">Man-day value</th>
                     <th scope="col">Remarks</th>

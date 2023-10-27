@@ -48,7 +48,7 @@ function registerUser() {
             console.log(res)
             if (res.code == 200) {
                 alert("Successfully Saved ")
-                loadAllCustomer();
+                loadAllUser();
                 clearForm();
             }    },
         error: function (ob) {
