@@ -21,7 +21,7 @@ $("#btn-update-booking").click(function (event) {
 
 
 //Delete Booking Event
-$("#btn-delete").click(function (event) {
+$("#btn-delete-booking").click(function (event) {
     deleteBooking();
 })
 
