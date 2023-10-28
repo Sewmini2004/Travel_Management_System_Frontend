@@ -390,7 +390,27 @@
                                                                             <label for="package_cate" class="form-label text-white">Package category</label>
                                                                             <select class="form-select" id="package_cate" required name="package_cate">
                                                                                 <option value="regular" selected>Regular</option>
-                                                                                <option value="luxury">Luxury</option>
+                                                                                <option value="1" selected>Regular</option>
+                                                                                <option value="2">Mid-level</option>
+                                                                                <option value="3">Luxury</option>
+                                                                                <option value="4">Super Luxury</option>
+
+                                                                            </select>
+
+
+                                                                            <div class="invalid-feedback">
+                                                                                Please select a valid packages.
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                        <div class="col-4">
+                                                                            <label for="hotel_opt" class="form-label text-white">Choose Hotel options</label>
+                                                                            <select class="form-select" id="hotel_opt" name="hotel_opt" required>
+                                                                                <option value="" selected>Option 1</option>
+                                                                                <option value="">Option 2</option>
+                                                                                <option value="">Option 3</option>
+
 
                                                                             </select>
 
@@ -405,7 +425,7 @@
                                                                             <label for="hotel_Category" class="form-label text-white">Choose Hotel</label>
                                                                             <select class="form-select" id="hotel_Category" name="hotel_Category"
                                                                                     required>
-                                                                                <option value=""></option>
+                                                                                <option value="">ABCD</option>
 
 
                                                                             </select>
@@ -417,25 +437,16 @@
                                                                         </div>
 
 
-                                                                        <div class="col-4">
-                                                                            <label for="hotel_opt" class="form-label text-white">Choose Hotel options</label>
-                                                                            <select class="form-select" id="hotel_opt" name="hotel_opt" required>
-                                                                                <option value=""></option>
 
-
-                                                                            </select>
-
-
-                                                                            <div class="invalid-feedback">
-                                                                                Please select a valid packages.
-                                                                            </div>
-                                                                        </div>
 
 
                                                                         <div class="col-4">
                                                                             <label for="Vehicle_Category" class="form-label text-white">Vehicle Category</label>
                                                                             <select class="form-select" id="Vehicle_Category" name="Vehicle_Category" required>
-                                                                                <option value="r"></option>
+                                                                                <option value="" selected>Economy</option>
+                                                                                <option value="" >Mid-Range</option>
+                                                                                <option value="" >Luxury</option>
+                                                                                <option value="" >Super Luxury</option>
 
 
                                                                             </select>
@@ -457,6 +468,7 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
+
 
 
                                                                         <div class="col-4">
@@ -493,7 +505,7 @@
                                                                         <div class="col-4">
                                                                             <label for="travel_area" class="form-label text-white">Travel Area</label>
                                                                             <select class="form-select" id="travel_area" name="travel_area" required>
-                                                                                <option value="Anuradhapura">Anuradhapura and Polonnaruwa</option>
+                                                                                <option value="Anuradhapura" selected>Anuradhapura and Polonnaruwa</option>
                                                                                 <option value="Sigiriya">Sigiriya and Dambulla</option>
                                                                                 <option value="Down South">Down South</option>
                                                                                 <option value="Capital Colombo">Capital Colombo</option>
@@ -543,10 +555,12 @@
                                                                         <div class="col-4">
                                                                             <label for="with_Pets_or_no" class="form-label text-white">With Pets or no</label>
                                                                             <select class="form-select" id="with_Pets_or_no" name="with_Pets_or_not" required>
-                                                                                <option value="no">No</option>
+                                                                                <option value="no" selected>No</option>
                                                                                 <option value="yes">Yes</option>
 
                                                                             </select>
+                                                                            <option value="no" selected>No</option>
+                                                                            <option value="yes">Yes</option>
 
 
                                                                             <div class="invalid-feedback">
@@ -558,11 +572,12 @@
                                                                         <div class="col-4">
                                                                             <label for="need_guide_or_no" class="form-label text-white">Need a guide or no</label>
                                                                             <select class="form-select" id="need_guide_or_no" name="need_guide_or_no" required>
-                                                                                <option value="no">No</option>
+                                                                                <option value="no" selected>No</option>
                                                                                 <option value="yes">Yes</option>
 
                                                                             </select>
-
+                                                                            <option value="no">No</option>
+                                                                            <option value="yes">Yes</option>
 
                                                                             <div class="invalid-feedback">
                                                                                 Please select a valid packages.
@@ -781,7 +796,8 @@
                                                                         <div class="col-4">
                                                                             <label for="PetsAllowed_or_not" class="form-label">Pets allowed or not</label>
                                                                             <select class="form-select" id="PetsAllowed_or_not" name="petsAllowed_or_not" required>
-                                                                                <option value="" selected></option>
+                                                                                <option value="" selected>Yes</option>
+                                                                                <option value="" >No</option>
 
 
                                                                             </select>
@@ -1017,7 +1033,7 @@
                                                                         <div class="col-4">
                                                                             <label for="Gender_gui" class="form-label">Gender</label>
                                                                             <select class="form-select" id="Gender_gui" name="gender_gui" required>
-                                                                                <option value="male">Male</option>
+                                                                                <option value="male" selected>Male</option>
                                                                                 <option value="female">Fe-male</option>
                                                                                 <option value="other">Other</option>
 
@@ -1254,7 +1270,8 @@
                                                                         <div class="col-4">
                                                                             <label for="Hybrid_or_Non-Hybrid" class="form-label">Hybrid or Non-Hybrid</label>
                                                                             <select class="form-select" id="Hybrid_or_Non-Hybrid" required name="hybrid_or_Non_Hybrid">
-                                                                                <option value=""></option>
+                                                                                <option value="" selected>Yes</option>
+                                                                                <option value="">No</option>
 
 
                                                                             </select>
@@ -1556,7 +1573,7 @@
                                                                         <div class="col-6">
                                                                             <label for="gender2" class="form-label">Gender</label>
                                                                             <select class="form-select" id="gender2" name="gender2" required>
-                                                                                <option value="male">Male</option>
+                                                                                <option value="male" selected>Male</option>
                                                                                 <option value="female">Female</option>
                                                                                 <option value="other">Other</option>
                                                                             </select>
@@ -1785,7 +1802,7 @@
                                 <!-- card -->
                                 <div class="card-body">
                                     <!--admin  booking tours-->
-                                    <section class="booking-tours" id="sec-adminBookingTour">
+                                    <section class="booking-tours2" id="sec-adminBookingTour">
 
                                         <section>
                                             <!-- Booking Form container -->
@@ -1805,7 +1822,10 @@
                                                                             <label for="package_cate" class="form-label text-white">Package category</label>
                                                                             <select class="form-select" id="package_cate2" required name="package_cate2">
                                                                                 <option value="regular" selected>Regular</option>
-                                                                                <option value="luxury">Luxury</option>
+                                                                                <option value="1" selected>Regular</option>
+                                                                                <option value="2">Mid-level</option>
+                                                                                <option value="3">Luxury</option>
+                                                                                <option value="4">Super Luxury</option>
 
                                                                             </select>
 
@@ -1814,13 +1834,33 @@
                                                                                 Please select a valid packages.
                                                                             </div>
                                                                         </div>
+
+
+
+                                                                        <div class="col-4">
+                                                                            <label for="hotel_opt" class="form-label text-white">Choose Hotel options</label>
+                                                                            <select class="form-select" id="hotel_opt2" name="hotel_opt2" required>
+                                                                                <option value="" selected>Option 1</option>
+                                                                                <option value="">Option 2</option>
+                                                                                <option value="">Option 3</option>
+
+
+
+                                                                            </select>
+
+
+                                                                            <div class="invalid-feedback">
+                                                                                Please select a valid packages.
+                                                                            </div>
+                                                                        </div>
+
 
 
                                                                         <div class="col-4">
                                                                             <label for="hotel_Category" class="form-label text-white">Choose Hotel</label>
                                                                             <select class="form-select" id="hotel_Category2" name="hotel_Category2"
                                                                                     required>
-                                                                                <option value=""></option>
+                                                                                <option value="">ABCD</option>
 
 
                                                                             </select>
@@ -1831,26 +1871,12 @@
                                                                             </div>
                                                                         </div>
 
-
-                                                                        <div class="col-4">
-                                                                            <label for="hotel_opt" class="form-label text-white">Choose Hotel options</label>
-                                                                            <select class="form-select" id="hotel_opt2" name="hotel_opt2" required>
-                                                                                <option value=""></option>
-
-
-                                                                            </select>
-
-
-                                                                            <div class="invalid-feedback">
-                                                                                Please select a valid packages.
-                                                                            </div>
-                                                                        </div>
 
 
                                                                         <div class="col-4">
                                                                             <label for="Vehicle_Category" class="form-label text-white">Vehicle Category</label>
                                                                             <select class="form-select" id="Vehicle_Category2" name="Vehicle_Category2" required>
-                                                                                <option value="r"></option>
+
 
 
                                                                             </select>
