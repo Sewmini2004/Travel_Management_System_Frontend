@@ -1680,10 +1680,456 @@
 
 
 
+                    <!--Admin booking section -->
+                    <section id="sec-adminBooking-dash" class="booking-shadow">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card card-chart">
+                                    <!-- Header -->
+                                    <div class="card-header">
+                                        <div class="row d-flex justify-content-center ">
+
+                                            <div class="col-sm-6 text-left">
+                                                <h5 class="card-category">Booking</h5>
+                                                <h2 class="card-title">All Packages</h2>
+                                            </div>
+                                            <!-- ratio btn table-->
+                                            <div class="col-sm-5">
+                                                <div class="container-fluid">
+
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+
+                                    </div>
+                                    <!-- card -->
+                                    <div class="card-body">
+                                        <!-- admin booking tours-->
+                                        <section class="booking-tours">
+                                            <!-- travel package table  -->
+
+                                            <article class="d-flex m-5 ">
+                                                <table class="table mt-3 table-dark bg-body-tertiary tbl border-dark border-top  ">
+                                                    <thead class="table table-dark">
+                                                    <tr>
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">Package Category</th>
+                                                        <th scope="col">Hotel Category</th>
+                                                        <th scope="col">Vehicle Category</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody id="adminPackage_table">
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>Regular</td>
+                                                        <td>3 Star and 2 Star</td>
+                                                        <td>Economy</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>Mid-level</td>
+                                                        <td>3 Star and 4 Star</td>
+                                                        <td>Mid-Range</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td>Luxury</td>
+                                                        <td>4 Star and 5 Star</td>
+                                                        <td>Luxury</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">4</th>
+                                                        <td>Super Luxury</td>
+                                                        <td>5 Star</td>
+                                                        <td>Super Luxury</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </article>
+
+                                        </section>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-12">
+                            <div class="card card-chart">
+                                <div class="card-header">
+                                    <div class="row d-flex justify-content-center">
+                                        <div class="col-sm-6 text-left">
+                                            <h5 class="card-category">Booking</h5>
+                                            <h2 class="card-title">Create booking</h2>
+                                        </div>
+
+                                        <!-- ratio btn table-->
+                                        <div class="col-sm-5">
+                                            <div class="container-fluid">
+                                                <form class="d-flex align-items-center" role="search">
+                                                    <input class="form-control me-lg-2 m-1 w-50 m-0" type="search"
+                                                           placeholder="Search" aria-label="Search" id="input-search-adminBooking">
+                                                    <button class="btn btn-outline-success m-1 w-25" type="submit" id="btn-search-adminBooking">Search
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                                <!-- card -->
+                                <div class="card-body">
+                                    <!--admin  booking tours-->
+                                    <section class="booking-tours" id="sec-adminBookingTour">
+
+                                        <section>
+                                            <!-- Booking Form container -->
+                                            <div class="d-flex">
+                                                <div class="container p-5 pb-3   d-flex ">
+                                                    <main>
+                                                        <div class="row g-5 d-flex  ">
+                                                            <div class=" col-md-3 col-lg-12 ">
+                                                                <form class="needs-validation" novalidate id="user-adminBooking-form">
+                                                                    <div class="row g-3">
+                                                                        <div class="col-4">
+                                                                            <label class="form-label text-white" >Package Id</label>
+                                                                            <label class="form-label " name="packageId2" id="packageId2" ></label>
+                                                                        </div>
+
+                                                                        <div class="col-4">
+                                                                            <label for="package_cate" class="form-label text-white">Package category</label>
+                                                                            <select class="form-select" id="package_cate2" required name="package_cate2">
+                                                                                <option value="regular" selected>Regular</option>
+                                                                                <option value="luxury">Luxury</option>
+
+                                                                            </select>
+
+
+                                                                            <div class="invalid-feedback">
+                                                                                Please select a valid packages.
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                        <div class="col-4">
+                                                                            <label for="hotel_Category" class="form-label text-white">Choose Hotel</label>
+                                                                            <select class="form-select" id="hotel_Category2" name="hotel_Category2"
+                                                                                    required>
+                                                                                <option value=""></option>
+
+
+                                                                            </select>
+
+
+                                                                            <div class="invalid-feedback">
+                                                                                Please select a valid packages.
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                        <div class="col-4">
+                                                                            <label for="hotel_opt" class="form-label text-white">Choose Hotel options</label>
+                                                                            <select class="form-select" id="hotel_opt2" name="hotel_opt2" required>
+                                                                                <option value=""></option>
+
+
+                                                                            </select>
+
+
+                                                                            <div class="invalid-feedback">
+                                                                                Please select a valid packages.
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                        <div class="col-4">
+                                                                            <label for="Vehicle_Category" class="form-label text-white">Vehicle Category</label>
+                                                                            <select class="form-select" id="Vehicle_Category2" name="Vehicle_Category2" required>
+                                                                                <option value="r"></option>
+
+
+                                                                            </select>
+
+
+                                                                            <div class="invalid-feedback">
+                                                                                Please select a valid packages.
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                        <div class="col-4">
+                                                                            <label for="start_date" class="form-label text-white">Start Date </label>
+                                                                            <div class="input-group has-validation">
+                                                                                <input type="date" class="form-control" id="start_date2" placeholder="Start Date" name="start_date2"
+                                                                                       required>
+                                                                                <div class="invalid-feedback">
+                                                                                    Your Start Date is required.
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                        <div class="col-4">
+                                                                            <label for="end_date" class="form-label text-white">End Date </label>
+                                                                            <div class="input-group has-validation">
+                                                                                <input type="date" class="form-control" id="end_date2" placeholder="End Date" name="end_date2"
+                                                                                       required>
+                                                                                <div class="invalid-feedback">
+                                                                                    Your End Date is required.
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                        <div class="col-4">
+                                                                            <label for="days" class="form-label text-white">Count of days</label>
+                                                                            <input type="number" class="form-control" id="days2" placeholder="Count of days" name="days2" required>
+                                                                            <div class="invalid-feedback">
+                                                                                Please enter a valid Count of days.
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                        <div class="col-4">
+                                                                            <label for="nights" class="form-label text-white">Count of nights</label>
+                                                                            <input type="number" class="form-control" id="nights2"
+                                                                                   placeholder="Count of nights" name="nights2" required>
+                                                                            <div class="invalid-feedback">
+                                                                                Please enter a valid Count of days.
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                        <div class="col-4">
+                                                                            <label for="travel_area" class="form-label text-white">Travel Area</label>
+                                                                            <select class="form-select" id="travel_area2" name="travel_area2" required>
+                                                                                <option value="Anuradhapura">Anuradhapura and Polonnaruwa</option>
+                                                                                <option value="Sigiriya">Sigiriya and Dambulla</option>
+                                                                                <option value="Down South">Down South</option>
+                                                                                <option value="Capital Colombo">Capital Colombo</option>
+                                                                                <option value="Kandy and Upcountry">Kandy and Upcountry</option>
+                                                                                <option value="Western Coast">Western Coast</option>
+                                                                                <option value="Matale">Matale</option>
+
+                                                                            </select>
+
+
+                                                                            <div class="invalid-feedback">
+                                                                                Please select a valid packages.
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                        <div class="col-4">
+                                                                            <label for="no_of_adults" class="form-label text-white">No of adults</label>
+                                                                            <input type="number" class="form-control" id="no_of_adults2" name="no_of_adults2"
+                                                                                   placeholder="No of adults" required>
+                                                                            <div class="invalid-feedback">
+                                                                                Please enter a valid No of Adults.
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                        <div class="col-4">
+                                                                            <label for="No_of_children" class="form-label text-white">No of Children</label>
+                                                                            <input type="number" class="form-control" id="No_of_children2" name="No_of_children2"
+                                                                                   placeholder="No of Children" required>
+                                                                            <div class="invalid-feedback">
+                                                                                Please enter a valid No of Children.
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                        <div class="col-4">
+                                                                            <label for="total_headcount" class="form-label text-white">Total headcount</label>
+                                                                            <input type="number" class="form-control" id="total_headcount2" name="total_headcount2"
+                                                                                   placeholder="Total headcount" required>
+                                                                            <div class="invalid-feedback">
+                                                                                Please enter a valid Total headcount.
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                        <div class="col-4">
+                                                                            <label for="with_Pets_or_no" class="form-label text-white">With Pets or no</label>
+                                                                            <select class="form-select" id="with_Pets_or_no2" name="with_Pets_or_not2" required>
+                                                                                <option value="no">No</option>
+                                                                                <option value="yes">Yes</option>
+
+                                                                            </select>
+
+
+                                                                            <div class="invalid-feedback">
+                                                                                Please select a valid packages.
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                        <div class="col-4">
+                                                                            <label for="need_guide_or_no" class="form-label text-white">Need a guide or no</label>
+                                                                            <select class="form-select" id="need_guide_or_no2" name="need_guide_or_no2" required>
+                                                                                <option value="no">No</option>
+                                                                                <option value="yes">Yes</option>
+
+                                                                            </select>
+
+
+                                                                            <div class="invalid-feedback">
+                                                                                Please select a valid packages.
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                        <div class="col-4">
+                                                                            <label for="hotel_fee" class="form-label text-white">Per Day Hotel Fee</label>
+                                                                            <input type="number" class="form-control" id="hotel_fee2" name="hotel_fee2"
+                                                                                   placeholder="Per Day Hotel Fee" required>
+                                                                            <div class="invalid-feedback">
+                                                                                Please enter a valid Per Day Hotel Fee.
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                        <div class="col-4">
+                                                                            <label for="guide_fee" class="form-label text-white">Guide Fee</label>
+                                                                            <input type="number" class="form-control" id="guide_fee2" name="guide_fee2"
+                                                                                   placeholder="Guide Fee" required>
+                                                                            <div class="invalid-feedback">
+                                                                                Please enter a valid Guide Fee.
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                        <div class="col-4">
+                                                                            <label for="vehicle_fee" class="form-label text-white">Vehicle Fee</label>
+                                                                            <input type="number" class="form-control" id="vehicle_fee2" name="vehicle_fee2"
+                                                                                   placeholder="Vehicle Fee" required>
+                                                                            <div class="invalid-feedback" >
+                                                                                Please enter a valid Vehicle Fee.
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                        <div class="col-4">
+                                                                            <label for="paid_value" class="form-label text-white">Paid value</label>
+                                                                            <input type="number" class="form-control" id="paid_value2" name="paid_value2"
+                                                                                   placeholder="Paid value" required>
+                                                                            <div class="invalid-feedback">
+                                                                                Please enter a valid Vehicle Fee.
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                        <div class="col-8">
+                                                                            <label for="remarks" class="form-label text-white">Remarks</label>
+                                                                            <textarea type="textarea" class="form-control" id="remarks" name="remarks"
+                                                                                      placeholder="Remarks" required></textarea>
+                                                                        </div>
+
+                                                                        <div class="col-3 pb-4 p-2 ">
+                                                                            <button class=" button-Booking " type="submit" id="btn-save-adminBooking">Booking</button>
+                                                                        </div>
+
+                                                                        <div class="col-3 pb-5 p-2">
+                                                                            <button class=" button-Booking " type="submit" id="btn-update-adminBooking">Update</button>
+                                                                        </div>
+
+                                                                        <div class="col-3 pb-4 p-2 ">
+                                                                            <button class=" button-Booking " type="submit" id="btn-delete-adminBooking">Delete</button>
+                                                                        </div>
+
+                                                                        <div class="col-3 pb-5 p-2">
+                                                                            <button class=" button-Booking " type="submit" id="btn-clear-adminBooking">Clear</button>
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </main>
+                                                </div>
+                                            </div>
+
+
+                                        </section>
+
+
+                                    </section>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <!-- get all table booking-->
+                            <div class="card card-chart">
+                                <div class="card-header">
+                                    <div class="row d-flex justify-content-center">
+                                        <div class="col-sm-6 text-left">
+                                            <h5 class="card-category">Booking</h5>
+                                            <h2 class="card-title">View All booking</h2>
+                                        </div>
+
+                                        <!-- ratio btn table-->
+                                        <div class="col-sm-5">
+                                            <div class="container-fluid">
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                                <!-- get all  details -->
+                                <article class="d-flex justify-content-start">
+                                    <table class=" table   table-dark mt-3  tbl border m-5 ">
+                                        <thead class="table  table-dark">
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Package Id</th>
+                                            <th scope="col">Package category</th>
+                                            <th scope="col">Hotel</th>
+                                            <th scope="col">Hotel options</th>
+                                            <th scope="col">Vehicle</th>
+                                            <th scope="col">Start Date</th>
+                                            <th scope="col">End Date</th>
+                                            <th scope="col">Count of days</th>
+                                            <th scope="col">Travel Area</th>
+                                            <th scope="col">Total headcount</th>
+                                            <th scope="col">Need a guide or no</th>
+                                            <th scope="col">Per Day Hotel Fee</th>
+                                            <th scope="col">Guide Fee</th>
+                                            <th scope="col">Vehicle Fee</th>
+
+                                        </tr>
+                                        </thead>
+                                        <tbody id="adminBooking_table">
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+
+                                        </tbody>
+                                    </table>
+                                </article>
+
+                            </div>
+                        </div>
+                    </section>
 
 
 
-<!--<div id="sec-admin-dashBoard">-->
+
+
+                    <!--<div id="sec-admin-dashBoard">-->
     <div class="col-lg-3 col-md-6">
         <div class="card card-stats">
             <div class="card-body">
