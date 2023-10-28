@@ -1,50 +1,53 @@
-var baseurl="http://localhost:8083/api/guideService";
+var baseurl="http://localhost:8084/api/hotelService";
 
 
 
-// Search Guide Event
-$("#btn-search-guide").click(function (event) {
-    searchGuide();
+// Search Hotel Event
+$("#btn-search-hotel").click(function (event) {
+    searchHotel();
 })
 
 
-// Save Guide Event
-$("#btn-save-guide").click(function (event) {
-    saveGuide();
+// Save Hotel Event
+$("#btn-save-hotel").click(function (event) {
+    saveHotel();
 })
 
 
-// Update Guide Event
-$("#btn-update-guide").click(function (event) {
-    updateGuide();
+// Update Hotel Event
+$("#btn-update-hotel").click(function (event) {
+    updateHotel();
 })
 
 
-//Delete Booking Event
-$("#btn-delete-guide").click(function (event) {
-    deleteGuide();
+//Delete Hotel Event
+$("#btn-delete-hotel").click(function (event) {
+    deleteHotel();
 })
 
 
 
 
-//Load All Guide
-function loadAllGuide() {
+//Load All Hotel
+function loadAllHotel() {
     $.ajax({
         url:baseurl,
         method: "GET",
         dataType: "json",
         success: function (resp) {
-            for (const guide of resp.data) {
-                let row = `<tr><td>${guide.guideId}</td>
-                           <td>${guide.guide_Name}</td>
-                           <td>${guide.guide_Address}</td>
-                           <td>${guide.gender_gui}</td>
-                           <td>${guide.guide_Contact}</td>
-                           <td>${guide.experience}</td>
-                           <td>${guide.man_day_value}</td>
-                           <td>${guide.remarks_Gu}</td></tr>`;
-                $("#guide_table").append(row);
+            for (const hotel of resp.data) {
+                let row = `<tr><td>${hotel.hotelId}</td>
+                           <td>${hotel.hotel_Name}</td>
+                           <td>${hotel.hotel_Location}</td>
+                           <td>${hotel.petsAllowed_or_not}</td>
+                           <td>${hotel.hotel_Contact1}</td>
+                           <td>${hotel.hotel_Contact2}</td>
+                           <td>${hotel.hotel_Email}</td>
+                           <td>${hotel.opt1}</td>
+                           <td>${hotel.opt2}</td>
+                           <td>${hotel.opt3}</td>
+                           <td>${hotel.remarks_Hotel}</td></tr>`;
+                $("#hotel-admin-table").append(row);
 
             }
             bindClickEvents();
@@ -56,19 +59,18 @@ function loadAllGuide() {
 
 
 
-//Save Guide
-function saveGuide() {
-    var data = $("#Guide-form").serialize();
+//Save Hotel
+function saveHotel() {
+    var data = $("#hotel-form").serialize();
     $.ajax({
         url: baseurl,
         method:"POST",
         data: data,
         success: function (res) {
 
-            console.log(res)
             if (res.code == 200) {
                 alert("Successfully Saved ")
-                loadAllGuide();
+                loadAllHotel();
                 clearForm();
             }    },
         error: function (ob) {
@@ -81,20 +83,20 @@ function saveGuide() {
 
 
 
-//Delete Guide
-function deleteGuide() {
-    //Get the guide id
-    let guideId = $("#GuideId").val();
+//Delete Hotel
+function deleteHotel() {
+    //Get the hotel id
+    let hotelId= $("#hotelId").val();
 
 
     $.ajax({
-        url: baseurl+"?id=" + guideId,
+        url: baseurl+"?id=" + hotelId,
         method: "DELETE",
         success: function (res) {
             console.log(res);
             if (res.code == 200) {
-                alert("Booking Successfully deleted");
-                loadAllGuide();
+                alert("Hotel Successfully deleted");
+                loadAllHotel();
                 clearForm();
             }
         },
@@ -107,23 +109,23 @@ function deleteGuide() {
 }
 
 
-//Update Guide
-function updateGuide() {
+//Update Hotel
+function updateHotel() {
     // Json format
 
-    var guideData = {
-        guideId: $("#GuideId").val(),
-        guide_Name: $("#Guide_Name").val(),
-        guide_Address: $("#Guide_Address").val(),
-        gender_gui: $("#Gender_gui").val(),
-        guide_Contact: $("#Guide_Contact").val(),
-        nic_image_guide_f: $("#nic-image_guide_f").val(),
-        nic_image_guide_b: $("#nic-image_guide_b").val(),
-        id_image_guide_f: $("#id-image_guide_f").val(),
-        id_image_guide_b: $("#id-image_guide_b").val(),
-        experience: $("#experience").val(),
-        man_day_value: $("#Man-day_value").val(),
-        remarks_Gu: $("#remarks_Gu").val(),
+    var hotelData = {
+        hotelId: $("#hotelId").val(),
+        hotel_Name: $("#Hotel_Name").val(),
+        hotel_Location: $("#Hotel_Location").val(),
+        petsAllowed_or_not: $("#PetsAllowed_or_not").val(),
+        hotel_Contact1: $("#Hotel_Contact1").val(),
+        hotel_Contact2: $("#Hotel_Contact2").val(),
+        hotel_Email: $("#Hotel_Email").val(),
+        opt1: $("#opt1").val(),
+        opt2: $("#opt2").val(),
+        opt3: $("#opt3").val(),
+        remarks_Hotel: $("#remarks_Hotel").val(),
+
 
     }
 
@@ -132,11 +134,11 @@ function updateGuide() {
         url: baseurl,
         method: "PUT",
         contentType: "application/json",
-        data: JSON.stringify(guideData),
+        data: JSON.stringify(hotelData),
         success: function (res) {
             if (res.code == 200) { //process is ok
                 alert("Successfully Updated");
-                loadAllGuide();
+                loadAllHotel();
                 clearForm();
             }
         },
@@ -149,30 +151,28 @@ function updateGuide() {
 }
 
 
-//Search Guide
-function searchGuide() {
-    var guideId = $("#input-search-guide").val();
+//Search Hotel
+function searchHotel() {
+    var hotelId = $("#input-search-hotel").val();
     $.ajax({
-        url: baseurl+"/"+guideId,
+        url: baseurl+"/"+hotelId,
         method: "GET",
 
         success: function (res) {
             if (res.code==200) {
-                var guide= res.data;
+                var hotel= res.data;
 
-
-                $("#GuideId").val(guide.guideId);
-                $("#Guide_Name").val(guide.guide_Name);
-                $("#Guide_Address").val(guide.guide_Address);
-                $("#Gender_gui").val(guide.gender_gui);
-                $("#Guide_Contact").val(guide.guide_Contact);
-                $("#nic-image_guide_f").val(guide.nic_image_guide_f);
-                $("#nic-image_guide_b").val(guide.nic_image_guide_b);
-                $("#id-image_guide_f").val(guide.id_image_guide_f);
-                $("#id-image_guide_b").val(guide.id_image_guide_b);
-                $("#experience").val(guide.experience);
-                $("#Man-day_value").val(guide.man_day_value);
-                $("#remarks_Gu").val(guide.remarks_Gu);
+                $("#hotelId").val(hotel.hotelId);
+                $("#Hotel_Name").val(hotel.hotel_Name);
+                $("#Hotel_Location").val(hotel.hotel_Location);
+                $("#PetsAllowed_or_not").val(hotel.petsAllowed_or_not);
+                $("#Hotel_Contact1").val(hotel.hotel_Contact1);
+                $("#Hotel_Contact2").val(hotel.hotel_Contact2);
+                $("#Hotel_Email").val(hotel.hotel_Email);
+                $("#opt1").val(hotel.opt1);
+                $("#opt2").val(hotel.opt2);
+                $("#opt3").val(hotel.opt3);
+                $("#remarks_Hotel").val(hotel.remarks_Hotel);
 
             }else {
                 clearForm();
@@ -188,23 +188,21 @@ function searchGuide() {
 }
 
 
-//Clear Guide Input Fields
+//Clear Hotel Input Fields
 function clearForm() {
 
-
-    $("#GuideId").val("");
-    $("#Guide_Name").val("");
-    $("#Guide_Address").val("");
-    $("#Gender_gui").val("");
-    $("#Guide_Contact").val("");
-    $("#nic-image_guide_f").val("");
-    $("#nic-image_guide_b").val("");
-    $("#id-image_guide_f").val("");
-    $("#id-image_guide_b").val("");
-    $("#experience").val("");
-    $("#Man-day_value").val("");
-    $("#remarks_Gu").val("");
-    $("#GuideId").focus();
+    $("#hotelId").val("");
+    $("#Hotel_Name").val("");
+    $("#Hotel_Location").val("");
+    $("#PetsAllowed_or_not").val("");
+    $("#Hotel_Contact1").val("");
+    $("#Hotel_Contact2").val("");
+    $("#Hotel_Email").val("");
+    $("#opt1").val("");
+    $("#opt2").val("");
+    $("#opt3").val("");
+    $("#remarks_Hotel").val("");
+    $("#hotelId").focus();
 
 }
 
@@ -213,29 +211,35 @@ function clearForm() {
 //bind click events to the table row
 function bindClickEvents() {
     //Get values from the selected row
-    $("#booking_table>tr").click(function () {
-        let  guideId= $(this).children().eq(0).text();
-        let guide_Name= $(this).children().eq(1).text();
-        let guide_Address= $(this).children().eq(2).text();
-        let  gender_gui = $(this).children().eq(3).text();
-        let guide_Contact= $(this).children().eq(4).text();
-        let experience = $(this).children().eq(5).text();
-        let  man_day_value= $(this).children().eq(6).text();
-        let remarks_Gu = $(this).children().eq(7).text();
+    $("#hotel-admin-table>tr").click(function () {
+        let hotelId = $(this).children().eq(0).text();
+        let hotel_Name= $(this).children().eq(1).text();
+        let hotel_Location= $(this).children().eq(2).text();
+        let  petsAllowed_or_not = $(this).children().eq(3).text();
+        let hotel_Contact1= $(this).children().eq(4).text();
+        let hotel_Contact2 = $(this).children().eq(5).text();
+        let  hotel_Email= $(this).children().eq(6).text();
+        let opt1 = $(this).children().eq(7).text();
+        let opt2 = $(this).children().eq(8).text();
+        let opt3 = $(this).children().eq(9).text();
+        let remarks_Hotel = $(this).children().eq(10).text();
+
 
 
 
         //Set values to the text-fields
+        $("#hotelId").val(hotelId);
+        $("#Hotel_Name").val(hotel_Name);
+        $("#Hotel_Location").val(hotel_Location);
+        $("#PetsAllowed_or_not").val(petsAllowed_or_not);
+        $("#Hotel_Contact1").val(hotel_Contact1);
+        $("#Hotel_Contact2").val( hotel_Contact2);
+        $("#Hotel_Email").val(hotel_Email);
+        $("#opt1").val( opt1);
+        $("#opt2").val(opt2);
+        $("#opt3").val(opt3);
+        $("#remarks_Hotel").val(remarks_Hotel);
 
-
-        $("#GuideId").val(guideId);
-        $("#Guide_Name").val(guide_Name);
-        $("#Guide_Address").val(guide_Address);
-        $("#Gender_gui").val(gender_gui);
-        $("#Guide_Contact").val(guide_Contact);
-        $("#experience").val(experience);
-        $("#Man-day_value").val(man_day_value);
-        $("#remarks_Gu").val(remarks_Gu);
 
     });
 }

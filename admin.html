@@ -382,8 +382,8 @@
                                                                 <form class="needs-validation" novalidate id="user-booking-form">
                                                                     <div class="row g-3">
                                                                         <div class="col-4">
-                                                                            <label id="packageId" class="form-label text-white" name="packageId">Package Id</label>
-                                                                            <label class="form-label "></label>
+                                                                            <label class="form-label text-white" >Package Id</label>
+                                                                            <label class="form-label " name="packageId" id="packageId" ></label>
                                                                         </div>
 
                                                                         <div class="col-4">
@@ -691,8 +691,7 @@
                                             <th scope="col">Per Day Hotel Fee</th>
                                             <th scope="col">Guide Fee</th>
                                             <th scope="col">Vehicle Fee</th>
-                                            <th scope="col">Vehicle Fee</th>
-                                            <th scope="col">Vehicle Fee</th>
+
                                         </tr>
                                         </thead>
                                         <tbody id="booking_table">
@@ -711,6 +710,7 @@
                         </div>
                     </section>
 
+
                     <!-- Hotel from section-->
                     <section id="sec-hotel-dash"  class="hotel-shadow">
                         <div class="col-12">
@@ -727,8 +727,8 @@
                                             <div class="container-fluid">
                                                 <form class="d-flex align-items-center" role="search">
                                                     <input class="form-control me-lg-2 m-1 w-50 m-0" type="search"
-                                                           placeholder="Search" aria-label="Search">
-                                                    <button class="btn btn-outline-success m-1 w-25" type="submit">Search
+                                                           placeholder="Search" aria-label="Search" id="input-search-hotel">
+                                                    <button class="btn btn-outline-success m-1 w-25" type="submit" id="btn-search-hotel">Search
                                                     </button>
                                                 </form>
                                             </div>
@@ -740,28 +740,28 @@
                                 </div>
                                 <!-- card -->
                                 <div class="card-body">
-                                    <!--  booking tours-->
+                                    <!--  hotel -->
                                     <section class="booking-tours" id="sec-hotel-form">
 
                                         <section>
-                                            <!-- Booking Form container -->
+                                            <!-- hotel Form container -->
                                             <div class="d-flex">
                                                 <div class="container p-5 pb-3   d-flex ">
                                                     <main>
                                                         <div class="row g-5 d-flex  ">
                                                             <div class=" col-md-3 col-lg-12 ">
-                                                                <form class="needs-validation" novalidate>
+                                                                <form class="needs-validation" novalidate id="hotel-form">
                                                                     <div class="row g-3">
                                                                         <div class="col-4">
-                                                                            <label id="HotelId" class="form-label">Hotel Id</label>
-                                                                            <label class="form-label "></label>
+                                                                            <label class="form-label">Hotel Id</label>
+                                                                            <label class="form-label "  id="hotelId" name="hotelId" ></label>
                                                                         </div>
 
 
                                                                         <div class="col-4">
                                                                             <label for="Hotel_Name" class="form-label">Hotel Name</label>
                                                                             <input type="text" class="form-control" id="Hotel_Name"
-                                                                                   placeholder="Hotel Name">
+                                                                                   placeholder="Hotel Name" name="hotel_Name" required>
                                                                             <div class="invalid-feedback">
                                                                                 Please enter a valid Hotel Name.
                                                                             </div>
@@ -771,7 +771,7 @@
                                                                         <div class="col-4">
                                                                             <label for="Hotel_Location" class="form-label">Hotel Location</label>
                                                                             <input type="text" class="form-control" id="Hotel_Location"
-                                                                                   placeholder="Hotel Location">
+                                                                                   placeholder="Hotel Location" name="hotel_Location" required>
                                                                             <div class="invalid-feedback">
                                                                                 Please enter a valid Hotel Location.
                                                                             </div>
@@ -780,8 +780,8 @@
 
                                                                         <div class="col-4">
                                                                             <label for="PetsAllowed_or_not" class="form-label">Pets allowed or not</label>
-                                                                            <select class="form-select" id="PetsAllowed_or_not" required>
-                                                                                <option value=""></option>
+                                                                            <select class="form-select" id="PetsAllowed_or_not" name="petsAllowed_or_not" required>
+                                                                                <option value="" selected></option>
 
 
                                                                             </select>
@@ -796,7 +796,7 @@
                                                                         <div class="col-4">
                                                                             <label for="Hotel_Contact1" class="form-label">Contact Number 1</label>
                                                                             <input type="text" class="form-control" id="Hotel_Contact1"
-                                                                                   placeholder="Hotel contact number 1">
+                                                                                   placeholder="Hotel contact number 1" required name="hotel_Contact1">
                                                                             <div class="invalid-feedback">
                                                                                 Please enter a valid Guide Contact Number.
                                                                             </div>
@@ -806,7 +806,7 @@
                                                                         <div class="col-4">
                                                                             <label for="Hotel_Contact2" class="form-label">Contact Number 2</label>
                                                                             <input type="text" class="form-control" id="Hotel_Contact2"
-                                                                                   placeholder="Hotel contact number 2">
+                                                                                   placeholder="Hotel contact number 2" name="hotel_Contact2" required>
                                                                             <div class="invalid-feedback">
                                                                                 Please enter a valid Guide Contact Number.
                                                                             </div>
@@ -815,7 +815,7 @@
                                                                         <div class="col-4">
                                                                             <label for="Hotel_Email" class="form-label">Hotel Email</label>
                                                                             <input type="email" class="form-control" id="Hotel_Email"
-                                                                                   placeholder="Hotel Email">
+                                                                                   placeholder="Hotel Email" required name="hotel_Email">
                                                                             <div class="invalid-feedback">
                                                                                 Please enter a valid Hotel Email.
                                                                             </div>
@@ -824,7 +824,7 @@
 
                                                                         <div class="col-4">
                                                                             <label for="opt1" class="form-label">option 1</label>
-                                                                            <input type="number" class="form-control" id="opt1" placeholder="option 1">
+                                                                            <input type="number" class="form-control" id="opt1" placeholder="option 1" name="opt1" required >
                                                                             <div class="invalid-feedback">
                                                                                 Please enter a valid option 1 value.
                                                                             </div>
@@ -833,7 +833,7 @@
 
                                                                         <div class="col-4">
                                                                             <label for="opt2" class="form-label">option 1</label>
-                                                                            <input type="number" class="form-control" id="opt2" placeholder="option 2">
+                                                                            <input type="number" class="form-control" id="opt2" placeholder="option 2" name="opt2" required>
                                                                             <div class="invalid-feedback">
                                                                                 Please enter a valid option 2 value.
                                                                             </div>
@@ -842,7 +842,7 @@
 
                                                                         <div class="col-4">
                                                                             <label for="opt3" class="form-label">option 1</label>
-                                                                            <input type="number" class="form-control" id="opt3" placeholder="option 3">
+                                                                            <input type="number" class="form-control" id="opt3" placeholder="option 3" name="opt3" required>
                                                                             <div class="invalid-feedback">
                                                                                 Please enter a valid option 3 value.
                                                                             </div>
@@ -852,23 +852,23 @@
                                                                         <div class="col-8">
                                                                             <label for="remarks_Hotel" class="form-label">Remarks</label>
                                                                             <textarea type="textarea" class="form-control" id="remarks_Hotel"
-                                                                                      placeholder="Remarks"></textarea>
+                                                                                      placeholder="Remarks" name="remarks_Hotel" required></textarea>
                                                                         </div>
 
                                                                         <div class="col-3 pb-4 p-2 ">
-                                                                            <button class=" button-Booking " type="submit">Add</button>
+                                                                            <button class=" button-Booking " type="submit" id="btn-save-hotel">Add</button>
                                                                         </div>
 
                                                                         <div class="col-3 pb-5 p-2">
-                                                                            <button class=" button-Booking " type="submit">Update</button>
+                                                                            <button class=" button-Booking " type="submit" id="btn-update-hotel">Update</button>
                                                                         </div>
 
                                                                         <div class="col-3 pb-4 p-2 ">
-                                                                            <button class=" button-Booking " type="submit">Delete</button>
+                                                                            <button class=" button-Booking " type="submit" id="btn-delete-hotel">Delete</button>
                                                                         </div>
 
                                                                         <div class="col-3 pb-5 p-2">
-                                                                            <button class=" button-Booking " type="submit">Clear</button>
+                                                                            <button class=" button-Booking " type="submit" id="btn-clear-hotel">Clear</button>
                                                                         </div>
 
                                                                     </div>
@@ -1453,6 +1453,219 @@
                             </div>
                         </div>
                     </section>
+
+
+                    <!-- Admin User Register section -->
+                    <section id="sec-admin-userRegister-dash" class="vehicle-shadow">
+                        <div class="col-12">
+                            <div class="card card-chart">
+                                <div class="card-header">
+                                    <div class="row d-flex justify-content-center">
+                                        <div class="col-sm-6 text-left">
+                                            <h5 class="card-category">User</h5>
+                                            <h2 class="card-title">User Register Form</h2>
+                                        </div>
+
+                                        <!-- ratio btn table-->
+                                        <div class="col-sm-5">
+                                            <div class="container-fluid">
+                                                <form class="d-flex align-items-center" role="search">
+                                                    <input class="form-control me-lg-2 m-1 w-50 m-0" type="search"
+                                                           placeholder="Search" aria-label="Search" id="input-search-adminUserRegister">
+                                                    <button class="btn btn-outline-success m-1 w-25" type="submit" id="btn-search-adminUserRegister">Search
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                                <!-- card -->
+                                <div class="card-body">
+                                    <!--  Admin User Register form -->
+                                    <section class="admin-userReg" id="sec-Admin-UserReg-form" >
+
+                                        <section>
+                                            <!--Admin UserReg Form container -->
+                                            <div class="d-flex">
+                                                <div class="container p-5 pb-3   d-flex ">
+                                                    <main>
+                                                        <div class="row g-5 d-flex  ">
+                                                            <div class=" col-md-3 col-lg-12 ">
+                                                                <form class="needs-validation" novalidate id="admin-UserReg-form">
+                                                                    <div class="row g-3">
+
+                                                                        <div class="col-6">
+                                                                            <label  class="form-label">User Id</label>
+                                                                            <label class="form-label " id="userId2" name="userId2"></label>
+                                                                        </div>
+
+
+
+                                                                        <div class="col-6">
+                                                                            <label for="username2" class="form-label">Username</label>
+                                                                            <div class="input-group has-validation">
+                                                                                <input type="text" class="form-control" id="username2" placeholder="Username" name="username2"
+                                                                                       required>
+                                                                                <div class="invalid-feedback">
+                                                                                    Your username is required.
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+
+
+                                                                        <div class="col-6">
+                                                                            <label for="email2" class="form-label">Email</label>
+                                                                            <input type="email" class="form-control" id="email2" placeholder="you@example.com" name="email2" required>
+                                                                            <div class="invalid-feedback">
+                                                                                Please enter a valid email address for shipping updates.
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                        <div class="col-6">
+                                                                            <label for="address2" class="form-label">Address</label>
+                                                                            <input type="text" class="form-control" id="address2" placeholder="1234 Main St" name="address2"
+                                                                                   required>
+                                                                            <div class="invalid-feedback">
+                                                                                Please enter your shipping address.
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="col-6">
+                                                                            <label for="nic2" class="form-label">NIC</label>
+                                                                            <input type="text" class="form-control" id="nic2" placeholder="NIC" name="nic2" required>
+                                                                        </div>
+
+                                                                        <div class="col-6">
+                                                                            <label for="gender2" class="form-label">Gender</label>
+                                                                            <select class="form-select" id="gender2" name="gender2" required>
+                                                                                <option value="male">Male</option>
+                                                                                <option value="female">Female</option>
+                                                                                <option value="other">Other</option>
+                                                                            </select>
+                                                                            <div class="invalid-feedback">
+                                                                                Please select a valid gender.
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                        <div class="col-12">
+                                                                            <label for="remarks2" class="form-label">Remarks</label>
+                                                                            <textarea type="textarea" class="form-control" id="remarks2" name="remarks2" required
+                                                                                      placeholder="Remarks"></textarea>
+                                                                        </div>
+
+
+                                                                        <div class="col-6">
+                                                                            <label for="nic-image1" class="form-label">NIC Image FrontEnd</label>
+                                                                            <input type="file" class="form-control" id="nic-image1" placeholder="NIC Image FrontEnd" name="nic-image1" required>
+                                                                        </div>
+
+
+                                                                        <div class="col-6">
+                                                                            <label for="nic-image2" class="form-label">NIC Image BackEnd</label>
+                                                                            <input type="file" class="form-control" id="nic-image2" name="nic-image2"  required
+                                                                                   placeholder="NIC Image BackEnd">
+                                                                        </div>
+
+
+                                                                        <div class="col-3 pb-4 p-2 ">
+                                                                            <button class=" button-Booking " type="submit" id="btn-save-adminUser">Register</button>
+                                                                        </div>
+
+                                                                        <div class="col-3 pb-5 p-2">
+                                                                            <button class=" button-Booking " type="submit"  id="btn-update-adminUser">Update</button>
+                                                                        </div>
+
+                                                                        <div class="col-3 pb-4 p-2 ">
+                                                                            <button class=" button-Booking " type="submit" id="btn-delete-adminUser">Delete</button>
+                                                                        </div>
+
+                                                                        <div class="col-3 pb-5 p-2">
+                                                                            <button class=" button-Booking " type="submit" id="btn-clear-adminUser">Clear</button>
+                                                                        </div>
+
+                                                                    </div>
+
+
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </main>
+                                                </div>
+                                            </div>
+
+
+                                        </section>
+
+
+                                    </section>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <!-- get all table AdminUser-->
+                            <div class="card card-chart">
+                                <div class="card-header">
+                                    <div class="row d-flex justify-content-center">
+                                        <div class="col-sm-6 text-left">
+                                            <h5 class="card-category">User</h5>
+                                            <h2 class="card-title">View All Users Details</h2>
+                                        </div>
+
+                                        <!-- ratio btn table-->
+                                        <div class="col-sm-5">
+                                            <div class="container-fluid">
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                                <!-- get all AdminUser details -->
+                                <article class="d-flex justify-content-start">
+                                    <article class="d-flex justify-content-start" >
+                                        <table class=" table mt-3  table-dark tbl border m-5 ">
+                                            <thead class="table table-dark"  >
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">User Id</th>
+                                                <th scope="col">Username</th>
+                                                <th scope="col">Email</th>
+                                                <th scope="col">Address</th>
+                                                <th scope="col">NIC</th>
+                                                <th scope="col">Gender</th>
+                                                <th scope="col">Remarks</th>
+
+                                            </tr>
+                                            </thead>
+                                            <tbody id="admin_User-table">
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </article>
+                                </article>
+
+                            </div>
+                        </div>
+                    </section>
+
+
+
+
 
 
 <!--<div id="sec-admin-dashBoard">-->
