@@ -73,7 +73,7 @@ function deleteUser() {
         success: function (res) {
             console.log(res);
             if (res.code == 200) {
-                alert("Customer Successfully deleted");
+                alert("User Successfully deleted");
                 loadAllUser();
                 clearForm();
             }
@@ -95,7 +95,7 @@ function updateUser() {
         id: $("#userId").val(),
         name: $("#username").val(),
         password: $("#password").val(),
-        email: $("#email2").val(),
+        email: $("#email").val(),
         address: $("#address").val(),
         nic: $("#nic").val(),
         gender: $("#gender").val(),
@@ -103,7 +103,7 @@ function updateUser() {
         nic_image_front: $("#nic-image").val(),
         nic_image_back: $("#nic-imag3").val(),
 
-    }
+      }
 
 
     $.ajax({
@@ -127,8 +127,9 @@ function updateUser() {
 }
 
 
-//Search Customer
+//Search User
 function searchUser() {
+
     var userId = $("#userId").val();
     $.ajax({
         url: baseurl+"/"+userId,
@@ -141,15 +142,14 @@ function searchUser() {
                 $("#userId").val(user.id);
                 $("#username").val(user.name);
                 $("#password").val(user.password);
-                $("#email2").val(user.email);
+                $("#email").val(user.email);
                 $("#address").val(user.address);
                 $("#nic").val(user.nic);
                 $("#gender").val(user.gender);
                 $("#remarks").val(user.remarks);
                 $("#nic-image").val(user.nic_image_front);
                 $("#nic-imag3").val(user.nic_image_back);
-
-            }else {
+          }else {
                 clearForm();
             }
         },
@@ -165,16 +165,15 @@ function searchUser() {
 
 //Clear User Input Fields
 function clearForm() {
-     $("#userId").val("");
-     $("#username").val("");
-     $("#password").val("");
-     $("#email2").val("");
-     $("#address").val("");
-     $("#nic").val("");
-     $("#gender").val("");
-     $("#remarks").val("");
-     $("#nic-image").val("");
-     $("#nic-imag3").val("");
-     $("#userId").focus();
-
+    $("#userId").val("");
+    $("#username").val("");
+    $("#password").val("");
+    $("#email").val("");
+    $("#address").val("");
+    $("#nic").val("");
+    $("#gender").val("");
+    $("#remarks").val("");
+    $("#nic-image").val("");
+    $("#nic-imag3").val("");
+    $("#userId").focus();
 }
