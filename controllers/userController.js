@@ -99,7 +99,7 @@ function updateUser() {
         address: $("#address").val(),
         nic: $("#nic").val(),
         gender: $("#gender").val(),
-        remarks: $("#remarks").val(),
+        remarks: $("#remarks_user").val(),
         nic_image_front: $("#nic-image").val(),
         nic_image_back: $("#nic-imag3").val(),
 
@@ -146,7 +146,7 @@ function searchUser() {
                 $("#address").val(user.address);
                 $("#nic").val(user.nic);
                 $("#gender").val(user.gender);
-                $("#remarks").val(user.remarks);
+                $("#remarks_user").val(user.remarks);
                 $("#nic-image").val(user.nic_image_front);
                 $("#nic-imag3").val(user.nic_image_back);
           }else {
@@ -172,7 +172,7 @@ function clearForm() {
     $("#address").val("");
     $("#nic").val("");
     $("#gender").val("");
-    $("#remarks").val("");
+    $("#remarks_user").val("");
     $("#nic-image").val("");
     $("#nic-imag3").val("");
     $("#userId").focus();
