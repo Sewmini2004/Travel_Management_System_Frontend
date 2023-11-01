@@ -646,7 +646,8 @@ input:valid ~ label {
     text-decoration: underline;
 }
 
-#login-btn {
+
+#login-btn{
     width: 100%;
 
     height: 40px;
@@ -661,9 +662,10 @@ input:valid ~ label {
 
     cursor: pointer;
 
-    font-size: 1em;
+    font-size: 1.31em;
 
-    font-weight: 600;
+
+    font-weight: bolder;
 }
 
 .register {

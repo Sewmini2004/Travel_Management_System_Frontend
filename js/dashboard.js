@@ -1,27 +1,7 @@
-function allNoneDashB(){
-
-    // if($('#sec-booking-dash').hasClass('d-block')) $('#sec-booking-dash').removeClass('d-block');
-    if($('#sec-hotel-dash').hasClass("d-block")) $('#sec-hotel-dash').removeClass('d-block');
-    // $('#sec-guide-dash').addClass('d-none');
-    if($('#sec-vehicle-dash').hasClass("d-block")) $('#sec-vehicle-dash').removeClass('d-block');
-    // $('#sec-admin-userRegister-dash').addClass('d-none');
-    // $('#sec-adminBooking-dash').addClass('d-none');
-    // $('.js-dashboard').addClass('d-none');
-
-    $('#sec-booking-dash').addClass('d-none');
-    $('#sec-hotel-dash').addClass('d-none');
-    $('#sec-guide-dash').addClass('d-none');
-    $('#sec-vehicle-dash').addClass('d-none');
-    $('#sec-admin-userRegister-dash').addClass('d-none');
-    $('#sec-adminBooking-dash').addClass('d-none');
-    $('.js-dashboard').addClass('d-none');
-}
-
 /* pages */
 $(document).ready(function () {
     allNoneDashB();
-
-/*
+    dashboard();
 
     $("#btn-admin-home").click(function () {
         allNoneDashB();
@@ -45,9 +25,7 @@ $(document).ready(function () {
 
     });
 
-*/
 
-/*
 
     $('#btn-admin-transport').click(function () {
         allNoneDashB();
@@ -56,7 +34,6 @@ $(document).ready(function () {
 
     });
 
-*/
 
 
 
@@ -76,7 +53,6 @@ $(document).ready(function () {
         console.log("vehicle")
 
     });
-/*
 
     $('#admin-booking-reg-form').click(function () {
         allNoneDashB();
@@ -91,7 +67,13 @@ $(document).ready(function () {
         guideForm();
 
     });
-*/
+//ok
+
+    $('#admin-guide-reg-form').click(function () {
+        allNoneDashB();
+        guideForm();
+
+    });
 
 
 
@@ -100,7 +82,25 @@ $(document).ready(function () {
 })
 
 
+function allNoneDashB(){
 
+    if($('#sec-booking-dash').hasClass('d-block')) $('#sec-booking-dash').removeClass('d-block');
+    if($('#sec-hotel-dash').hasClass("d-block")) $('#sec-hotel-dash').removeClass('d-block');
+    if($('#sec-guide-dash').hasClass("d-block")) $('#sec-guide-dash').removeClass('d-block');
+    if($('#sec-vehicle-dash').hasClass("d-block")) $('#sec-vehicle-dash').removeClass('d-block');
+    if($('#sec-admin-userRegister-dash').hasClass("d-block")) $('#sec-admin-userRegister-dash').removeClass('d-block');
+    if($('#sec-adminBooking-dash').hasClass("d-block")) $('#sec-adminBooking-dash').removeClass('d-block');
+    if($('.js-dashboard').hasClass("d-block")) $('.js-dashboard').removeClass('d-block');
+
+
+    $('#sec-booking-dash').addClass('d-none');
+    $('#sec-hotel-dash').addClass('d-none');
+    $('#sec-guide-dash').addClass('d-none');
+    $('#sec-vehicle-dash').addClass('d-none');
+    $('#sec-admin-userRegister-dash').addClass('d-none');
+    $('#sec-adminBooking-dash').addClass('d-none');
+    $('.js-dashboard').addClass('d-none');
+}
 
 
 
@@ -139,7 +139,6 @@ function transportPage() {
 
 
 
-// ow den meka ainth ekt danne komd mn demm okkom awl giya
 
 
 
@@ -165,7 +164,8 @@ function tourPackages() {
 
 
 function contact() {
-    if ($('#sec-contact').hasClass('d-none')) $('#sec-contact').removeClass('d-none')
+    if ($('#sec-contact').hasClass('d-none'))
+        $('#sec-contact').removeClass('d-none')
     $('#sec-contact').add('d-block')
 }
 
@@ -217,11 +217,6 @@ function guideForm() {
 /* sec-vehicle-dash */
 
 
-/*
-* none all
-* none - show
-*
-* */
 
 function vehicleForm() {
     let sec = $('#sec-vehicle-dash');
@@ -234,7 +229,7 @@ function vehicleForm() {
 }
 
 
-//ko manika code ek eke html d jquery
+
 
 /* Admin booking section */
 
@@ -248,14 +243,14 @@ function BookingForm() {
 }
 
 
-/* Admin dash-displayItem */
+/* Admin js-dashboard */
 
 
-function dashDisplayItem() {
-    let sec = $('#dash-displayItem');
+function dashboard() {
+    let sec = $('.js-dashboard');
     if (sec.hasClass("d-none")) {
-        $('#dash-displayItem').removeClass('d-none');
+        $('.js-dashboard').removeClass('d-none');
     }
-    $('#dash-displayItem').addClass('d-block');
+    $('.js-dashboard').addClass('d-block');
 }
 
