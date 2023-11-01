@@ -1,9 +1,30 @@
+function allNoneDashB(){
+
+    // if($('#sec-booking-dash').hasClass('d-block')) $('#sec-booking-dash').removeClass('d-block');
+    if($('#sec-hotel-dash').hasClass("d-block")) $('#sec-hotel-dash').removeClass('d-block');
+    // $('#sec-guide-dash').addClass('d-none');
+    if($('#sec-vehicle-dash').hasClass("d-block")) $('#sec-vehicle-dash').removeClass('d-block');
+    // $('#sec-admin-userRegister-dash').addClass('d-none');
+    // $('#sec-adminBooking-dash').addClass('d-none');
+    // $('.js-dashboard').addClass('d-none');
+
+    $('#sec-booking-dash').addClass('d-none');
+    $('#sec-hotel-dash').addClass('d-none');
+    $('#sec-guide-dash').addClass('d-none');
+    $('#sec-vehicle-dash').addClass('d-none');
+    $('#sec-admin-userRegister-dash').addClass('d-none');
+    $('#sec-adminBooking-dash').addClass('d-none');
+    $('.js-dashboard').addClass('d-none');
+}
+
+/* pages */
 $(document).ready(function () {
-    allNoneDash();
-/*    dashBoardPage();*/
+    allNoneDashB();
+
+/*
 
     $("#btn-admin-home").click(function () {
-        allNoneDash();
+        allNoneDashB();
         homePage();
         about();
         tourPackages();
@@ -12,58 +33,68 @@ $(document).ready(function () {
 
 
     $('#btn-admin-travel').click(function () {
-        allNoneDash();
+        allNoneDashB();
         travelPage();
     });
 
 
 
     $('#btn-admin-hotel').click(function () {
-        allNoneDash();
+        allNoneDashB();
         HotelPage();
+
     });
 
+*/
 
+/*
 
     $('#btn-admin-transport').click(function () {
-        allNoneDash();
-        transportPage();
+        allNoneDashB();
+      transportPage();
+
+
     });
 
+*/
 
 
 
     $('#admin-hotel-reg-form').click(function () {
-        allNoneDash();
+        allNoneDashB();
+        console.log("All none")
         hotelsForm();
+        console.log("hotel")
     });
 
 
 
     $('#admin-vehicle-reg-form').click(function () {
-        allNoneDash();
+        allNoneDashB();
+        console.log("all none")
         vehicleForm();
-    });
+        console.log("vehicle")
 
+    });
+/*
 
     $('#admin-booking-reg-form').click(function () {
-        allNoneDash();
-        bookingForm();
+        allNoneDashB();
+        adminBookingForm();
+
     });
 
 
 
     $('#admin-guide-reg-form').click(function () {
-        allNoneDash();
+        allNoneDashB();
         guideForm();
+
     });
+*/
 
 
 
-    $('#btn-admin-dashboard').click(function () {
-        allNoneDash();
-      /*  dashBoardPage();*/
-    });
 
 
 })
@@ -72,31 +103,7 @@ $(document).ready(function () {
 
 
 
-function allNoneDash(){
 
-    $('#sec-home').addClass('d-none');
-    $('#sec-about-page').addClass('d-none');
-    $('#sec-tour-Packages').addClass('d-none');
-    $('#sec-contact').addClass('d-none');
-    $('#sec-travel-Visit').addClass('d-none');
-    $('#sec-view-hotel').addClass('d-none');
-    $('#sec-vehicle-page').addClass('d-none');
-    $('#sec-guide').addClass('d-none');
-    $('#sec-bookingTour').addClass('d-none');
-    $('#sec-admin-register').addClass('d-none');
-    $('#sec-admin-hotel').addClass('d-none');
-    $('#sec-user-register').addClass('d-none');
-    $('#login-page').addClass('d-none');
-    $('#sec-booking-dash').addClass('d-none');
-    $('#sec-hotel-dash').addClass('d-none');
-    $('#sec-guide-dash').addClass('d-none');
-    $('#sec-vehicle-dash').addClass('d-none');
-  /*  $('#sec-admin-dashBoard').addClass('d-none');
-
-*/
-}
-
-/* pages */
 
 
 
@@ -104,10 +111,8 @@ function allNoneDash(){
 /* sec-view-hotel  */
 function HotelPage() {
     let sec = $('#sec-view-hotel');
-    if (sec.hasClass("d-none")) {
-        $('#sec-view-hotel').removeClass('d-none');
-    }
-    $('#sec-view-hotel').addClass('d-block');
+    sec.removeClass('d-none');
+    sec.addClass('d-block');
 }
 
 
@@ -127,16 +132,14 @@ function travelPage() {
 /* sec-vehicle-page -*/
 function transportPage() {
     let sec = $('#sec-vehicle-page');
-    if (sec.hasClass("d-none")) {
-        $('#sec-vehicle-page').removeClass('d-none');
-    }
-    $('#sec-vehicle-page').addClass('d-block');
+    sec.removeClass('d-none');
+    sec.addClass('d-block');
 }
 
 
 
 
-
+// ow den meka ainth ekt danne komd mn demm okkom awl giya
 
 
 
@@ -173,13 +176,13 @@ function contact() {
 
 /* sec-booking-dash */
 
-
-function bookingForm() {
-    let sec = $('#sec-booking-dash');
+//mt html tkth pennko
+function adminBookingForm() {
+    let sec = $('#sec-adminBooking-dash');
     if (sec.hasClass("d-none")) {
-        $('#sec-booking-dash').removeClass('d-none');
+        $('#sec-adminBooking-dash').removeClass('d-none');
     }
-    $('#sec-booking-dash').addClass('d-block');
+    $('#sec-adminBooking-dash').addClass('d-block');
 }
 
 
@@ -190,9 +193,9 @@ function bookingForm() {
 function hotelsForm() {
     let sec = $('#sec-hotel-dash');
     if (sec.hasClass("d-none")) {
-        $('#sec-hotel-dash').removeClass('d-none');
+        sec.removeClass('d-none');
     }
-    $('#sec-hotel-dash').addClass('d-block');
+    sec.addClass('d-block');
 }
 
 
@@ -214,23 +217,45 @@ function guideForm() {
 /* sec-vehicle-dash */
 
 
+/*
+* none all
+* none - show
+*
+* */
+
 function vehicleForm() {
     let sec = $('#sec-vehicle-dash');
     if (sec.hasClass("d-none")) {
-        $('#sec-vehicle-dash').removeClass('d-none');
+        sec.removeClass('d-none');
+        console.log("Run")
     }
-    $('#sec-vehicle-dash').addClass('d-block');
+    sec.addClass('d-block');
+
 }
 
 
-/* sec-vehicle-dash */
+//ko manika code ek eke html d jquery
 
-/*
+/* Admin booking section */
 
-function dashBoardPage() {
-    let sec = $('#sec-admin-dashBoard');
+
+function BookingForm() {
+    let sec = $('#sec-booking-dash');
     if (sec.hasClass("d-none")) {
-        $('#sec-admin-dashBoard').removeClass('d-none');
+        $('#sec-booking-dash').removeClass('d-none');
     }
-    $('#sec-admin-dashBoard').addClass('d-block');
-}*/
+    $('#sec-booking-dash').addClass('d-block');
+}
+
+
+/* Admin dash-displayItem */
+
+
+function dashDisplayItem() {
+    let sec = $('#dash-displayItem');
+    if (sec.hasClass("d-none")) {
+        $('#dash-displayItem').removeClass('d-none');
+    }
+    $('#dash-displayItem').addClass('d-block');
+}
+
